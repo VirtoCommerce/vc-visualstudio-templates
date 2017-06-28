@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="VirtoCommerce.Module.Vsix.73af5367-1757-4210-938b-67ab285c0eba" Version="1.0" Language="en-US" Publisher="Virto Commerce" />
+    <DisplayName>Virto Commerce 2.x Module</DisplayName>
+    <Description xml:space="preserve">A project template for creating extension/module for Virto Commerce platform.</Description>
+    <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
+    <GettingStartedGuide>https://virtocommerce.com/docs/vc2devguide/getting-started</GettingStartedGuide>
+    <ReleaseNotes>https://virtocommerce.com/blog</ReleaseNotes>
+    <PreviewImage>module.png</PreviewImage>
+    <Tags>ecommerce,platform,azure,angularjs,pim,oms,cms</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Template" d:TargetPath="|VirtoCommerce.Module.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+  </Assets>
+</PackageManifest>
