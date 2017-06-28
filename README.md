@@ -1,6 +1,10 @@
 # VirtoCommerce Visual Studio Extensions
 This repository is the official storage for VirtoCommerce Visual Studio templates source code.
 
+Compile version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=VirtoCommerce2xModuleProjectTemplate.VirtoCommerce2xModule
+
+Extension can be submitted using https://visualstudiogallery.msdn.microsoft.com/
+
 # License
 Copyright (c) Virtosoftware Ltd.  All rights reserved.
 
