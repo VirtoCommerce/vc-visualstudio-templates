@@ -17,7 +17,7 @@ angular.module(moduleTemplateName, [])
                         var newBlade = {
                             id: 'blade1',
                             controller: '$safeprojectname$.blade1Controller',
-                            template: 'Modules/$($safeprojectname$)/Scripts/blades/blade1.tpl.html',
+                            template: 'Modules/$($safeprojectname$)/Scripts/blades/helloWorld_blade1.tpl.html',
                             isClosingDisabled: true
                         };
                         bladeNavigationService.showBlade(newBlade);
@@ -40,4 +40,3 @@ angular.module(moduleTemplateName, [])
         mainMenuService.addMenuItem(menuItem);
     }
 ]);
-

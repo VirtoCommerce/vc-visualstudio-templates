@@ -75,6 +75,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="module.ignore" />
     <None Include="_packages.config" />
     <None Include="Content\help\index.html" />
     <None Include="Content\help\stylesheet.css" />
@@ -82,22 +84,14 @@
     <None Include="module.manifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\managedModule.css" />
-    <None Include="Scripts\blades\blade1.js" />
-    <None Include="Scripts\blades\blade1.tpl.html" />
+    <None Include="Scripts\blades\helloWorld_blade1.js" />
+    <None Include="Scripts\blades\helloWorld_blade1.tpl.html" />
     <None Include="Scripts\managedModule.js" />
     <None Include="Scripts\resources\managedModuleApi.js" />
-    <None Include="Web.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Web.config" />
     <None Include="Module.Web.csproj">
       <SubType>Designer</SubType>
     </None>

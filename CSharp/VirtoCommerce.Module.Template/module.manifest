@@ -21,7 +21,7 @@
     </scripts>
 
     <settings>
-        <group>
+        <group name="General">
             <setting>
                 <name>$safeprojectname$.General.String</name>
                 <valueType>string</valueType>
