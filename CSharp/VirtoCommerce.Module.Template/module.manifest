@@ -2,7 +2,7 @@
 <module>
     <id>$safeprojectname$</id>
     <version>1.0.0</version>
-    <platformVersion>2.13.9</platformVersion>
+    <platformVersion>2.13.14</platformVersion>
 
     <title>$projectname$</title>
     <description>Enter your module description here.</description>
