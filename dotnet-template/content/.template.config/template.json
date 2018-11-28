@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Virto Commerce",
+  "classifications": [ "Common", "Library" ],
+  "identity": "VirtoCommerce.Templates.ManagedModule",
+  "name": "Virto Commerce 2.x Module",
+  "shortName": "vc-module",
+  "description": "A project template for creating Virto Commerce Module Extension",
+  "defaultName": "ManagedModule",
+  "sourceName": "Module.Web",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

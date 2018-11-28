@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>VirtoCommerce.Templates.ManagedModule</id>
+        <version>1.0.0</version>
+        <title>VirtoCommerce.Templates.ManagedModule</title>
+        <authors>Mikhail Smal</authors>
+        <owners>VirtoCommerce</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <licenseUrl>https://virtocommerce.com/open-source-license</licenseUrl>
+        <projectUrl>https://github.com/VirtoCommerce/vc-visualstudio-templates</projectUrl>
+        <iconUrl>https://github.com/VirtoCommerce/vc-platform/raw/master/NuGet/icon.png</iconUrl>
+        <description>VirtoCommerce Managed Module template for "dotnet new" engine</description>
+        <copyright>Copyright © VirtoCommerce 2011-2018</copyright>
+        <developmentDependency>true</developmentDependency>
+        <packageTypes>
+          <packageType name="Template"/>
+        </packageTypes>
+    </metadata>
+</package>
