@@ -56,6 +56,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VirtoCommerce.CartExModule.Template\VirtoCommerce.CartExModule.Template.csproj">
+      <Project>{c9ae85ca-f1b1-4d7e-bc97-c131e4796f8e}</Project>
+      <Name>VirtoCommerce.CartExModule.Template</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\VirtoCommerce.Module.Template\VirtoCommerce.Module.Template.csproj">
       <Project>{6B0E71BB-87AA-460A-83C3-FA5CE0993394}</Project>
       <Name>VirtoCommerce.Module.Template</Name>
