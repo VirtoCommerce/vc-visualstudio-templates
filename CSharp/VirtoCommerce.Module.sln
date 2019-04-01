@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.Module.Templa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.CartExModule.Template", "VirtoCommerce.CartExModule.Template\VirtoCommerce.CartExModule.Template.csproj", "{C9AE85CA-F1B1-4D7E-BC97-C131E4796F8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.PriceExModule.Template", "VirtoCommerce.PriceExModule.Template\VirtoCommerce.PriceExModule.Template.csproj", "{AF56362E-276B-4E64-9FCB-FD7E529F24F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C9AE85CA-F1B1-4D7E-BC97-C131E4796F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9AE85CA-F1B1-4D7E-BC97-C131E4796F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9AE85CA-F1B1-4D7E-BC97-C131E4796F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF56362E-276B-4E64-9FCB-FD7E529F24F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF56362E-276B-4E64-9FCB-FD7E529F24F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF56362E-276B-4E64-9FCB-FD7E529F24F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF56362E-276B-4E64-9FCB-FD7E529F24F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

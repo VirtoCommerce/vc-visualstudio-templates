@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <id>$safeprojectname$</id>
+    <version>1.0.0</version>
+    <platformVersion>2.13.43</platformVersion>
+    <dependencies>
+      <dependency id="VirtoCommerce.Core" version="2.25.19" />
+      <dependency id="VirtoCommerce.Pricing" version="2.18.3" />
+    </dependencies>
+
+    <title>$projectname$</title>
+    <description>Enter your module description here.</description>
+    <authors>
+        <author>$username$</author>
+    </authors>
+
+    <assemblyFile>$safeprojectname$.dll</assemblyFile>
+    <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
+
+    <scripts>
+        <directory virtualPath="$/Scripts" searchPattern="*.js" searchSubdirectories="true" />
+    </scripts>
+
+  <settings></settings>
+
+  <permissions>
+    <group name="Pricing">
+      <permission id="pricing:access" name="Open pricing menu" description=""/>
+      <permission id="pricing:create" name="Create pricing data" description=""/>
+      <permission id="pricing:read" name="View pricing data" description=""/>
+      <permission id="pricing:update" name="Update pricing data" description=""/>
+      <permission id="pricing:delete" name="Delete pricing data" description=""/>
+    </group>
+  </permissions>
+</module>
