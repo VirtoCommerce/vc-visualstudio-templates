@@ -70,6 +70,13 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\VirtoCommerce.OrderExModule.Template\VirtoCommerce.OrderExModule.Template.csproj">
+      <Project>{7ecd6427-8063-4d98-8aba-bf8bba7c84ea}</Project>
+      <Name>VirtoCommerce.OrderExModule.Template</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\VirtoCommerce.PriceExModule.Template\VirtoCommerce.PriceExModule.Template.csproj">
       <Project>{af56362e-276b-4e64-9fcb-fd7e529f24f2}</Project>
       <Name>VirtoCommerce.PriceExModule.Template</Name>
