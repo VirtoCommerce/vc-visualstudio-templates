@@ -16,7 +16,7 @@ namespace $safeprojectname$
         public override void SetupDatabase()
         {
             // Modify database schema with EF migrations
-            // using (var context = new PricingRepositoryImpl(_connectionStringName))
+            // using (var context = new MyRepository(_connectionStringName)))
             // {
             //     var initializer = new SetupDatabaseInitializer<MyRepository, Data.Migrations.Configuration>();
             //     initializer.InitializeDatabase(context);
