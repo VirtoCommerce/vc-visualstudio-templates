@@ -60,7 +60,7 @@ namespace $safeprojectname$
             _container.RegisterType<ICartRepository>(new InjectionFactory(c => new CartExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
             _container.RegisterType<IOrderRepository>(new InjectionFactory(c => new OrderExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
 
-            //Override ICustomerOrderBuilder default implementation
+            // Override ICustomerOrderBuilder default implementation
             _container.RegisterType<ICustomerOrderBuilder, CustomerOrderBuilderExService>();
         }
 
@@ -77,9 +77,8 @@ namespace $safeprojectname$
             AbstractTypeFactory<CustomerOrderEntity>.OverrideType<CustomerOrderEntity, CustomerOrderExEntity>();
             AbstractTypeFactory<CustomerOrder>.OverrideType<CustomerOrder, CustomerOrderEx>().WithFactory(() => new CustomerOrderEx { OperationType = "CustomerOrder" });
             AbstractTypeFactory<OrderLineItem>.OverrideType<OrderLineItem, OrderLineItemEx>();
-            //AbstractTypeFactory<LineItemEntity>.OverrideType<LineItemEntity, LineItemExEntity>();
 
-            //Thats need for PolymorphicOperationJsonConverter for API deserialization
+            // Thats need for PolymorphicOperationJsonConverter for API deserialization
             AbstractTypeFactory<IOperation>.RegisterType<Invoice>();
         }
     }

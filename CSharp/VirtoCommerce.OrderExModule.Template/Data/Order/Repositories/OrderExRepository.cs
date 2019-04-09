@@ -28,12 +28,6 @@ namespace $safeprojectname$.Repositories
             modelBuilder.Entity<CustomerOrderExEntity>().ToTable("CustomerOrderEx");
             #endregion
 
-            //#region LineItem2
-            //modelBuilder.Entity<LineItemExEntity>().HasKey(x => x.Id)
-            //    .Property(x => x.Id);
-            //modelBuilder.Entity<LineItemExEntity>().ToTable("OrderLineItem2");
-            //#endregion
-
             #region OrderInvoice
             modelBuilder.Entity<InvoiceEntity>().HasKey(x => x.Id)
             .Property(x => x.Id);
@@ -61,7 +55,6 @@ namespace $safeprojectname$.Repositories
         public override CustomerOrderEntity[] GetCustomerOrdersByIds(string[] ids, CustomerOrderResponseGroup responseGroup)
         {
             var retVal = base.GetCustomerOrdersByIds(ids, responseGroup);
-            //var invoices = Invoices.Where(x => ids.Contains(x.CustomerOrderExId)).ToArray();
             return retVal;
         }
     }

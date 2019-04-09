@@ -25,7 +25,6 @@
         <Folder Name="Model">
           <ProjectItem ReplaceParameters="true">CustomerOrderExEntity.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true">InvoiceEntity.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true">LineItemExEntity.cs</ProjectItem>
         </Folder>
         <Folder Name="Repositories">
           <ProjectItem ReplaceParameters="true">OrderExRepository.cs</ProjectItem>

@@ -18,7 +18,7 @@ namespace $safeprojectname$.Services
         {
             var result = base.ToOrderModel(lineItem) as OrderLineItemEx;
 
-            // Next lines just copy OuterId from cart LineItem2 to order LineItem2
+            // Next lines just copy OuterId from cart LineItemEx to order LineItemEx
             var cartLineItemEx = lineItem as CartLineItemEx;
             if (cartLineItemEx != null)
             {

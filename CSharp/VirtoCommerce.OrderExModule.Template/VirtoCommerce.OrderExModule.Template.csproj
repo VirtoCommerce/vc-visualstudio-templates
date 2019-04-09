@@ -86,7 +86,6 @@
     <None Include="Web\Module.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AssemblyInfo.cs" />
     <None Include="Core\_packages.config" />
     <None Include="Data\Cart\_packages.config" />
     <None Include="Data\Order\_packages.config" />
