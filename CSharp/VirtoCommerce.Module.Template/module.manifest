@@ -80,4 +80,12 @@
             </setting>
         </group>
     </settings>
+  
+    <permissions>
+        <group name="$projectname$">
+            <permission id="$safeprojectname$:read" name="Read" />
+            <permission id="$safeprojectname$:update" name="Update" />
+            <permission id="$safeprojectname$:delete" name="Delete" />
+        </group>
+    </permissions>
 </module>
