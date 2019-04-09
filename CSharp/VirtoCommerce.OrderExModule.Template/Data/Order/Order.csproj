@@ -96,7 +96,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\CustomerOrderExEntity.cs" />
     <Compile Include="Model\InvoiceEntity.cs" />
-    <Compile Include="Model\LineItemExEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\OrderExRepository.cs" />
     <Compile Include="Services\CustomerOrderBuilderExService.cs" />
