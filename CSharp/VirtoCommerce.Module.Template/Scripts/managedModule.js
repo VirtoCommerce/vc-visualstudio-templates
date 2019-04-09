@@ -34,7 +34,7 @@ angular.module(moduleTemplateName, [])
             icon: 'fa fa-cube',
             title: '$safeprojectname$',
             priority: 100,
-            action: function () { $state.go('workspace.$safeprojectname$') },
+            action: function () { $state.go('workspace.$safeprojectname$'); },
             permission: '$safeprojectname$Permission'
         };
         mainMenuService.addMenuItem(menuItem);

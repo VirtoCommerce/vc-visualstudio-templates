@@ -8,7 +8,7 @@
             blade.data = data.result;
             blade.isLoading = false;
         });
-    }
+    };
 
     blade.refresh();
 }]);
