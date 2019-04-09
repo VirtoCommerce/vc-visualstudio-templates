@@ -97,7 +97,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controllers\Api\managedModuleController.cs" />
+    <None Include="Controllers\Api\MyModuleController.cs" />
     <None Include="Module.cs" />
     <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

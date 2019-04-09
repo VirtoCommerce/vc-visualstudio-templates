@@ -35,7 +35,7 @@
             </Folder>
             <Folder Name="Controllers" TargetFolderName="Controllers">
                 <Folder Name="Api" TargetFolderName="Api">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Controller.cs">ManagedModuleController.cs</ProjectItem>
+                    <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Controller.cs">MyModuleController.cs</ProjectItem>
                 </Folder>
             </Folder>
             <Folder Name="Properties" TargetFolderName="Properties">
