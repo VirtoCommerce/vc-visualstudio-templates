@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Virto Commerce 2.x Cart and Order Ex Module</Name>
+    <Description>A project template for creating Virto Commerce Cart and Order Modules Extension</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>CartAndOrderEx</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <TemplateGroupID>7aaaede2-ef9b-47b8-a3af-a6c6c93a0ea8</TemplateGroupID>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+          Web\Web.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+          Core\Core.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Cart.Data" CopyParameters="true">
+          Data\Cart\Cart.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Order.Data" CopyParameters="true">
+          Data\Order\Order.vstemplate
+        </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
