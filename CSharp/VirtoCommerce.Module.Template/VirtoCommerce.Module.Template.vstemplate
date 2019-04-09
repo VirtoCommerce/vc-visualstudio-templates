@@ -43,8 +43,8 @@
             </Folder>
             <Folder Name="Scripts" TargetFolderName="Scripts">
                 <Folder Name="blades" TargetFolderName="blades">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld_blade1.js">helloWorld_blade1.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld_blade1.tpl.html">helloWorld_blade1.tpl.html</ProjectItem>
+                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld.js">helloWorld.js</ProjectItem>
+                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld.tpl.html">helloWorld.tpl.html</ProjectItem>
                 </Folder>
                 <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.js">managedModule.js</ProjectItem>
                 <Folder Name="resources" TargetFolderName="resources">

@@ -103,8 +103,8 @@
   <ItemGroup>
     <Content Include="module.manifest" />
     <Content Include="Content\css\$safeprojectname$.css" />
-    <Content Include="Scripts\blades\helloWorld_blade1.js" />
-    <Content Include="Scripts\blades\helloWorld_blade1.tpl.html" />
+    <Content Include="Scripts\blades\helloWorld.js" />
+    <Content Include="Scripts\blades\helloWorld.tpl.html" />
     <Content Include="Scripts\$safeprojectname$.js" />
     <Content Include="Scripts\resources\$safeprojectname$Api.js" />
   </ItemGroup>
