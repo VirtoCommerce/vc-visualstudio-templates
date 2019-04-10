@@ -32,9 +32,9 @@
         </Folder>
         <Folder Name="Content">
           <Folder Name="help">
-            <ProjectItem ReplaceParameters="true">arch_diagram.png</ProjectItem>
+            <ProjectItem ReplaceParameters="true">arch_scheme.png</ProjectItem>
             <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
-            <ProjectItem ReplaceParameters="true" OpenInEditor="true">index.html</ProjectItem>
+            <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
           </Folder>
         </Folder>
       </Project>
