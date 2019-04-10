@@ -14,7 +14,7 @@
       <Project TargetFileName="$safeprojectname$.csproj" File="Web.csproj" ReplaceParameters="true">
         <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-        <ProjectItem ReplaceParameters="true" OpenInEditor="true">Module.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Module.cs</ProjectItem>
         <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
         <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
         <ProjectItem ReplaceParameters="true">app.config</ProjectItem>
@@ -28,6 +28,13 @@
           <Folder Name="blades">
             <ProjectItem ReplaceParameters="true">invoice-detail.js</ProjectItem>
             <ProjectItem ReplaceParameters="true">invoice-detail.tpl.html</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Content">
+          <Folder Name="help">
+            <ProjectItem ReplaceParameters="true">arch_diagram.png</ProjectItem>
+            <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" OpenInEditor="true">index.html</ProjectItem>
           </Folder>
         </Folder>
       </Project>
