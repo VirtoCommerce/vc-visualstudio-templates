@@ -5,8 +5,8 @@ namespace $safeprojectname$
 {
     public class Module : ModuleBase
     {
-        // private const string _connectionStringName = "VirtoCommerce";
-        private readonly IUnityContainer _container;
+    // private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("$safeprojectname$") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
+    private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)
         {
@@ -16,27 +16,27 @@ namespace $safeprojectname$
         public override void SetupDatabase()
         {
             // Modify database schema with EF migrations
-            // using (var context = new MyRepository(_connectionStringName)))
+            // using (var context = new MyRepository(_connectionString)))
             // {
             //     var initializer = new SetupDatabaseInitializer<MyRepository, Data.Migrations.Configuration>();
             //     initializer.InitializeDatabase(context);
             // }
         }
 
-        public override void Initialize()
+    public override void Initialize()
         {
             base.Initialize();
 
             // This method is called for each installed module on the first stage of initialization.
 
             // Register implementations:
-            // _container.RegisterType<IMyRepository>(new InjectionFactory(c => new MyRepository(_connectionStringName, new EntityPrimaryKeyGeneratorInterceptor()));
+            // _container.RegisterType<IMyRepository>(new InjectionFactory(c => new MyRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor()));
             // _container.RegisterType<IMyService, MyServiceImplementation>();
 
             // Try to avoid calling _container.Resolve<>();
         }
 
-        public override void PostInitialize()
+    public override void PostInitialize()
         {
             base.PostInitialize();
 
