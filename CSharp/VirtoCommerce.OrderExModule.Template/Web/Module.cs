@@ -28,7 +28,7 @@ namespace $safeprojectname$
 
     public class Module : ModuleBase
     {
-        private const string _connectionStringName = "VirtoCommerce";
+        private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("$safeprojectname$") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
         private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)
@@ -40,13 +40,13 @@ namespace $safeprojectname$
         {
             base.SetupDatabase();
 
-            using (var db = new CartExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>()))
+            using (var db = new CartExRepository(_connectionString, _container.Resolve<AuditableInterceptor>()))
             {
                 var initializer = new SetupDatabaseInitializer<CartExRepository, CartConfiguration>();
                 initializer.InitializeDatabase(db);
             }
 
-            using (var db = new OrderExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>()))
+            using (var db = new OrderExRepository(_connectionString, _container.Resolve<AuditableInterceptor>()))
             {
                 var initializer = new SetupDatabaseInitializer<OrderExRepository, OrderConfiguration>();
                 initializer.InitializeDatabase(db);
@@ -57,8 +57,8 @@ namespace $safeprojectname$
         {
             base.Initialize();
 
-            _container.RegisterType<ICartRepository>(new InjectionFactory(c => new CartExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
-            _container.RegisterType<IOrderRepository>(new InjectionFactory(c => new OrderExRepository(_connectionStringName, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
+            _container.RegisterType<ICartRepository>(new InjectionFactory(c => new CartExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
+            _container.RegisterType<IOrderRepository>(new InjectionFactory(c => new OrderExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
 
             // Override ICustomerOrderBuilder default implementation
             _container.RegisterType<ICustomerOrderBuilder, CustomerOrderBuilderExService>();
