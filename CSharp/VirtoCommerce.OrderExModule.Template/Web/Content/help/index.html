@@ -36,7 +36,7 @@
                 <p>In the solution, each project has its own responsibilities. Thus, certain types belong to each project, and you can always find the folders corresponding to these types in the corresponding project.</p>
                 <p>The figure below shows a representation of the layers of architecture. Notice that the solid arrows correspond to the compile-time dependencies, and the dashed arrows to the dependencies that exist only at run time. As part of the current architecture, a Web project works with interfaces that are defined in the Core project at compile time, and ideally should not know anything about the implementation types defined in the Data project. But at run time, these types of implementations are necessary to run the application, so they must exist and be tied to the interfaces of the Core project through dependency injection.</p>
                 <p>
-                    <img src="arch_diagram.png" />
+                    <img src="arch_scheme.png" />
                 </p>
                 <h3>.Core <small>Business/Application Model</small></h3>
                 <p>The project must contain a business model, services and interfaces. These interfaces should include abstractions for operations that will be performed using infrastructure, such as data access, file system access, network calls, etc. In addition, services or interfaces defined at this level can work with non-object types. that are independent of the user. interface or infrastructure and are defined as simple data transfer objects (DTO).</p>
