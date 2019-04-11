@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.PriceExModule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.OrderExModule.Template", "VirtoCommerce.OrderExModule.Template\VirtoCommerce.OrderExModule.Template.csproj", "{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.Module.Wizard", "VirtoCommerce.Module.Wizard\VirtoCommerce.Module.Wizard.csproj", "{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
