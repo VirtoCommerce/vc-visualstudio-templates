@@ -113,7 +113,7 @@
     <None Include="Web\Scripts\blades\invoice-detail.js" />
     <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
     <None Include="Web\Scripts\External.OrderExModule.Web.js" />
-    <None Include="Web\Scripts\tree-template.html" />
+    <None Include="Web\Scripts\tree-template.tpl.html" />
     <None Include="Web\Web.csproj">
       <SubType>Designer</SubType>
     </None>

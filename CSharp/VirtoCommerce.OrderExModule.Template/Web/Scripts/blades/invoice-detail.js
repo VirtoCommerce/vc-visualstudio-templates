@@ -1,5 +1,5 @@
-﻿angular.module('$safeprojectname$')
-    .controller('$safeprojectname$.invoiceDetailController', ['$scope', 'platformWebApp.bladeNavigationService', 'platformWebApp.dialogService', 'platformWebApp.settings', 'virtoCommerce.customerModule.members',
+﻿angular.module('$ext_supersafenamejs$')
+    .controller('$ext_supersafenamejs$.invoiceDetailController', ['$scope', 'platformWebApp.bladeNavigationService', 'platformWebApp.dialogService', 'platformWebApp.settings', 'virtoCommerce.customerModule.members',
     function ($scope, bladeNavigationService, dialogService, settings, members) {
         var blade = $scope.blade;
 

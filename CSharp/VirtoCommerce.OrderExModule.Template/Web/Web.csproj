@@ -147,7 +147,7 @@
     <Content Include="Scripts\blades\invoice-detail.js" />
     <Content Include="Scripts\blades\invoice-detail.tpl.html" />
     <Content Include="Scripts\$safeprojectname$.js" />
-    <Content Include="Scripts\tree-template.html" />
+    <Content Include="Scripts\tree-template.tpl.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module.cs" />

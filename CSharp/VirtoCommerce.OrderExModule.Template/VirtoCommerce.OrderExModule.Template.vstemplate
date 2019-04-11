@@ -31,4 +31,8 @@
         </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>VirtoCommerce.Module.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627683273f803801</Assembly>
+    <FullClassName>VirtoCommerce.Module.Wizard.SafeNameWizard</FullClassName>
+  </WizardExtension>
 </VSTemplate>

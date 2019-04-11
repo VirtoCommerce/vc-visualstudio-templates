@@ -22,8 +22,8 @@
         <ProjectItem ReplaceParameters="true">README.md</ProjectItem>
         
         <Folder Name="Scripts">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.js">External.OrderExModule.Web.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true">tree-template.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.js">External.OrderExModule.Web.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">tree-template.tpl.html</ProjectItem>
           
           <Folder Name="blades">
             <ProjectItem ReplaceParameters="true">invoice-detail.js</ProjectItem>
