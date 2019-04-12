@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <module>
-    <id>External.OrderExModule.Web</id>
+    <id>$safeprojectname$</id>
     <version>1.0.0</version>
     <platformVersion>2.13.43</platformVersion>
     <dependencies>
@@ -9,14 +9,21 @@
       <dependency id="VirtoCommerce.Orders" version="2.17.22" />
     </dependencies>
 
-    <title>External.OrderExModule.Web</title>
+    <title>$projectname$</title>
     <description>Enter your module description here.</description>
     <authors>
-        <author>evanbtlr</author>
+      <author>$username$</author>
     </authors>
+    <owners>
+      <owner>$registeredorganization$</owner>
+    </owners>
 
-    <assemblyFile>External.OrderExModule.Web.dll</assemblyFile>
-    <moduleType>External.OrderExModule.Web.Module, External.OrderExModule.Web</moduleType>
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright © $year$ $registeredorganization$. All rights reserved</copyright>
+    <tags>extension order cart module</tags>
+
+    <assemblyFile>$safeprojectname$.dll</assemblyFile>
+    <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
 
     <scripts>
         <directory virtualPath="$/Scripts" searchPattern="*.js" searchSubdirectories="true" />
