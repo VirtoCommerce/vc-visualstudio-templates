@@ -1,9 +1,8 @@
-﻿using $ext_safeprojectname$.Cart.Data.Model;
-using $ext_safeprojectname$.Cart.Data.Repositories;
-using $ext_safeprojectname$.Core.Model;
-using $ext_safeprojectname$.Order.Data.Model;
-using $ext_safeprojectname$.Order.Data.Repositories;
-using $ext_safeprojectname$.Order.Data.Services;
+﻿using $ext_safeprojectname$.Core.Model;
+using $ext_safeprojectname$.Data.Model.Cart;
+using $ext_safeprojectname$.Data.Model.Order;
+using $ext_safeprojectname$.Data.Repositories;
+using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.CartModule.Data.Repositories;
@@ -20,10 +19,10 @@ using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
 
 namespace $safeprojectname$
 {
-    using CartConfiguration = Cart.Data.Migrations.Configuration;
+    using CartConfiguration = Data.Migrations.Cart.Configuration;
     using CartLineItem = VirtoCommerce.Domain.Cart.Model.LineItem;
     using LineItemEntity = VirtoCommerce.CartModule.Data.Model.LineItemEntity;
-    using OrderConfiguration = Order.Data.Migrations.Configuration;
+    using OrderConfiguration = Data.Migrations.Order.Configuration;
     using OrderLineItem = VirtoCommerce.Domain.Order.Model.LineItem;
 
     public class Module : ModuleBase
@@ -71,7 +70,7 @@ namespace $safeprojectname$
             AbstractTypeFactory<ShoppingCart>.OverrideType<ShoppingCart, CartEx>();
             AbstractTypeFactory<ShoppingCartEntity>.OverrideType<ShoppingCartEntity, CartExEntity>();
             AbstractTypeFactory<CartLineItem>.OverrideType<CartLineItem, CartLineItemEx>();
-            AbstractTypeFactory<LineItemEntity>.OverrideType<LineItemEntity, Cart.Data.Model.LineItemExEntity>();
+            AbstractTypeFactory<LineItemEntity>.OverrideType<LineItemEntity, LineItemExEntity>();
 
             AbstractTypeFactory<IOperation>.OverrideType<CustomerOrder, CustomerOrderEx>();
             AbstractTypeFactory<CustomerOrderEntity>.OverrideType<CustomerOrderEntity, CustomerOrderExEntity>();

@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\_packages.config" />
     <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Core\Model\CartEx.cs" />
@@ -61,34 +62,30 @@
     <None Include="Core\Model\CustomerOrderEx.cs" />
     <None Include="Core\Model\Invoice.cs" />
     <None Include="Core\Model\LineItemEx.cs" />
-    <None Include="Data\Cart\Migrations\Initial.cs" />
-    <None Include="Data\Cart\Migrations\Initial.designer.cs">
-      <DependentUpon>Initial.cs</DependentUpon>
-    </None>
-    <None Include="Data\Cart\Migrations\Configuration.cs" />
-    <None Include="Data\Cart\Model\CartExEntity.cs" />
-    <None Include="Data\Cart\Model\LineItemExEntity.cs" />
-    <None Include="Data\Cart\Repositories\CartExRepository.cs" />
-    <None Include="Data\Order\Migrations\Initial.cs" />
-    <None Include="Data\Order\Migrations\Initial.designer.cs">
-      <DependentUpon>Initial.cs</DependentUpon>
-    </None>
-    <None Include="Data\Order\Migrations\Configuration.cs" />
-    <None Include="Data\Order\Model\CustomerOrderExEntity.cs" />
-    <None Include="Data\Order\Model\InvoiceEntity.cs" />
-    <None Include="Data\Order\Model\LineItemExEntity.cs" />
-    <None Include="Data\Order\Repositories\OrderExRepository.cs" />
-    <None Include="Data\Order\Services\OrderBuilderExService.cs" />
     <None Include="Core\AssemblyInfo.cs" />
-    <None Include="Data\Cart\AssemblyInfo.cs" />
-    <None Include="Data\Order\AssemblyInfo.cs" />
+    <None Include="Data\AssemblyInfo.cs" />
+    <None Include="Data\Migrations\Cart\Initial.cs" />
+    <None Include="Data\Migrations\Cart\Initial.Designer.cs">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <None Include="Data\Migrations\Cart\Configuration.cs" />
+    <None Include="Data\Migrations\Order\Initial.cs" />
+    <None Include="Data\Migrations\Order\Initial.Designer.cs">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <None Include="Data\Migrations\Order\Configuration.cs" />
+    <None Include="Data\Model\Cart\CartExEntity.cs" />
+    <None Include="Data\Model\Cart\LineItemExEntity.cs" />
+    <None Include="Data\Model\Order\CustomerOrderExEntity.cs" />
+    <None Include="Data\Model\Order\InvoiceEntity.cs" />
+    <None Include="Data\Repositories\CartExRepository.cs" />
+    <None Include="Data\Repositories\OrderExRepository.cs" />
+    <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Core\_packages.config" />
-    <None Include="Data\Cart\_packages.config" />
-    <None Include="Data\Order\_packages.config" />
     <None Include="Web\module.ignore" />
     <None Include="Web\app.config" />
     <None Include="Web\module.manifest" />
@@ -104,26 +101,12 @@
     <None Include="Core\Core.csproj">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Data\Cart\Cart.csproj">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Data\Order\Order.csproj">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web\Scripts\blades\invoice-detail.js" />
     <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
     <None Include="Web\Scripts\External.OrderExModule.Web.js" />
     <None Include="Web\Scripts\tree-template.tpl.html" />
     <None Include="Web\Web.csproj">
       <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Data\Cart\Migrations\Initial.resx">
-      <DependentUpon>Initial.cs</DependentUpon>
-    </None>
-    <None Include="Data\Order\Migrations\Initial.resx">
-      <DependentUpon>Initial.cs</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -137,23 +120,25 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Data\Cart\Cart.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
-  </ItemGroup>
-  <ItemGroup>
-    <VSTemplate Include="Data\Order\Order.vstemplate">
-      <SubType>Designer</SubType>
-    </VSTemplate>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Web\Content\help\index.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web\Content\help\stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Data.csproj" />
+    <Content Include="Data\Data.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web\Content\help\arch_scheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Migrations\Cart\Initial.resx">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Data\Migrations\Order\Initial.resx">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

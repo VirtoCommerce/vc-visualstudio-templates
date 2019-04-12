@@ -23,11 +23,8 @@
         <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
           Core\Core.vstemplate
         </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Cart.Data" CopyParameters="true">
-          Data\Cart\Cart.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Order.Data" CopyParameters="true">
-          Data\Order\Order.vstemplate
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+          Data\Data.vstemplate
         </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>

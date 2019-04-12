@@ -11,7 +11,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$rootnamespace$</RootNamespace>
+    <RootNamespace>$safeprojectname$</RootNamespace>
     <AssemblyName>$safeprojectname$</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
@@ -154,17 +154,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\$ext_safeprojectname$.Cart.Data\$ext_safeprojectname$.Cart.Data.csproj">
-      <Project>{$guid3$}</Project>
-      <Name>$ext_safeprojectname$.Cart.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj">
       <Project>{$guid2$}</Project>
       <Name>$ext_safeprojectname$.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\$ext_safeprojectname$.Order.Data\$ext_safeprojectname$.Order.Data.csproj">
-      <Project>{$guid4$}</Project>
-      <Name>$ext_safeprojectname$.Order.Data</Name>
+    <ProjectReference Include="..\$ext_safeprojectname$.Data\$ext_safeprojectname$.Data.csproj">
+      <Project>{$guid3$}</Project>
+      <Name>$ext_safeprojectname$.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

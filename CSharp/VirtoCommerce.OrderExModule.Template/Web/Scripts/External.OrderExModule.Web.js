@@ -1,5 +1,5 @@
 ﻿//Call this to register our module to main application
-var moduleTemplateName = "$ext_supersafenamejs$";
+var moduleTemplateName = "$ext_supersafenamejs$Module";
 
 if (AppDependencies !== undefined) {
     AppDependencies.push(moduleTemplateName);
@@ -25,7 +25,7 @@ angular.module(moduleTemplateName, [])
                 description: 'Sample Invoice document',
                 treeTemplateUrl: 'invoiceOperation.tpl.html',
                 detailBlade: {
-                    template: 'Modules/$($ext_supersafenamejs$)/Scripts/blades/invoice-detail.tpl.html',
+                    template: 'Modules/$($ext_supersafenamejs$Module)/Scripts/blades/invoice-detail.tpl.html',
                     metaFields: [
                         {
                             name: 'number',
@@ -49,7 +49,7 @@ angular.module(moduleTemplateName, [])
             };
             knownOperations.registerOperation(invoiceOperation);
 
-            $http.get('Modules/$($ext_supersafenamejs$)/Scripts/tree-template.html').then(function (response) {
+            $http.get('Modules/$($ext_supersafenamejs$Module)/Scripts/tree-template.html').then(function (response) {
                 // compile the response, which will put stuff into the cache
                 $compile(response.data);
             });
