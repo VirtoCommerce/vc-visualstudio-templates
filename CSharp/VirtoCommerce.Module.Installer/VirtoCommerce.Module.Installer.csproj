@@ -15,8 +15,8 @@
     <ProjectGuid>{01D54559-D552-441F-9B55-0B10F4C0E97C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VirtoCommerce.Module.Vsix</RootNamespace>
-    <AssemblyName>VirtoCommerce.Module.Vsix</AssemblyName>
+    <RootNamespace>VirtoCommerce.Module.Installer</RootNamespace>
+    <AssemblyName>VirtoCommerce.Module.Installer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
