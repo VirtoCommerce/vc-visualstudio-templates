@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Virto Commerce 2.x Cart and Order Ex Module</Name>
-    <Description>This solution allows developers to create an extension module for standard modules from VirtoCommerce, integrated by default, order and cart.</Description>
+    <Description>A project template for creating Virto Commerce extension module. Includes structure for extending Cart and Order models.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
     <SortOrder>1000</SortOrder>

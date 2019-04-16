@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Web\CommonAssemblyInfo.cs" />
     <None Include="Data\_packages.config" />
     <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
