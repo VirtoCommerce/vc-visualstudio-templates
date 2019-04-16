@@ -98,10 +98,10 @@
       <DependentUpon>201904120529362_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Order\Configuration.cs" />
-    <Compile Include="Model\Cart\CartExEntity.cs" />
-    <Compile Include="Model\Cart\LineItemExEntity.cs" />
-    <Compile Include="Model\Order\CustomerOrderExEntity.cs" />
-    <Compile Include="Model\Order\InvoiceEntity.cs" />
+    <Compile Include="Model\CartExEntity.cs" />
+    <Compile Include="Model\LineItemExEntity.cs" />
+    <Compile Include="Model\CustomerOrderExEntity.cs" />
+    <Compile Include="Model\InvoiceEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CartExRepository.cs" />
     <Compile Include="Repositories\OrderExRepository.cs" />

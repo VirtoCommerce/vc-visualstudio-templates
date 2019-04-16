@@ -5,7 +5,7 @@ using VirtoCommerce.Domain.Order.Model;
 using VirtoCommerce.OrderModule.Data.Model;
 using VirtoCommerce.Platform.Core.Common;
 
-namespace $safeprojectname$.Model.Order
+namespace $safeprojectname$.Model
 {
     public class CustomerOrderExEntity : CustomerOrderEntity
     {

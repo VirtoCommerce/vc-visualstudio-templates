@@ -30,14 +30,10 @@
         </Folder>
       </Folder>
       <Folder Name="Model" TargetFolderName="Model">
-        <Folder Name="Cart" TargetFolderName="Cart">
           <ProjectItem ReplaceParameters="true" TargetFileName="CartExEntity.cs">CartExEntity.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="LineItemExEntity.cs">LineItemExEntity.cs</ProjectItem>
-        </Folder>
-        <Folder Name="Order" TargetFolderName="Order">
           <ProjectItem ReplaceParameters="true" TargetFileName="CustomerOrderExEntity.cs">CustomerOrderExEntity.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="InvoiceEntity.cs">InvoiceEntity.cs</ProjectItem>
-        </Folder>
       </Folder>
       <Folder Name="Repositories" TargetFolderName="Repositories">
         <ProjectItem ReplaceParameters="true" TargetFileName="CartExRepository.cs">CartExRepository.cs</ProjectItem>
