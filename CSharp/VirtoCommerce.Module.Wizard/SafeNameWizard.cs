@@ -11,7 +11,7 @@ namespace VirtoCommerce.Module.Wizard
 {
     public class SafeNameWizard : IWizard
     {
-        #region MyRegion
+        #region NotImplemented
         #pragma warning disable S1186 // Methods should not be empty
         public void BeforeOpeningFile(ProjectItem projectItem) { }
 
@@ -33,9 +33,29 @@ namespace VirtoCommerce.Module.Wizard
             var safeprojectname = replacementsDictionary["$safeprojectname$"];
             var supersafename = Safe(safeprojectname);
             var supersafenamejs = ToCamelCase(supersafename);
+            var safeprojectnamejs = SafeJs(safeprojectname);
 
             replacementsDictionary.Add("$supersafename$", supersafename);
             replacementsDictionary.Add("$supersafenamejs$", supersafenamejs);
+            replacementsDictionary.Add("$safeprojectnamejs$", safeprojectnamejs);
+        }
+
+        private string SafeJs(string value)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (var item in value)
+            {
+                if (!char.IsUpper(item))
+                    continue;
+
+                var index = value.IndexOf(item);
+                if (index > 0 && !char.IsUpper(value[index - 1]) && char.IsSymbol(value[index - 1]))
+                    stringBuilder.Append('-');
+
+                stringBuilder.Append(item);
+            }
+
+            return stringBuilder.ToString().ToLower();
         }
 
         private string Safe(string value)
