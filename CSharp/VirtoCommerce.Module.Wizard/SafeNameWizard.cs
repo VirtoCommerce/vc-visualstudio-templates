@@ -53,7 +53,7 @@ namespace VirtoCommerce.Module.Wizard
                 if (char.IsUpper(item))
                 {
                     var index = value.IndexOf(item);
-                    if (index > 0 && !char.IsUpper(value[index - 1]) && !char.IsSeparator(value[index - 1]))
+                    if (index > 0 && !char.IsUpper(value[index - 1]) && !char.IsPunctuation(value[index - 1]))
                         stringBuilder.Append('-');
                 }
 
