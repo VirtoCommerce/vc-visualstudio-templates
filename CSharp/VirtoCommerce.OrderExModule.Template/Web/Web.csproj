@@ -146,7 +146,7 @@
     <Content Include="module.manifest" />
     <Content Include="Scripts\blades\invoice-detail.js" />
     <Content Include="Scripts\blades\invoice-detail.tpl.html" />
-    <Content Include="Scripts\$safeprojectnamejs$.js" />
+    <Content Include="Scripts\$ext_safeprojectnamejs$.js" />
     <Content Include="Scripts\tree-template.tpl.html" />
   </ItemGroup>
   <ItemGroup>

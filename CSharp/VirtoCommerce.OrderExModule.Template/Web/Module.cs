@@ -3,6 +3,7 @@ using $ext_safeprojectname$.Data.Model;
 using $ext_safeprojectname$.Data.Repositories;
 using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
+using System;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.CartModule.Data.Repositories;
 using VirtoCommerce.Domain.Cart.Model;
@@ -15,6 +16,7 @@ using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.Platform.Core.Modularity;
 using VirtoCommerce.Platform.Data.Infrastructure;
 using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
+using VirtoCommerce.Platform.Data.Repositories;
 
 namespace $safeprojectname$
 {

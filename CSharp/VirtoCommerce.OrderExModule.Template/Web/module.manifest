@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <module>
-    <id>$safeprojectname$</id>
+    <id>$ext_safeprojectname$</id>
     <version>1.0.0</version>
     <platformVersion>2.13.43</platformVersion>
     <dependencies>
@@ -9,7 +9,7 @@
       <dependency id="VirtoCommerce.Orders" version="2.17.22" />
     </dependencies>
 
-    <title>$projectname$</title>
+    <title>$ext_projectname$</title>
     <description>Enter your module description here.</description>
     <authors>
       <author>$username$</author>

@@ -1,4 +1,4 @@
-﻿using $safeprojectname$.Model.Order;
+﻿using $safeprojectname$.Model;
 using System.Data.Entity;
 using System.Linq;
 using VirtoCommerce.Domain.Order.Model;

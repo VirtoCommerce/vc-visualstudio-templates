@@ -31,13 +31,18 @@ namespace VirtoCommerce.Module.Wizard
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
             var safeprojectname = replacementsDictionary["$safeprojectname$"];
+
             var supersafename = Safe(safeprojectname);
-            var supersafenamejs = ToJsCamelCase(supersafename);
+            var supersafenamejs =  ToJsCamelCase(supersafename);
             var safeprojectnamejs = SafeJs(safeprojectname);
+
+            var projectnameitems = safeprojectname.Split('.').Select(x => ToJsCamelCase(Safe(x)));
+            var safeprojectnamecamel = string.Join(".", projectnameitems);
 
             replacementsDictionary.Add("$supersafename$", supersafename);
             replacementsDictionary.Add("$supersafenamejs$", supersafenamejs);
             replacementsDictionary.Add("$safeprojectnamejs$", safeprojectnamejs);
+            replacementsDictionary.Add("$safeprojectnamecamel$", safeprojectnamecamel);
         }
 
         private string SafeJs(string value)
@@ -45,12 +50,12 @@ namespace VirtoCommerce.Module.Wizard
             StringBuilder stringBuilder = new StringBuilder();
             foreach (var item in value)
             {
-                if (!char.IsUpper(item))
-                    continue;
-
-                var index = value.IndexOf(item);
-                if (index > 0 && !char.IsUpper(value[index - 1]) && char.IsSymbol(value[index - 1]))
-                    stringBuilder.Append('-');
+                if (char.IsUpper(item))
+                {
+                    var index = value.IndexOf(item);
+                    if (index > 0 && !char.IsUpper(value[index - 1]) && !char.IsSeparator(value[index - 1]))
+                        stringBuilder.Append('-');
+                }
 
                 stringBuilder.Append(item);
             }
