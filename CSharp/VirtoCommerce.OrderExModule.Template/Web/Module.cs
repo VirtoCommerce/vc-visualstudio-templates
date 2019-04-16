@@ -1,6 +1,5 @@
 ﻿using $ext_safeprojectname$.Core.Model;
-using $ext_safeprojectname$.Data.Model.Cart;
-using $ext_safeprojectname$.Data.Model.Order;
+using $ext_safeprojectname$.Data.Model;
 using $ext_safeprojectname$.Data.Repositories;
 using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
@@ -55,6 +54,16 @@ namespace $safeprojectname$
         public override void Initialize()
         {
             base.Initialize();
+
+            Func<ICartRepository> cartRepFactory = () =>
+                new CartExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
+                    new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CartExEntity), nameof(LineItemExEntity) }));
+            _container.RegisterInstance(cartRepFactory);
+
+            Func<IOrderRepository> orderRepFactory = () =>
+                new OrderExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
+                    new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CustomerOrderExEntity), nameof(InvoiceEntity) }));
+            _container.RegisterInstance(orderRepFactory);
 
             _container.RegisterType<ICartRepository>(new InjectionFactory(c => new CartExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
             _container.RegisterType<IOrderRepository>(new InjectionFactory(c => new OrderExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));

@@ -74,10 +74,10 @@
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
     <None Include="Data\Migrations\Order\Configuration.cs" />
-    <None Include="Data\Model\Cart\CartExEntity.cs" />
-    <None Include="Data\Model\Cart\LineItemExEntity.cs" />
-    <None Include="Data\Model\Order\CustomerOrderExEntity.cs" />
-    <None Include="Data\Model\Order\InvoiceEntity.cs" />
+    <None Include="Data\Model\CartExEntity.cs" />
+    <None Include="Data\Model\LineItemExEntity.cs" />
+    <None Include="Data\Model\CustomerOrderExEntity.cs" />
+    <None Include="Data\Model\InvoiceEntity.cs" />
     <None Include="Data\Repositories\CartExRepository.cs" />
     <None Include="Data\Repositories\OrderExRepository.cs" />
     <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
