@@ -32,7 +32,7 @@ namespace VirtoCommerce.Module.Wizard
         {
             var safeprojectname = replacementsDictionary["$safeprojectname$"];
             var supersafename = Safe(safeprojectname);
-            var supersafenamejs = ToCamelCase(supersafename);
+            var supersafenamejs = ToJsCamelCase(supersafename);
             var safeprojectnamejs = SafeJs(safeprojectname);
 
             replacementsDictionary.Add("$supersafename$", supersafename);
@@ -78,7 +78,7 @@ namespace VirtoCommerce.Module.Wizard
             return stringBuilder.ToString();
         }
 
-        private string ToCamelCase(string value)
+        private string ToJsCamelCase(string value)
         {
             return char.ToLowerInvariant(value[0]) + value.Substring(1);
         }
