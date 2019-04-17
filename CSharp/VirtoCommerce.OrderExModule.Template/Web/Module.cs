@@ -1,5 +1,7 @@
-﻿using $ext_safeprojectname$.Core.Model;
-using $ext_safeprojectname$.Data.Model;
+﻿using $ext_safeprojectname$.Core.Model.Cart;
+using $ext_safeprojectname$.Core.Model.Order;
+using $ext_safeprojectname$.Data.Model.Cart;
+using $ext_safeprojectname$.Data.Model.Order;
 using $ext_safeprojectname$.Data.Repositories;
 using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
@@ -58,14 +60,14 @@ namespace $safeprojectname$
             base.Initialize();
 
             Func<ICartRepository> cartRepFactory = () =>
-                new CartExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
-                    new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CartExEntity), nameof(LineItemExEntity) }));
-            _container.RegisterInstance(cartRepFactory);
+                   new CartExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
+                       new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CartExEntity), nameof(Data.Model.Cart.LineItemExEntity) }));
+            _container.RegisterInstance(instance: cartRepFactory);
 
             Func<IOrderRepository> orderRepFactory = () =>
                 new OrderExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
                     new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CustomerOrderExEntity), nameof(InvoiceEntity) }));
-            _container.RegisterInstance(orderRepFactory);
+            _container.RegisterInstance(instance: orderRepFactory);
 
             _container.RegisterType<ICartRepository>(new InjectionFactory(c => new CartExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
             _container.RegisterType<IOrderRepository>(new InjectionFactory(c => new OrderExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(), new EntityPrimaryKeyGeneratorInterceptor())));
@@ -80,13 +82,13 @@ namespace $safeprojectname$
 
             AbstractTypeFactory<ShoppingCart>.OverrideType<ShoppingCart, CartEx>();
             AbstractTypeFactory<ShoppingCartEntity>.OverrideType<ShoppingCartEntity, CartExEntity>();
-            AbstractTypeFactory<CartLineItem>.OverrideType<CartLineItem, CartLineItemEx>();
+            AbstractTypeFactory<CartLineItem>.OverrideType<CartLineItem, Core.Model.Cart.LineItemEx>();
             AbstractTypeFactory<LineItemEntity>.OverrideType<LineItemEntity, LineItemExEntity>();
 
             AbstractTypeFactory<IOperation>.OverrideType<CustomerOrder, CustomerOrderEx>();
             AbstractTypeFactory<CustomerOrderEntity>.OverrideType<CustomerOrderEntity, CustomerOrderExEntity>();
             AbstractTypeFactory<CustomerOrder>.OverrideType<CustomerOrder, CustomerOrderEx>().WithFactory(() => new CustomerOrderEx { OperationType = "CustomerOrder" });
-            AbstractTypeFactory<OrderLineItem>.OverrideType<OrderLineItem, OrderLineItemEx>();
+            AbstractTypeFactory<OrderLineItem>.OverrideType<OrderLineItem, Core.Model.Order.LineItemEx>();
 
             // Thats need for PolymorphicOperationJsonConverter for API deserialization
             AbstractTypeFactory<IOperation>.RegisterType<Invoice>();

@@ -7,19 +7,16 @@
     <ProjectSubType></ProjectSubType>
     <CreateNewFolder>true</CreateNewFolder>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
-    <TemplateGroupID>7aaaede2-ef9b-47b8-a3af-a6c6c93a0ea8</TemplateGroupID>
-    <CreateInPlace>true</CreateInPlace>
     <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
       <Project TargetFileName="$safeprojectname$.csproj" File="Web.csproj" ReplaceParameters="true">
         <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="..\CommonAssemblyInfo.cs">CommonAssemblyInfo.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
         <ProjectItem ReplaceParameters="true">Module.cs</ProjectItem>
         <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
         <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
-        <ProjectItem ReplaceParameters="true">app.config</ProjectItem>
         <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
         <ProjectItem ReplaceParameters="true">README.md</ProjectItem>
         
