@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using VirtoCommerce.Domain.Order.Model;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Model.Order
 {
     public class CustomerOrderEx : CustomerOrder
     {

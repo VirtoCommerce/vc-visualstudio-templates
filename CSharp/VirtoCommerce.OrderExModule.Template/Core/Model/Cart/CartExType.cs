@@ -1,4 +1,4 @@
-﻿namespace $safeprojectname$.Model
+﻿namespace $safeprojectname$.Model.Cart
 {
     public enum CartExType
     {
