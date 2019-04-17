@@ -1,7 +1,8 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using VirtoCommerce.OrderModule.Data.Model;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Model.Order
 {
     public class InvoiceEntity : OperationEntity
     {

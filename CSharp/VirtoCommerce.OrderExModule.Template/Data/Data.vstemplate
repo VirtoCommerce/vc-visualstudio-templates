@@ -7,13 +7,13 @@
     <CreateNewFolder>true</CreateNewFolder>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <TemplateGroupID>7aaaede2-ef9b-47b8-a3af-a6c6c93a0ea8</TemplateGroupID>
     <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.csproj" File="Data.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
       
       <Folder Name="Migrations" TargetFolderName="Migrations">
         <Folder Name="Cart" TargetFolderName="Cart">
@@ -30,10 +30,14 @@
         </Folder>
       </Folder>
       <Folder Name="Model" TargetFolderName="Model">
-          <ProjectItem ReplaceParameters="true" TargetFileName="CartExEntity.cs">CartExEntity.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="LineItemExEntity.cs">LineItemExEntity.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="CustomerOrderExEntity.cs">CustomerOrderExEntity.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="InvoiceEntity.cs">InvoiceEntity.cs</ProjectItem>
+        <Folder Name="Cart">
+          <ProjectItem ReplaceParameters="true">CartExEntity.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true">LineItemExEntity.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Order">
+          <ProjectItem ReplaceParameters="true">CustomerOrderExEntity.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true">InvoiceEntity.cs</ProjectItem>
+        </Folder>
       </Folder>
       <Folder Name="Repositories" TargetFolderName="Repositories">
         <ProjectItem ReplaceParameters="true" TargetFileName="CartExRepository.cs">CartExRepository.cs</ProjectItem>

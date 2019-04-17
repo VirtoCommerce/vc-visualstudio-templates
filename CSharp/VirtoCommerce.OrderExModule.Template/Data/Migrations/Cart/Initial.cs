@@ -7,25 +7,25 @@ namespace $safeprojectname$.Migrations.Cart
     {
         public override void Up()
         {
-            
+
             CreateTable(
                 "dbo.CartEx",
                 c => new
-                    {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        CartType = c.String(maxLength: 64),
-                    })
+                {
+                    Id = c.String(nullable: false, maxLength: 128),
+                    CartType = c.String(maxLength: 64),
+                })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Cart", t => t.Id)
+                .ForeignKey("dbo.Cart", t => t.Id, cascadeDelete: true)
                 .Index(t => t.Id);
-            
+
             CreateTable(
                 "dbo.CartLineItemEx",
                 c => new
-                    {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        OuterId = c.String(maxLength: 64),
-                    })
+                {
+                    Id = c.String(nullable: false, maxLength: 128),
+                    OuterId = c.String(maxLength: 64),
+                })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.CartLineItem", t => t.Id, cascadeDelete: true)
                 .Index(t => t.Id);
@@ -36,7 +36,7 @@ namespace $safeprojectname$.Migrations.Cart
             //Convert  all exist LineItem records to LineItemEx
             Sql("INSERT INTO dbo.CartLineItemEx (Id) SELECT Id FROM dbo.CartLineItem");
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.CartLineItemEx", "Id", "dbo.CartLineItem");

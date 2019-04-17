@@ -1,10 +1,10 @@
-﻿using $ext_safeprojectname$.Core.Model;
+﻿using $ext_safeprojectname$.Core.Model.Cart;
 using System.ComponentModel.DataAnnotations;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.Domain.Cart.Model;
 using VirtoCommerce.Platform.Core.Common;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Model.Cart
 {
     public class CartExEntity : ShoppingCartEntity
     {

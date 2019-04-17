@@ -1,11 +1,12 @@
-﻿using $ext_safeprojectname$.Core.Model;
+﻿using $ext_safeprojectname$.Core.Model.Order;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using VirtoCommerce.Domain.Order.Model;
 using VirtoCommerce.OrderModule.Data.Model;
 using VirtoCommerce.Platform.Core.Common;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Model.Order
 {
     public class CustomerOrderExEntity : CustomerOrderEntity
     {
@@ -14,6 +15,7 @@ namespace $safeprojectname$.Model
             Invoices = new NullCollection<InvoiceEntity>();
         }
 
+        [StringLength(128)]
         public string NewField { get; set; }
         public virtual ObservableCollection<InvoiceEntity> Invoices { get; set; }
 

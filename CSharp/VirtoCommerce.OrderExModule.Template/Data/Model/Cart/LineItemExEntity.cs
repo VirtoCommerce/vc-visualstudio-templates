@@ -1,10 +1,10 @@
-﻿using $ext_safeprojectname$.Core.Model;
+﻿using $ext_safeprojectname$.Core.Model.Cart;
 using System.ComponentModel.DataAnnotations;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.Domain.Cart.Model;
 using VirtoCommerce.Platform.Core.Common;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Model.Cart
 {
     public class LineItemExEntity : LineItemEntity
     {
@@ -15,7 +15,7 @@ namespace $safeprojectname$.Model
         {
             var result = base.ToModel(lineItem);
 
-            var lineItemEx = (CartLineItemEx)result;
+            var lineItemEx = (LineItemEx)result;
             lineItemEx.OuterId = OuterId;
 
             return lineItemEx;
@@ -25,7 +25,7 @@ namespace $safeprojectname$.Model
         {
             base.FromModel(lineItem, pkMap);
 
-            var lineItemEx = (CartLineItemEx)lineItem;
+            var lineItemEx = (LineItemEx)lineItem;
             OuterId = lineItemEx.OuterId;
 
             return this;

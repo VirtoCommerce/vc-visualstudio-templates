@@ -1,4 +1,4 @@
-﻿using $ext_safeprojectname$.Core.Model;
+﻿using $ext_safeprojectname$.Core.Model.Order;
 using VirtoCommerce.Domain.Order.Services;
 using VirtoCommerce.OrderModule.Data.Services;
 
@@ -16,10 +16,10 @@ namespace $safeprojectname$.Services
 
         protected override OrderLineItem ToOrderModel(CartLineItem lineItem)
         {
-            var result = base.ToOrderModel(lineItem) as OrderLineItemEx;
+            var result = base.ToOrderModel(lineItem) as LineItemEx;
 
             // Next lines just copy OuterId from cart LineItemEx to order LineItemEx
-            var cartLineItemEx = lineItem as CartLineItemEx;
+            var cartLineItemEx = lineItem as Core.Model.Cart.LineItemEx;
             if (cartLineItemEx != null)
             {
                 result.OuterId = cartLineItemEx.OuterId;

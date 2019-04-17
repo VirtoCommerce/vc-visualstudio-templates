@@ -1,4 +1,4 @@
-﻿using $safeprojectname$.Model;
+﻿using $safeprojectname$.Model.Order;
 using System.Data.Entity;
 using System.Linq;
 using VirtoCommerce.Domain.Order.Model;
@@ -22,21 +22,12 @@ namespace $safeprojectname$.Repositories
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            #region CustomerOrderEx
-            modelBuilder.Entity<CustomerOrderExEntity>().HasKey(x => x.Id)
-                .Property(x => x.Id);
-            modelBuilder.Entity<CustomerOrderExEntity>().ToTable("CustomerOrderEx");
-            #endregion
-
-            #region OrderInvoice
-            modelBuilder.Entity<InvoiceEntity>().HasKey(x => x.Id)
-            .Property(x => x.Id);
-            modelBuilder.Entity<InvoiceEntity>().ToTable("OrderInvoice");
+            modelBuilder.Entity<CustomerOrderExEntity>().ToTable("CustomerOrderEx").HasKey(x => x.Id).Property(x => x.Id);
+            modelBuilder.Entity<InvoiceEntity>().ToTable("OrderInvoice").HasKey(x => x.Id).Property(x => x.Id);
 
             modelBuilder.Entity<InvoiceEntity>().HasRequired(m => m.CustomerOrderEx)
                                                  .WithMany(m => m.Invoices).HasForeignKey(m => m.CustomerOrderExId)
-                                                 .WillCascadeOnDelete(true);
-            #endregion
+                                                 .WillCascadeOnDelete();
 
             base.OnModelCreating(modelBuilder);
         }
