@@ -12,7 +12,6 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
-    <TemplateGroupID>7aaaede2-ef9b-47b8-a3af-a6c6c93a0ea8</TemplateGroupID>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>

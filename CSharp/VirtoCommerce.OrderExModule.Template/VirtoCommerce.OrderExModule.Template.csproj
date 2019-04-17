@@ -54,15 +54,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Core\_app.config" />
+    <None Include="Data\_app.config" />
     <None Include="Web\CommonAssemblyInfo.cs" />
     <None Include="Data\_packages.config" />
     <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
-    <None Include="Core\Model\CartEx.cs" />
-    <None Include="Core\Model\CartExType.cs" />
-    <None Include="Core\Model\CustomerOrderEx.cs" />
-    <None Include="Core\Model\Invoice.cs" />
-    <None Include="Core\Model\LineItemEx.cs" />
+    <None Include="Core\Model\Cart\CartEx.cs" />
+    <None Include="Core\Model\Cart\CartExType.cs" />
+    <None Include="Core\Model\Order\CustomerOrderEx.cs" />
+    <None Include="Core\Model\Order\Invoice.cs" />
+    <None Include="Core\Model\Cart\LineItemEx.cs" />
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Data\AssemblyInfo.cs" />
     <None Include="Data\Migrations\Cart\Initial.cs" />
@@ -75,20 +77,21 @@
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
     <None Include="Data\Migrations\Order\Configuration.cs" />
-    <None Include="Data\Model\CartExEntity.cs" />
-    <None Include="Data\Model\LineItemExEntity.cs" />
-    <None Include="Data\Model\CustomerOrderExEntity.cs" />
-    <None Include="Data\Model\InvoiceEntity.cs" />
+    <None Include="Data\Model\Cart\CartExEntity.cs" />
+    <None Include="Data\Model\Cart\LineItemExEntity.cs" />
+    <None Include="Data\Model\Order\CustomerOrderExEntity.cs" />
+    <None Include="Data\Model\Order\InvoiceEntity.cs" />
     <None Include="Data\Repositories\CartExRepository.cs" />
     <None Include="Data\Repositories\OrderExRepository.cs" />
     <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
+    <None Include="Core\Model\Order\LineItemEx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Core\_packages.config" />
     <None Include="Web\module.ignore" />
-    <None Include="Web\app.config" />
+    <None Include="Web\_app.config" />
     <None Include="Web\module.manifest" />
     <None Include="Web\Web.config" />
     <None Include="Web\_packages.config" />
