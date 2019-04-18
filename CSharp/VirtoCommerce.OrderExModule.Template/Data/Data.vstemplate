@@ -17,15 +17,15 @@
       
       <Folder Name="Migrations" TargetFolderName="Migrations">
         <Folder Name="Cart" TargetFolderName="Cart">
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120528190_Initial.cs">Initial.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120528190_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120528190_Initial.resx">Initial.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180719511_Initial.cs">Initial.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180719511_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180719511_Initial.resx">Initial.resx</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
         </Folder>
         <Folder Name="Order" TargetFolderName="Order">
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120529362_Initial.cs">Initial.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120529362_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
-          <ProjectItem ReplaceParameters="true" TargetFileName="201904120529362_Initial.resx">Initial.resx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180711432_Initial.cs">Initial.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180711432_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="201904180711432_Initial.resx">Initial.resx</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
         </Folder>
       </Folder>

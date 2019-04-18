@@ -30,7 +30,7 @@ namespace $safeprojectname$
 
     public class Module : ModuleBase
     {
-        private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("$safeprojectname$") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
+        private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("VirtoCommerce.Cart") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
         private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)

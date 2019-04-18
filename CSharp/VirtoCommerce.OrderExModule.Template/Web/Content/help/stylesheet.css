@@ -167,3 +167,7 @@ ul
     {
         width: 300px;
     }
+
+    pre.indent {
+        margin-left: 18px;
+    }
