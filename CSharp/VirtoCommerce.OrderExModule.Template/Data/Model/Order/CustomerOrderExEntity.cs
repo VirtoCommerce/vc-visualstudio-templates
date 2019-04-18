@@ -17,6 +17,7 @@ namespace $safeprojectname$.Model.Order
 
         [StringLength(128)]
         public string NewField { get; set; }
+
         public virtual ObservableCollection<InvoiceEntity> Invoices { get; set; }
 
 
