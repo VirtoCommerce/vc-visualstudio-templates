@@ -54,8 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Test\AssemblyInfo.cs" />
+    <None Include="Test\Tests.cs" />
     <None Include="Core\_app.config" />
     <None Include="Data\_app.config" />
+    <None Include="Test\_app.config" />
+    <None Include="Test\_packages.config" />
     <None Include="Web\CommonAssemblyInfo.cs" />
     <None Include="Data\_packages.config" />
     <None Include="Web\README.md" />
@@ -130,10 +134,14 @@
     <None Include="Web\Content\help\stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Data.csproj" />
+    <None Include="Data\Data.csproj" />
     <Content Include="Data\Data.vstemplate">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Test\Test.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Test\Test.csproj" />
     <Content Include="Web\Content\help\arch_scheme.png" />
   </ItemGroup>
   <ItemGroup>
