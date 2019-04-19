@@ -38,8 +38,8 @@ namespace $safeprojectname$.Migrations.Order
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        CustomerId = c.String(),
-                        CustomerName = c.String(),
+                        CustomerId = c.String(maxLength: 128),
+                        CustomerName = c.String(maxLength: 128),
                         CustomerOrderExId = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
