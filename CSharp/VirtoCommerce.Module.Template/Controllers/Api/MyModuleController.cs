@@ -1,9 +1,9 @@
 ﻿using System.Web.Http;
 
-namespace $projectname$.Controllers.Api
+namespace $safeprojectname$.Controllers.Api
 {
     [RoutePrefix("api/$safeprojectname$")]
-    public class ManagedModuleController : ApiController
+    public class MyModuleController : ApiController
     {
         // GET: api/managedModule
         [HttpGet]

@@ -16,8 +16,8 @@ angular.module(moduleTemplateName, [])
                     '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
                         var newBlade = {
                             id: 'blade1',
-                            controller: '$safeprojectname$.blade1Controller',
-                            template: 'Modules/$($safeprojectname$)/Scripts/blades/helloWorld_blade1.tpl.html',
+                            controller: '$safeprojectname$.helloWorldController',
+                            template: 'Modules/$($safeprojectname$)/Scripts/blades/helloWorld.tpl.html',
                             isClosingDisabled: true
                         };
                         bladeNavigationService.showBlade(newBlade);
@@ -34,7 +34,7 @@ angular.module(moduleTemplateName, [])
             icon: 'fa fa-cube',
             title: '$safeprojectname$',
             priority: 100,
-            action: function () { $state.go('workspace.$safeprojectname$') },
+            action: function () { $state.go('workspace.$safeprojectname$'); },
             permission: '$safeprojectname$Permission'
         };
         mainMenuService.addMenuItem(menuItem);

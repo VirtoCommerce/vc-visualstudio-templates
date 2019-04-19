@@ -2,7 +2,10 @@
 <module>
     <id>$safeprojectname$</id>
     <version>1.0.0</version>
-    <platformVersion>2.13.9</platformVersion>
+    <platformVersion>2.13.43</platformVersion>
+    <dependencies>
+        <dependency id="VirtoCommerce.Core" version="2.25.19" />
+    </dependencies>
 
     <title>$projectname$</title>
     <description>Enter your module description here.</description>
@@ -80,4 +83,12 @@
             </setting>
         </group>
     </settings>
+  
+    <permissions>
+        <group name="$projectname$">
+            <permission id="$safeprojectname$:read" name="Read" />
+            <permission id="$safeprojectname$:update" name="Update" />
+            <permission id="$safeprojectname$:delete" name="Delete" />
+        </group>
+    </permissions>
 </module>

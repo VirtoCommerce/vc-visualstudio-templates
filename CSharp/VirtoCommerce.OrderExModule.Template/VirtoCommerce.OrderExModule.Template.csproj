@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtoCommerce.OrderExModule.Template</RootNamespace>
+    <AssemblyName>VirtoCommerce.OrderExModule.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\_app.config" />
+    <None Include="Data\_app.config" />
+    <None Include="Web\CommonAssemblyInfo.cs" />
+    <None Include="Data\_packages.config" />
+    <None Include="Web\README.md" />
+    <None Include="Web\AssemblyInfo.cs" />
+    <None Include="Core\Model\Cart\CartEx.cs" />
+    <None Include="Core\Model\Cart\CartExType.cs" />
+    <None Include="Core\Model\Order\CustomerOrderEx.cs" />
+    <None Include="Core\Model\Order\Invoice.cs" />
+    <None Include="Core\Model\Cart\LineItemEx.cs" />
+    <None Include="Core\AssemblyInfo.cs" />
+    <None Include="Data\AssemblyInfo.cs" />
+    <None Include="Data\Model\Cart\CartExEntity.cs" />
+    <None Include="Data\Model\Cart\LineItemExEntity.cs" />
+    <None Include="Data\Model\Order\CustomerOrderExEntity.cs" />
+    <None Include="Data\Model\Order\InvoiceEntity.cs" />
+    <None Include="Data\Repositories\CartExRepository.cs" />
+    <None Include="Data\Repositories\OrderExRepository.cs" />
+    <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
+    <None Include="Core\Model\Order\LineItemEx.cs" />
+    <None Include="Data\Migrations\Cart\Initial.cs" />
+    <None Include="Data\Migrations\Cart\Initial.Designer.cs">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <None Include="Data\Migrations\Cart\Configuration.cs" />
+    <None Include="Data\Migrations\Order\Initial.cs" />
+    <None Include="Data\Migrations\Order\Initial.Designer.cs">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <None Include="Data\Migrations\Order\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Web\Module.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\_packages.config" />
+    <None Include="Web\module.ignore" />
+    <None Include="Web\_app.config" />
+    <None Include="Web\module.manifest" />
+    <None Include="Web\Web.config" />
+    <None Include="Web\_packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="VirtoCommerce.OrderExModule.Template.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Core.csproj">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web\Scripts\blades\invoice-detail.js" />
+    <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
+    <None Include="Web\Scripts\External.OrderExModule.Web.js" />
+    <None Include="Web\Scripts\tree-template.tpl.html" />
+    <None Include="Web\Web.csproj">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Web\Web.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Core\Core.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\Content\help\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\Content\help\stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Data.csproj" />
+    <Content Include="Data\Data.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web\Content\help\arch_scheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Migrations\Cart\Initial.resx">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+    <None Include="Data\Migrations\Order\Initial.resx">
+      <DependentUpon>Initial.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

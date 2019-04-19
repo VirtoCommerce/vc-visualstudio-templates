@@ -87,8 +87,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\css\managedModule.css" />
-    <None Include="Scripts\blades\helloWorld_blade1.js" />
-    <None Include="Scripts\blades\helloWorld_blade1.tpl.html" />
+    <None Include="Scripts\blades\helloWorld.js" />
+    <None Include="Scripts\blades\helloWorld.tpl.html" />
     <None Include="Scripts\managedModule.js" />
     <None Include="Scripts\resources\managedModuleApi.js" />
     <None Include="Web.config" />
@@ -97,12 +97,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controllers\Api\managedModuleController.cs" />
+    <None Include="Controllers\Api\MyModuleController.cs" />
     <None Include="Module.cs" />
     <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="VirtoCommerce.Module.Template.vstemplate" />
+    <VSTemplate Include="VirtoCommerce.Module.Template.vstemplate">
+      <SubType>Designer</SubType>
+    </VSTemplate>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

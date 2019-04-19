@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Virto Commerce 2.x Cart and Order Web Project</Name>
+    <Description>A project template for creating Virto Commerce Cart and Order Modules Extension</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <CreateNewFolder>true</CreateNewFolder>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+      <Project TargetFileName="$safeprojectname$.csproj" File="Web.csproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Module.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
+        <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
+        <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+        <ProjectItem ReplaceParameters="true">README.md</ProjectItem>
+        
+        <Folder Name="Scripts">
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">External.OrderExModule.Web.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">tree-template.tpl.html</ProjectItem>
+          
+          <Folder Name="blades">
+            <ProjectItem ReplaceParameters="true">invoice-detail.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true">invoice-detail.tpl.html</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Content">
+          <Folder Name="help">
+            <ProjectItem ReplaceParameters="true">arch_scheme.png</ProjectItem>
+            <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
+          </Folder>
+        </Folder>
+      </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
