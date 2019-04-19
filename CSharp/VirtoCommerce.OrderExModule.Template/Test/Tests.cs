@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using TTTTTTttttt.Core.Model.Cart;
-using TTTTTTttttt.Core.Model.Order;
-using TTTTTTttttt.Data.Model.Cart;
-using TTTTTTttttt.Data.Model.Order;
+using $safeprojectname$.Core.Model.Cart;
+using $safeprojectname$.Core.Model.Order;
+using $safeprojectname$.Data.Model.Cart;
+using $safeprojectname$.Data.Model.Order;
 using VirtoCommerce.Platform.Core.Common;
 using Xunit;
 
