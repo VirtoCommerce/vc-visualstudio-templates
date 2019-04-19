@@ -141,7 +141,9 @@
     <Content Include="Test\Test.vstemplate">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Test\Test.csproj" />
+    <None Include="Test\Test.csproj">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Web\Content\help\arch_scheme.png" />
   </ItemGroup>
   <ItemGroup>
