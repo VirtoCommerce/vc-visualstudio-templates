@@ -38,7 +38,7 @@ namespace $safeprojectname$.Migrations.Cart
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        OuterId = c.String(maxLength: 64),
+                        OuterId = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.CartLineItem", t => t.Id, cascadeDelete: true)

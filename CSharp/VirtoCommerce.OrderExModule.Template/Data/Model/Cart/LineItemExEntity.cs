@@ -8,7 +8,7 @@ namespace $safeprojectname$.Model.Cart
 {
     public class LineItemExEntity : LineItemEntity
     {
-        [StringLength(64)]
+        [StringLength(128)]
         public string OuterId { get; set; }
 
         public override LineItem ToModel(LineItem lineItem)
