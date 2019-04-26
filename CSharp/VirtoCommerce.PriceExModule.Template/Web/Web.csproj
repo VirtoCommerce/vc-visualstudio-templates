@@ -104,49 +104,47 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="VirtoCommerce.Domain, Version=2.25.19.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.19\lib\net461\VirtoCommerce.Domain.dll</HintPath>
+    <Reference Include="VirtoCommerce.Domain, Version=2.25.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.21\lib\net461\VirtoCommerce.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.43.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.43\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.44\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.43.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.43\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.44\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.PricingModule.Data, Version=2.18.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.PricingModule.Data.2.18.3\lib\net461\VirtoCommerce.PricingModule.Data.dll</HintPath>
+    <Reference Include="VirtoCommerce.PricingModule.Data, Version=2.18.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.PricingModule.Data.2.18.6\lib\net461\VirtoCommerce.PricingModule.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Localizations\en.$safeprojectname$.json" />
+    <Content Include="Content\help\arch_scheme.png" />
+    <Content Include="Content\help\index.html" />
+    <Content Include="Content\help\stylesheet.css" />
+    <Content Include="Localizations\en.$ext_safeprojectnamejs$.json" />
     <None Include="module.ignore" />
     <None Include="packages.config" />
     <None Include="app.config" />
-    <Content Include="README.md" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="module.manifest" />
-    <Content Include="Scripts\$safeprojectname$.js" />
+    <Content Include="Scripts\$ext_safeprojectnamejs$.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201903271904136_Initial.cs" />
-    <Compile Include="Migrations\201903271904136_Initial.Designer.cs">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\PriceEx.cs" />
-    <Compile Include="Model\PriceExEntity.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\PriceExRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903271904136_Initial.resx">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj">
+      <Project>{$guid2$}</Project>
+      <Name>$ext_safeprojectname$.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\$ext_safeprojectname$.Data\$ext_safeprojectname$.Data.csproj">
+      <Project>{$guid3$}</Project>
+      <Name>$ext_safeprojectname$.Data</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

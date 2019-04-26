@@ -1,6 +1,6 @@
 using System.Data.Entity.Migrations;
 
-namespace $projectname$.Migrations
+namespace $safeprojectname$.Migrations
 {
     public partial class Initial : DbMigration
     {

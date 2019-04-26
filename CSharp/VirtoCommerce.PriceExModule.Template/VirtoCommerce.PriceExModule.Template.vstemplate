@@ -1,4 +1,4 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
     <TemplateData>
         <Name>Virto Commerce 2.x Price Ex Module</Name>
         <Description>A project template for creating Virto Commerce Price Module Extension</Description>
@@ -6,7 +6,7 @@
         <ProjectSubType></ProjectSubType>
         <SortOrder>1000</SortOrder>
         <CreateNewFolder>true</CreateNewFolder>
-        <DefaultName>PriceManagedModule</DefaultName>
+        <DefaultName>PriceEx</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -16,40 +16,23 @@
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     </TemplateData>
     <TemplateContent>
-        <Project TargetFileName="$safeprojectname$.csproj" File="Module.Web.csproj" ReplaceParameters="true">
-            <ProjectItem ReplaceParameters="true" TargetFileName="Module.cs">Module.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="module.manifest">module.manifest</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="module.ignore">module.ignore</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="README.md">README.md</ProjectItem>
-            <Folder Name="Migrations" TargetFolderName="Migrations">
-              <ProjectItem ReplaceParameters="true" TargetFileName="201903271904136_Initial.cs">201903271904136_Initial.cs</ProjectItem>
-              <ProjectItem ReplaceParameters="true" TargetFileName="201903271904136_Initial.Designer.cs">201903271904136_Initial.Designer.cs</ProjectItem>
-              <ProjectItem ReplaceParameters="false" TargetFileName="201903271904136_Initial.resx">201903271904136_Initial.resx</ProjectItem>
-              <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
-            </Folder>
-          <Folder Name="Model" TargetFolderName="Model">
-            <ProjectItem ReplaceParameters="true" TargetFileName="PriceEx.cs">PriceEx.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="PriceExEntity.cs">PriceExEntity.cs</ProjectItem>
-          </Folder>
-          <Folder Name="Repositories" TargetFolderName="Repositories">
-            <ProjectItem ReplaceParameters="true" TargetFileName="PriceExRepository.cs">PriceExRepository.cs</ProjectItem>
-          </Folder>
-          <Folder Name="Scripts" TargetFolderName="Scripts">
-            <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.js">VirtoCommerce.PriceExModule.Template.js</ProjectItem>
-          </Folder>
-          <Folder Name="Localizations" TargetFolderName="Localizations">
-            <ProjectItem ReplaceParameters="true" TargetFileName="en.$safeprojectname$.json">en.VirtoCommerce.ExternalPrice.json</ProjectItem>
-          </Folder>
-          <Folder Name="Properties" TargetFolderName="Properties">
-              <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-          </Folder>
-        </Project>
+      <ProjectCollection>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+          Web\Web.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+          Core\Core.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+          Data\Data.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
+          Test\Test.vstemplate
+        </ProjectTemplateLink>
+      </ProjectCollection>
     </TemplateContent>
     <WizardExtension>
-        <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-        <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+      <Assembly>VirtoCommerce.Module.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627683273f803801</Assembly>
+      <FullClassName>VirtoCommerce.Module.Wizard.SafeNameWizard</FullClassName>
     </WizardExtension>
 </VSTemplate>

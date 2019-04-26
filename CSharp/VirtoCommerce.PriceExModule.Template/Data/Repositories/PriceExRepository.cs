@@ -1,9 +1,9 @@
 ﻿using System.Data.Entity;
+using $safeprojectname$.Model;
 using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
-using $projectname$.Model;
 using VirtoCommerce.PricingModule.Data.Repositories;
 
-namespace $projectname$.Repositories
+namespace $safeprojectname$.Repositories
 {
     public class PriceExRepository : PricingRepositoryImpl
     {
@@ -19,8 +19,7 @@ namespace $projectname$.Repositories
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PriceExEntity>().HasKey(x => x.Id).Property(x => x.Id);
-            modelBuilder.Entity<PriceExEntity>().ToTable("PriceEx");
+            modelBuilder.Entity<PriceExEntity>().ToTable("PriceEx").HasKey(x => x.Id).Property(x => x.Id);
 
             base.OnModelCreating(modelBuilder);
         }

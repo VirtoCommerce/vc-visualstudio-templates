@@ -1,6 +1,6 @@
 ﻿using VirtoCommerce.Domain.Pricing.Model;
 
-namespace $projectname$.Model
+namespace $safeprojectname$.Model
 {
     public class PriceEx : Price
     {

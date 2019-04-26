@@ -1,8 +1,9 @@
-﻿using VirtoCommerce.Domain.Pricing.Model;
+﻿using $ext_safeprojectname$.Core.Model;
+using VirtoCommerce.Domain.Pricing.Model;
 using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.PricingModule.Data.Model;
 
-namespace $projectname$.Model
+namespace $safeprojectname$.Model
 {
     public class PriceExEntity : PriceEntity
     {
