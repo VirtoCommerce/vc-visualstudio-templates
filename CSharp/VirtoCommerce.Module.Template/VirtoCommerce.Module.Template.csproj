@@ -118,9 +118,10 @@
     <Content Include="Test\Test.csproj" />
     <Content Include="Test\Test.vstemplate" />
     <Content Include="Web\Content\css\web.css" />
+    <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
     <Content Include="Web\Content\help\sample.png" />
-    <Content Include="Web\Content\help\stylesheet.css" />
+    <None Include="Web\Content\help\stylesheet.css" />
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
     <Content Include="Web\Scripts\blades\helloWorld.js" />

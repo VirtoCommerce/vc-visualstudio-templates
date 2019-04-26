@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6
     right: -30px;
 }
 
-h1, h2
+h1, h2, h3
 {
     font-family: "Segoe UI Light", "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1;
@@ -72,6 +72,13 @@ h1, h2
 #header h2
 {
     font-size: 1.5em;
+    margin-top: 10px;
+    padding-bottom: 18px;
+    font-weight: normal;
+}
+
+#header h2 {
+    font-size: 1.2em;
     margin-top: 10px;
     padding-bottom: 18px;
     font-weight: normal;
@@ -159,4 +166,8 @@ ul
     #rpanel div
     {
         width: 300px;
+    }
+
+    pre.indent {
+        margin-left: 18px;
     }

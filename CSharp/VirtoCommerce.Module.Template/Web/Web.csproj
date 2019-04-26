@@ -125,14 +125,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="module.manifest" />
-    <Content Include="Content\css\my-module3.web.css" />
+    <Content Include="Content\css\$ext_safeprojectnamejs$.css" />
     <Content Include="Scripts\blades\helloWorld.js" />
     <Content Include="Scripts\blades\helloWorld.tpl.html" />
-    <Content Include="Scripts\my-module3.web.js" />
-    <Content Include="Scripts\resources\my-module3.web-api.js" />
+    <Content Include="Scripts\$ext_safeprojectnamejs$.js" />
+    <Content Include="Scripts\resources\$ext_safeprojectnamejs$-api.js" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\Api\MyModule3Controller.cs" />
+    <Compile Include="Controllers\Api\$ext_supersafename$Controller.cs" />
     <Compile Include="Module.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
