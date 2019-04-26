@@ -16,15 +16,15 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
-          Web\Web.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
-          Core\Core.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
-          Data\Data.vstemplate
-        </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+        Web\Web.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+        Core\Core.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+        Data\Data.vstemplate
+      </ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
         Test\Test.vstemplate
       </ProjectTemplateLink>
