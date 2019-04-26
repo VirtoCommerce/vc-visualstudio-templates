@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("VirtoCommerce.Module.Installer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("VirtoCommerce")]
 [assembly: AssemblyProduct("VirtoCommerce.Module.Installer")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright © VirtoCommerce 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
