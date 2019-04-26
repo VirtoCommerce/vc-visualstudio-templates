@@ -39,10 +39,10 @@ namespace VirtoCommerce.Module.Wizard
             var projectnameitems = safeprojectname.Split('.').Select(x => ToJsCamelCase(Safe(x)));
             var safeprojectnamecamel = string.Join(".", projectnameitems);
 
-            replacementsDictionary.Add("$supersafename$", supersafename);
-            replacementsDictionary.Add("$supersafenamejs$", supersafenamejs);
-            replacementsDictionary.Add("$safeprojectnamejs$", safeprojectnamejs);
-            replacementsDictionary.Add("$safeprojectnamecamel$", safeprojectnamecamel);
+            replacementsDictionary.Add("$supersafename$", supersafename); // 0ProjectName XX = _ProjectNameXX
+            replacementsDictionary.Add("$supersafenamejs$", supersafenamejs); // ProjectNameXX = projectNameXX
+            replacementsDictionary.Add("$safeprojectnamejs$", safeprojectnamejs); // ProjectNameXX = project-name-xx
+            replacementsDictionary.Add("$safeprojectnamecamel$", safeprojectnamecamel); // ProjectName.Web = projectName.web
         }
 
         private string SafeJs(string value)
