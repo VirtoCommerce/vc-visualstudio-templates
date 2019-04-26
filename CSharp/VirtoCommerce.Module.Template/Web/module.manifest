@@ -1,20 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <module>
-    <id>MyModule3</id>
+    <id>$ext_safeprojectname$</id>
     <version>1.0.0</version>
-    <platformVersion>2.13.43</platformVersion>
+    <platformVersion>2.13.44</platformVersion>
     <dependencies>
-        <dependency id="VirtoCommerce.Core" version="2.25.19" />
+        <dependency id="VirtoCommerce.Core" version="2.25.21" />
     </dependencies>
 
-    <title>MyModule3</title>
+    <title>$ext_projectname$</title>
     <description>Enter your module description here.</description>
     <authors>
-        <author>evanb</author>
+        <author>$username$</author>
     </authors>
+    <owners>
+      <owner>$registeredorganization$</owner>
+    </owners>
 
-    <assemblyFile>MyModule3.Web.dll</assemblyFile>
-    <moduleType>MyModule3.Web.Module, MyModule3.Web</moduleType>
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright © $year$ $registeredorganization$. All rights reserved</copyright>
+    <tags>extension module</tags>
+  
+    <assemblyFile>$safeprojectname$.dll</assemblyFile>
+    <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
 
     <styles>
         <directory virtualPath="$/Content/css" searchPattern="*.css" searchSubdirectories="true" />
@@ -26,28 +33,28 @@
     <settings>
         <group name="General">
             <setting>
-                <name>MyModule3.General.String</name>
+                <name>$ext_safeprojectname$.General.String</name>
                 <valueType>string</valueType>
                 <defaultValue>qwerty</defaultValue>
                 <title>String</title>
                 <description>A text setting</description>
             </setting>
             <setting>
-                <name>MyModule3.General.Password</name>
+                <name>$ext_safeprojectname$.General.Password</name>
                 <valueType>secureString</valueType>
                 <defaultValue>qwerty</defaultValue>
                 <title>Password</title>
                 <description>A secure text setting</description>
             </setting>
             <setting>
-                <name>MyModule3.General.Integer</name>
+                <name>$ext_safeprojectname$.General.Integer</name>
                 <valueType>integer</valueType>
                 <defaultValue>123</defaultValue>
                 <title>Integer</title>
                 <description>An integer setting</description>
             </setting>
             <setting>
-                <name>MyModule3.General.Decimal</name>
+                <name>$ext_safeprojectname$.General.Decimal</name>
                 <valueType>decimal</valueType>
                 <defaultValue>123.45</defaultValue>
                 <title>Decimal</title>
@@ -56,21 +63,21 @@
         </group>
         <group name="Advanced">
             <setting>
-                <name>MyModule3.Advanced.Boolean1</name>
+                <name>$ext_safeprojectname$.Advanced.Boolean1</name>
                 <valueType>boolean</valueType>
                 <defaultValue>true</defaultValue>
                 <title>Boolean1</title>
                 <description>A boolean setting</description>
             </setting>
             <setting>
-                <name>MyModule3.Advanced.Boolean2</name>
+                <name>$ext_safeprojectname$.Advanced.Boolean2</name>
                 <valueType>boolean</valueType>
                 <defaultValue>false</defaultValue>
                 <title>Boolean2</title>
                 <description>A boolean setting</description>
             </setting>
             <setting>
-                <name>MyModule3.Advanced.Select</name>
+                <name>$ext_safeprojectname$.Advanced.Select</name>
                 <valueType>string</valueType>
                 <allowedValues>
                     <value>qwerty</value>
@@ -85,10 +92,10 @@
     </settings>
   
     <permissions>
-        <group name="MyModule3">
-            <permission id="MyModule3:read" name="Read" />
-            <permission id="MyModule3:update" name="Update" />
-            <permission id="MyModule3:delete" name="Delete" />
+        <group name="$ext_safeprojectname$">
+            <permission id="$ext_safeprojectname$:read" name="Read" />
+            <permission id="$ext_safeprojectname$:update" name="Update" />
+            <permission id="$ext_safeprojectname$:delete" name="Delete" />
         </group>
     </permissions>
 </module>

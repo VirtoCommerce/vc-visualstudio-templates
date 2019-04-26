@@ -23,8 +23,9 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.css">web.css</ProjectItem>
         </Folder>
         <Folder Name="help">
-          <ProjectItem ReplaceParameters="true">index.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
           <ProjectItem ReplaceParameters="false">sample.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false">arch_scheme.png</ProjectItem>
           <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
         </Folder>
       </Folder>

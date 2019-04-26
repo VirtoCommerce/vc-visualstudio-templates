@@ -120,6 +120,7 @@
     <None Include="Content\help\index.html" />
     <None Include="Content\help\stylesheet.css" />
     <None Include="Content\help\sample.png" />
+    <None Include="Content\help\arch_scheme.png" />
     <None Include="app.config" />
     <None Include="Web.config" />
   </ItemGroup>
