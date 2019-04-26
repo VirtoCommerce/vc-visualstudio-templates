@@ -2,8 +2,8 @@
 
 namespace $safeprojectname$.Controllers.Api
 {
-    [RoutePrefix("api/$safeprojectname$")]
-    public class MyModuleController : ApiController
+    [RoutePrefix("api/$ext_supersafename$")]
+    public class $ext_supersafename$Controller : ApiController
     {
         // GET: api/managedModule
         [HttpGet]

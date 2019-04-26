@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <module>
-    <id>$safeprojectname$</id>
+    <id>MyModule3</id>
     <version>1.0.0</version>
     <platformVersion>2.13.43</platformVersion>
     <dependencies>
         <dependency id="VirtoCommerce.Core" version="2.25.19" />
     </dependencies>
 
-    <title>$projectname$</title>
+    <title>MyModule3</title>
     <description>Enter your module description here.</description>
     <authors>
-        <author>$username$</author>
+        <author>evanb</author>
     </authors>
 
-    <assemblyFile>$safeprojectname$.dll</assemblyFile>
-    <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
+    <assemblyFile>MyModule3.Web.dll</assemblyFile>
+    <moduleType>MyModule3.Web.Module, MyModule3.Web</moduleType>
 
     <styles>
         <directory virtualPath="$/Content/css" searchPattern="*.css" searchSubdirectories="true" />
@@ -26,28 +26,28 @@
     <settings>
         <group name="General">
             <setting>
-                <name>$safeprojectname$.General.String</name>
+                <name>MyModule3.General.String</name>
                 <valueType>string</valueType>
                 <defaultValue>qwerty</defaultValue>
                 <title>String</title>
                 <description>A text setting</description>
             </setting>
             <setting>
-                <name>$safeprojectname$.General.Password</name>
+                <name>MyModule3.General.Password</name>
                 <valueType>secureString</valueType>
                 <defaultValue>qwerty</defaultValue>
                 <title>Password</title>
                 <description>A secure text setting</description>
             </setting>
             <setting>
-                <name>$safeprojectname$.General.Integer</name>
+                <name>MyModule3.General.Integer</name>
                 <valueType>integer</valueType>
                 <defaultValue>123</defaultValue>
                 <title>Integer</title>
                 <description>An integer setting</description>
             </setting>
             <setting>
-                <name>$safeprojectname$.General.Decimal</name>
+                <name>MyModule3.General.Decimal</name>
                 <valueType>decimal</valueType>
                 <defaultValue>123.45</defaultValue>
                 <title>Decimal</title>
@@ -56,21 +56,21 @@
         </group>
         <group name="Advanced">
             <setting>
-                <name>$safeprojectname$.Advanced.Boolean1</name>
+                <name>MyModule3.Advanced.Boolean1</name>
                 <valueType>boolean</valueType>
                 <defaultValue>true</defaultValue>
                 <title>Boolean1</title>
                 <description>A boolean setting</description>
             </setting>
             <setting>
-                <name>$safeprojectname$.Advanced.Boolean2</name>
+                <name>MyModule3.Advanced.Boolean2</name>
                 <valueType>boolean</valueType>
                 <defaultValue>false</defaultValue>
                 <title>Boolean2</title>
                 <description>A boolean setting</description>
             </setting>
             <setting>
-                <name>$safeprojectname$.Advanced.Select</name>
+                <name>MyModule3.Advanced.Select</name>
                 <valueType>string</valueType>
                 <allowedValues>
                     <value>qwerty</value>
@@ -85,10 +85,10 @@
     </settings>
   
     <permissions>
-        <group name="$projectname$">
-            <permission id="$safeprojectname$:read" name="Read" />
-            <permission id="$safeprojectname$:update" name="Update" />
-            <permission id="$safeprojectname$:delete" name="Delete" />
+        <group name="MyModule3">
+            <permission id="MyModule3:read" name="Read" />
+            <permission id="MyModule3:update" name="Update" />
+            <permission id="MyModule3:delete" name="Delete" />
         </group>
     </permissions>
 </module>

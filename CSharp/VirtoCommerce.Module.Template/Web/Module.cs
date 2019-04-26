@@ -5,8 +5,8 @@ namespace $safeprojectname$
 {
     public class Module : ModuleBase
     {
-    // private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("$safeprojectname$") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
-    private readonly IUnityContainer _container;
+        // private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("MyModule3") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
+        private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)
         {
@@ -23,7 +23,7 @@ namespace $safeprojectname$
             // }
         }
 
-    public override void Initialize()
+        public override void Initialize()
         {
             base.Initialize();
 
@@ -31,12 +31,12 @@ namespace $safeprojectname$
 
             // Register implementations:
             // _container.RegisterType<IMyRepository>(new InjectionFactory(c => new MyRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor()));
-            // _container.RegisterType<IMyService, MyServiceImplementation>();
+            // _container.RegisterType<IMyService, MyService>();
 
             // Try to avoid calling _container.Resolve<>();
         }
 
-    public override void PostInitialize()
+        public override void PostInitialize()
         {
             base.PostInitialize();
 
@@ -44,7 +44,7 @@ namespace $safeprojectname$
 
             // Register implementations 
             // _container.RegisterType<IMyService, MyService>();
-        
+
             // Resolve registered implementations:
             // var settingManager = _container.Resolve<ISettingsManager>();
             // var value = settingManager.GetValue("Pricing.ExportImport.Description", string.Empty);

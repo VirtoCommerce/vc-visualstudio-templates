@@ -1,7 +1,7 @@
 ﻿//Call this to register our module to main application
-var moduleTemplateName = "$safeprojectname$";
+var moduleTemplateName = "$ext_safeprojectnamecamel$";
 
-if (AppDependencies != undefined) {
+if (AppDependencies !== undefined) {
     AppDependencies.push(moduleTemplateName);
 }
 
@@ -9,15 +9,15 @@ angular.module(moduleTemplateName, [])
 .config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('workspace.$safeprojectname$', {
-                url: '/$safeprojectname$',
+            .state('workspace.$ext_supersafenamejs$State', {
+                url: '/$ext_safeprojectnamecamel$',
                 templateUrl: '$(Platform)/Scripts/common/templates/home.tpl.html',
                 controller: [
                     '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
                         var newBlade = {
                             id: 'blade1',
-                            controller: '$safeprojectname$.helloWorldController',
-                            template: 'Modules/$($safeprojectname$)/Scripts/blades/helloWorld.tpl.html',
+                            controller: '$ext_safeprojectnamecamel$.helloWorldController',
+                            template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/helloWorld.tpl.html',
                             isClosingDisabled: true
                         };
                         bladeNavigationService.showBlade(newBlade);
@@ -30,12 +30,12 @@ angular.module(moduleTemplateName, [])
     function ($rootScope, mainMenuService, widgetService, $state) {
         //Register module in main menu
         var menuItem = {
-            path: 'browse/$safeprojectname$',
+            path: 'browse/$ext_safeprojectnamecamel$',
             icon: 'fa fa-cube',
-            title: '$safeprojectname$',
+            title: '$ext_projectname$',
             priority: 100,
-            action: function () { $state.go('workspace.$safeprojectname$'); },
-            permission: '$safeprojectname$Permission'
+            action: function () { $state.go('workspace.$ext_supersafenamejs$State'); },
+            permission: '$ext_safeprojectnamecamel$.WebPermission'
         };
         mainMenuService.addMenuItem(menuItem);
     }
