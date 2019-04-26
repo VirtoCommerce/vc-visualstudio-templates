@@ -60,7 +60,6 @@
     <None Include="Data\_app.config" />
     <None Include="Test\_app.config" />
     <None Include="Test\_packages.config" />
-    <None Include="Web\CommonAssemblyInfo.cs" />
     <None Include="Data\_packages.config" />
     <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
@@ -111,7 +110,7 @@
     </None>
     <None Include="Web\Scripts\blades\invoice-detail.js" />
     <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
-    <None Include="Web\Scripts\External.OrderExModule.Web.js" />
+    <None Include="Web\Scripts\web.js" />
     <None Include="Web\Scripts\tree-template.tpl.html" />
     <None Include="Web\Web.csproj">
       <SubType>Designer</SubType>
