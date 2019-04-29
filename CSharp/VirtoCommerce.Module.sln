@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.OrderExModule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.Module.Wizard", "VirtoCommerce.Module.Wizard\VirtoCommerce.Module.Wizard.csproj", "{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B0E71BB-87AA-460A-83C3-FA5CE0993394} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
+		{AF56362E-276B-4E64-9FCB-FD7E529F24F2} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
+		{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {267A0731-F784-40BC-A659-645C9ED2585E}
