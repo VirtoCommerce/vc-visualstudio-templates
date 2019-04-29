@@ -1,11 +1,11 @@
-﻿using $ext_safeprojectname$.Core.Model.Cart;
+﻿using System;
+using $ext_safeprojectname$.Core.Model.Cart;
 using $ext_safeprojectname$.Core.Model.Order;
 using $ext_safeprojectname$.Data.Model.Cart;
 using $ext_safeprojectname$.Data.Model.Order;
 using $ext_safeprojectname$.Data.Repositories;
 using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
-using System;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.CartModule.Data.Repositories;
 using VirtoCommerce.Domain.Cart.Model;
