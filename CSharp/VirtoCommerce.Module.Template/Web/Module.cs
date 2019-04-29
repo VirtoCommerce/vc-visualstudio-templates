@@ -5,7 +5,7 @@ namespace $safeprojectname$
 {
     public class Module : ModuleBase
     {
-        // private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("MyModule3") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
+        // private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("$ext_safeprojectname$") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
         private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)
