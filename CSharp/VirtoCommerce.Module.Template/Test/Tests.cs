@@ -4,7 +4,6 @@ namespace $safeprojectname$
 {
     public class Tests
     {
-
         public Tests()
         {
         }
