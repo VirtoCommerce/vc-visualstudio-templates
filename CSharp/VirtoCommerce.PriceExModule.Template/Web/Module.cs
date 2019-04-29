@@ -1,4 +1,5 @@
-﻿using Microsoft.Practices.Unity;
+﻿using System;
+using Microsoft.Practices.Unity;
 using $ext_safeprojectname$.Core.Model;
 using $ext_safeprojectname$.Data.Model;
 using $ext_safeprojectname$.Data.Repositories;
@@ -7,6 +8,7 @@ using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.Platform.Core.Modularity;
 using VirtoCommerce.Platform.Data.Infrastructure;
 using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
+using VirtoCommerce.Platform.Data.Repositories;
 using VirtoCommerce.PricingModule.Data.Model;
 using VirtoCommerce.PricingModule.Data.Repositories;
 
@@ -37,9 +39,13 @@ namespace $safeprojectname$
         {
             base.Initialize();
 
-            //TODO: Fabric
+            Func<IPricingRepository> repFactory = () =>
+                   new PriceExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
+                       new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(PriceExEntity) }));
+            _container.RegisterInstance(instance: repFactory);
+
             _container.RegisterType<IPricingRepository>(new InjectionFactory(c => new PriceExRepository(_connectionString, _container.Resolve<AuditableInterceptor>(),
-                new EntityPrimaryKeyGeneratorInterceptor())));
+                    new EntityPrimaryKeyGeneratorInterceptor())));
         }
 
         public override void PostInitialize()
