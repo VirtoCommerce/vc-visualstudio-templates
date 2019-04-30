@@ -1,7 +1,8 @@
-using System.Data.Entity.Migrations;
-
-namespace $safeprojectname$.Migrations
+namespace MyCompany.PriceEx4.Data.Migrations
 {
+    using System;
+    using System.Data.Entity.Migrations;
+    
     public partial class Initial : DbMigration
     {
         public override void Up()
@@ -9,18 +10,16 @@ namespace $safeprojectname$.Migrations
             CreateTable(
                 "dbo.PriceEx",
                 c => new
-                {
-                    Id = c.String(nullable: false, maxLength: 128),
-                    BasePrice = c.Decimal(precision: 18, scale: 2),
-                })
+                    {
+                        Id = c.String(nullable: false, maxLength: 128),
+                        BasePrice = c.Decimal(storeType: "money"),
+                    })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Price", t => t.Id, cascadeDelete: true)
+                .ForeignKey("dbo.Price", t => t.Id)
                 .Index(t => t.Id);
-
-            //Convert  all exist Price records to Price2
-            Sql("INSERT INTO dbo.PriceEx (Id) SELECT Id FROM dbo.Price");
+            
         }
-
+        
         public override void Down()
         {
             DropForeignKey("dbo.PriceEx", "Id", "dbo.Price");

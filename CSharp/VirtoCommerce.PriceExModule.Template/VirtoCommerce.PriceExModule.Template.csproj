@@ -109,10 +109,6 @@
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Core\Model\PriceEx.cs" />
     <None Include="Data\AssemblyInfo.cs" />
-    <None Include="Data\Migrations\201903271904136_Initial.cs" />
-    <None Include="Data\Migrations\201903271904136_Initial.Designer.cs">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
-    </None>
     <None Include="Data\Migrations\Configuration.cs" />
     <None Include="Data\Model\PriceExEntity.cs" />
     <None Include="Data\Repositories\PriceExRepository.cs" />
@@ -136,8 +132,14 @@
     <Content Include="Web\Web.vstemplate" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Migrations\201903271904136_Initial.resx">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
+    <None Include="Data\Migrations\201904300818457_Initial.cs" />
+    <None Include="Data\Migrations\201904300818457_Initial.designer.cs">
+      <DependentUpon>201904300818457_Initial.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Migrations\201904300818457_Initial.resx">
+      <DependentUpon>201904300818457_Initial.cs</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

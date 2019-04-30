@@ -1,4 +1,5 @@
-﻿using $ext_safeprojectname$.Core.Model;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using $ext_safeprojectname$.Core.Model;
 using VirtoCommerce.Domain.Pricing.Model;
 using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.PricingModule.Data.Model;
@@ -7,6 +8,7 @@ namespace $safeprojectname$.Model
 {
     public class PriceExEntity : PriceEntity
     {
+        [Column(TypeName = "Money")]
         public decimal? BasePrice { get; set; }
 
         public override Price ToModel(Price price)

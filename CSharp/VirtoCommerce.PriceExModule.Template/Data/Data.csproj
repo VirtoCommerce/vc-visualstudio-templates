@@ -76,9 +76,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201903271904136_Initial.cs" />
-    <Compile Include="Migrations\201903271904136_Initial.Designer.cs">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201904300818457_Initial.cs" />
+    <Compile Include="Migrations\201904300818457_Initial.Designer.cs">
+      <DependentUpon>201904300818457_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\PriceExEntity.cs" />
@@ -86,8 +86,8 @@
     <Compile Include="Repositories\PriceExRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903271904136_Initial.resx">
-      <DependentUpon>201903271904136_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904300818457_Initial.resx">
+      <DependentUpon>201904300818457_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
