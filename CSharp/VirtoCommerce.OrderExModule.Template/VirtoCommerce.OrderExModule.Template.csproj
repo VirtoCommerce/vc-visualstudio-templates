@@ -61,7 +61,6 @@
     <None Include="Test\_app.config" />
     <None Include="Test\_packages.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Core\Model\Cart\CartEx.cs" />
     <None Include="Core\Model\Cart\CartExType.cs" />

@@ -6,8 +6,8 @@ if (AppDependencies !== undefined) {
 }
 
 angular.module(moduleTemplateName, [])
-    .run(['virtoCommerce.orderModule.knownOperations', '$http', '$compile',
-        function (knownOperations, $http, $compile) {
+    .run(['virtoCommerce.orderModule.knownOperations', '$templateRequest', '$compile',
+        function (knownOperations, $templateRequest, $compile) {
             var foundTemplate = knownOperations.getOperation('CustomerOrder');
             if (foundTemplate) {
                 foundTemplate.detailBlade.metaFields.push(
@@ -49,8 +49,9 @@ angular.module(moduleTemplateName, [])
             };
             knownOperations.registerOperation(invoiceOperation);
 
-            $http.get('Modules/$($ext_safeprojectnamecamel$)/Scripts/tree-template.html').then(function (response) {
+            $templateRequest('Modules/$($ext_safeprojectnamecamel$)/Scripts/tree-template.html').then(function (response) {
                 // compile the response, which will put stuff into the cache
-                $compile(response.data);
+                var template = angular.element(response);
+                $compile(template);
             });
         }]);
