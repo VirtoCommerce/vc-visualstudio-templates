@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
     <TemplateData>
         <Name>Virto Commerce 2.x Module</Name>
-        <Description>A project template for creating Virto Commerce Module Extension</Description>
+        <Description>Default project template for creating Virto Commerce module</Description>
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType></ProjectSubType>
         <SortOrder>1000</SortOrder>
