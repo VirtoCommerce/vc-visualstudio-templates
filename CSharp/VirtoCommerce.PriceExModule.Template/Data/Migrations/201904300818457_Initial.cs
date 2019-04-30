@@ -1,4 +1,4 @@
-namespace MyCompany.PriceEx4.Data.Migrations
+namespace $safeprojectname$.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
@@ -15,9 +15,11 @@ namespace MyCompany.PriceEx4.Data.Migrations
                         BasePrice = c.Decimal(storeType: "money"),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Price", t => t.Id)
+                .ForeignKey("dbo.Price", t => t.Id, cascadeDelete: true)
                 .Index(t => t.Id);
-            
+
+            // Convert all exist Price records to PriceEx
+            Sql("INSERT INTO dbo.PriceEx (Id) SELECT Id FROM dbo.Price");
         }
         
         public override void Down()
