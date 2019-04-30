@@ -16,8 +16,9 @@
 
 namespace $safeprojectname$.Migrations.Cart
 {
+    using System;
     using System.Data.Entity.Migrations;
-
+    
     public partial class Initial : DbMigration
     {
         public override void Up()
@@ -55,10 +56,10 @@ namespace $safeprojectname$.Migrations.Cart
         {
             DropForeignKey("dbo.CartLineItemEx", "Id", "dbo.CartLineItem");
             DropForeignKey("dbo.CartEx", "Id", "dbo.Cart");
-            
+
             DropIndex("dbo.CartLineItemEx", new[] { "Id" });
             DropIndex("dbo.CartEx", new[] { "Id" });
-            
+
             DropTable("dbo.CartLineItemEx");
             DropTable("dbo.CartEx");
         }

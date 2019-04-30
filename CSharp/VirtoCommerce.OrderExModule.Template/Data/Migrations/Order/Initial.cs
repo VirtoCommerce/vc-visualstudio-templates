@@ -1,4 +1,3 @@
-//
 // For migration, use the following commands, indicating the type of migration configuration, for 
 // multiple migrations in one project:
 // Add-Migration <MigrateName> 
@@ -16,8 +15,9 @@
 
 namespace $safeprojectname$.Migrations.Order
 {
+    using System;
     using System.Data.Entity.Migrations;
-
+    
     public partial class Initial : DbMigration
     {
         public override void Up()
@@ -48,7 +48,7 @@ namespace $safeprojectname$.Migrations.Order
                 .Index(t => t.Id)
                 .Index(t => t.CustomerOrderExId);
 
-            //Convert  all exist CustomerOrder records to CustomerOrderEx
+            // Convert all exist CustomerOrder records to CustomerOrderEx
             Sql("INSERT INTO dbo.CustomerOrderEx (Id) SELECT Id FROM dbo.CustomerOrder");
         }
         
@@ -61,7 +61,7 @@ namespace $safeprojectname$.Migrations.Order
             DropIndex("dbo.OrderInvoice", new[] { "CustomerOrderExId" });
             DropIndex("dbo.OrderInvoice", new[] { "Id" });
             DropIndex("dbo.CustomerOrderEx", new[] { "Id" });
-            
+
             DropTable("dbo.OrderInvoice");
             DropTable("dbo.CustomerOrderEx");
         }

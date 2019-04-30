@@ -88,14 +88,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\Cart\201904180719511_Initial.cs" />
-    <Compile Include="Migrations\Cart\201904180719511_Initial.Designer.cs">
-      <DependentUpon>201904180719511_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\Cart\201904301004175_Initial.cs" />
+    <Compile Include="Migrations\Cart\201904301004175_Initial.Designer.cs">
+      <DependentUpon>201904301004175_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Cart\Configuration.cs" />
-    <Compile Include="Migrations\Order\201904180711432_Initial.cs" />
-    <Compile Include="Migrations\Order\201904180711432_Initial.Designer.cs">
-      <DependentUpon>201904180711432_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\Order\201904301003397_Initial.cs" />
+    <Compile Include="Migrations\Order\201904301003397_Initial.Designer.cs">
+      <DependentUpon>201904301003397_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Order\Configuration.cs" />
     <Compile Include="Model\Cart\CartExEntity.cs" />
@@ -108,11 +108,11 @@
     <Compile Include="Services\CustomerOrderBuilderExService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\Cart\201904180719511_Initial.resx">
-      <DependentUpon>201904180719511_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Cart\201904301004175_Initial.resx">
+      <DependentUpon>201904301004175_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\Order\201904180711432_Initial.resx">
-      <DependentUpon>201904180711432_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\Order\201904301003397_Initial.resx">
+      <DependentUpon>201904301003397_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

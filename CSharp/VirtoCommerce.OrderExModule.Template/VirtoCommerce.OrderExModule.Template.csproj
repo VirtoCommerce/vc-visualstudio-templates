@@ -77,16 +77,16 @@
     <None Include="Data\Repositories\OrderExRepository.cs" />
     <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
     <None Include="Core\Model\Order\LineItemEx.cs" />
+    <None Include="Data\Migrations\Cart\Configuration.cs" />
+    <None Include="Data\Migrations\Order\Configuration.cs" />
     <None Include="Data\Migrations\Cart\Initial.cs" />
     <None Include="Data\Migrations\Cart\Initial.Designer.cs">
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
-    <None Include="Data\Migrations\Cart\Configuration.cs" />
     <None Include="Data\Migrations\Order\Initial.cs" />
-    <None Include="Data\Migrations\Order\Initial.Designer.cs">
+    <None Include="Data\Migrations\Order\Initial.designer.cs">
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
-    <None Include="Data\Migrations\Order\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>
