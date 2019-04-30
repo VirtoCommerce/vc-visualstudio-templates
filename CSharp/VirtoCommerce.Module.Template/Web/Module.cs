@@ -45,6 +45,10 @@ namespace $safeprojectname$
             // Register implementations 
             // _container.RegisterType<IMyService, MyService>();
 
+            // Override types using AbstractTypeFactory:
+            // AbstractTypeFactory<BaseModel>.OverrideType<BaseModel, BaseModelEx>();
+            // AbstractTypeFactory<BaseModelEntity>.OverrideType<BaseModelEntity, BaseModelExEntity>();
+
             // Resolve registered implementations:
             // var settingManager = _container.Resolve<ISettingsManager>();
             // var value = settingManager.GetValue("Pricing.ExportImport.Description", string.Empty);
