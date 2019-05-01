@@ -1,0 +1,51 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name>Virto Commerce 2.x Cart Ex Module</Name>
+        <Description>A project template for creating Virto Commerce Cart Module Extension</Description>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType></ProjectSubType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>CartManagedModule</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+        <Icon>__TemplateIcon.ico</Icon>
+        <!-- Indicates how many parent folders this item template should appear in -->
+        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="$safeprojectname$.csproj" File="Module.Web.csproj" ReplaceParameters="true">
+            <ProjectItem ReplaceParameters="true" TargetFileName="Module.cs">Module.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="module.manifest">module.manifest</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="module.ignore">module.ignore</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+            <Folder Name="Migrations" TargetFolderName="Migrations">
+              <ProjectItem ReplaceParameters="true" TargetFileName="201903290617311_Initial.cs">201903290617311_Initial.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="201903290617311_Initial.Designer.cs">201903290617311_Initial.Designer.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="201903290617311_Initial.resx">201903290617311_Initial.resx</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
+            </Folder>
+          <Folder Name="Model" TargetFolderName="Model">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CartEx.cs">CartEx.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CartExEntity.cs">CartExEntity.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="CartExType.cs">CartExType.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LineItemEx.cs">LineItemEx.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LineItemExEntity.cs">LineItemExEntity.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Repositories" TargetFolderName="Repositories">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CartExRepository.cs">CartExRepository.cs</ProjectItem>
+          </Folder>
+            <Folder Name="Properties" TargetFolderName="Properties">
+                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            </Folder>
+        </Project>
+    </TemplateContent>
+    <WizardExtension>
+        <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+        <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+    </WizardExtension>
+</VSTemplate>
