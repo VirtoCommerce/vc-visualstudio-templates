@@ -42,9 +42,6 @@ namespace $safeprojectname$
 
             // This method is called for each installed module on the second stage of initialization.
 
-            // Register implementations 
-            // _container.RegisterType<IMyService, MyService>();
-
             // Override types using AbstractTypeFactory:
             // AbstractTypeFactory<BaseModel>.OverrideType<BaseModel, BaseModelEx>();
             // AbstractTypeFactory<BaseModelEntity>.OverrideType<BaseModelEntity, BaseModelExEntity>();
