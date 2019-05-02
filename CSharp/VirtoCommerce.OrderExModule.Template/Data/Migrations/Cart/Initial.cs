@@ -16,8 +16,9 @@
 
 namespace $safeprojectname$.Migrations.Cart
 {
+    using System;
     using System.Data.Entity.Migrations;
-
+    
     public partial class Initial : DbMigration
     {
         public override void Up()
@@ -38,7 +39,7 @@ namespace $safeprojectname$.Migrations.Cart
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        OuterId = c.String(maxLength: 64),
+                        OuterId = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.CartLineItem", t => t.Id, cascadeDelete: true)
@@ -55,10 +56,10 @@ namespace $safeprojectname$.Migrations.Cart
         {
             DropForeignKey("dbo.CartLineItemEx", "Id", "dbo.CartLineItem");
             DropForeignKey("dbo.CartEx", "Id", "dbo.Cart");
-            
+
             DropIndex("dbo.CartLineItemEx", new[] { "Id" });
             DropIndex("dbo.CartEx", new[] { "Id" });
-            
+
             DropTable("dbo.CartLineItemEx");
             DropTable("dbo.CartEx");
         }

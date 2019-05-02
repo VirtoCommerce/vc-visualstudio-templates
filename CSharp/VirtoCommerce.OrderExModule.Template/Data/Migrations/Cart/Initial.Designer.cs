@@ -12,7 +12,7 @@ namespace $safeprojectname$.Migrations.Cart
         
         string IMigrationMetadata.Id
         {
-            get { return "201904180719511_Initial"; }
+            get { return "201904301004175_Initial"; }
         }
         
         string IMigrationMetadata.Source

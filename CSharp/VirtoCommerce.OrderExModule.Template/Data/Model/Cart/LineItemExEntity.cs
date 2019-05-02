@@ -1,5 +1,5 @@
-﻿using $ext_safeprojectname$.Core.Model.Cart;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using $ext_safeprojectname$.Core.Model.Cart;
 using VirtoCommerce.CartModule.Data.Model;
 using VirtoCommerce.Domain.Cart.Model;
 using VirtoCommerce.Platform.Core.Common;
@@ -8,7 +8,7 @@ namespace $safeprojectname$.Model.Cart
 {
     public class LineItemExEntity : LineItemEntity
     {
-        [StringLength(64)]
+        [StringLength(128)]
         public string OuterId { get; set; }
 
         public override LineItem ToModel(LineItem lineItem)

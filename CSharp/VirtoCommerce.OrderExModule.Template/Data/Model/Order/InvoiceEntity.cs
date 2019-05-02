@@ -6,10 +6,10 @@ namespace $safeprojectname$.Model.Order
 {
     public class InvoiceEntity : OperationEntity
     {
-        [StringLength(64)]
+        [StringLength(128)]
         public string CustomerId { get; set; }
 
-        [StringLength(64)]
+        [StringLength(128)]
         public string CustomerName { get; set; }
 
 

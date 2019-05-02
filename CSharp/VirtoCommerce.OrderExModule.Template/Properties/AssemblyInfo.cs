@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("VirtoCommerce.OrderExModule.Template")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Ivan Butler")]
+[assembly: AssemblyCompany("VirtoCommerce")]
 [assembly: AssemblyProduct("VirtoCommerce.OrderExModule.Template")]
-[assembly: AssemblyCopyright("Copyright © Ivan Butler 2019")]
+[assembly: AssemblyCopyright("Copyright © VirtoCommerce 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

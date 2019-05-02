@@ -54,11 +54,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Test\AssemblyInfo.cs" />
+    <None Include="Test\Tests.cs" />
     <None Include="Core\_app.config" />
     <None Include="Data\_app.config" />
-    <None Include="Web\CommonAssemblyInfo.cs" />
+    <None Include="Test\_app.config" />
+    <None Include="Test\_packages.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Web\README.md" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Core\Model\Cart\CartEx.cs" />
     <None Include="Core\Model\Cart\CartExType.cs" />
@@ -75,16 +77,16 @@
     <None Include="Data\Repositories\OrderExRepository.cs" />
     <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
     <None Include="Core\Model\Order\LineItemEx.cs" />
+    <None Include="Data\Migrations\Cart\Configuration.cs" />
+    <None Include="Data\Migrations\Order\Configuration.cs" />
     <None Include="Data\Migrations\Cart\Initial.cs" />
     <None Include="Data\Migrations\Cart\Initial.Designer.cs">
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
-    <None Include="Data\Migrations\Cart\Configuration.cs" />
     <None Include="Data\Migrations\Order\Initial.cs" />
-    <None Include="Data\Migrations\Order\Initial.Designer.cs">
+    <None Include="Data\Migrations\Order\Initial.designer.cs">
       <DependentUpon>Initial.cs</DependentUpon>
     </None>
-    <None Include="Data\Migrations\Order\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>
@@ -107,7 +109,7 @@
     </None>
     <None Include="Web\Scripts\blades\invoice-detail.js" />
     <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
-    <None Include="Web\Scripts\External.OrderExModule.Web.js" />
+    <None Include="Web\Scripts\web.js" />
     <None Include="Web\Scripts\tree-template.tpl.html" />
     <None Include="Web\Web.csproj">
       <SubType>Designer</SubType>
@@ -130,10 +132,16 @@
     <None Include="Web\Content\help\stylesheet.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Data.csproj" />
+    <None Include="Data\Data.csproj" />
     <Content Include="Data\Data.vstemplate">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Test\Test.vstemplate">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Test\Test.csproj">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Web\Content\help\arch_scheme.png" />
   </ItemGroup>
   <ItemGroup>

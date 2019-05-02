@@ -1,7 +1,7 @@
-﻿using $ext_safeprojectname$.Core.Model.Order;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using $ext_safeprojectname$.Core.Model.Order;
 using VirtoCommerce.Domain.Order.Model;
 using VirtoCommerce.OrderModule.Data.Model;
 using VirtoCommerce.Platform.Core.Common;

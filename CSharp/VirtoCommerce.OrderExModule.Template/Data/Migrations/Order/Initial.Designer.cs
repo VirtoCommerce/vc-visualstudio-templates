@@ -12,7 +12,7 @@ namespace $safeprojectname$.Migrations.Order
         
         string IMigrationMetadata.Id
         {
-            get { return "201904180711432_Initial"; }
+            get { return "201904301003397_Initial"; }
         }
         
         string IMigrationMetadata.Source
