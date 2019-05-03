@@ -16,7 +16,7 @@ namespace $safeprojectname$
 {
     public class Module : ModuleBase
     {
-        private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("VirtoCommerce.Price") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
+        private readonly string _connectionString = ConfigurationHelper.GetConnectionStringValue("VirtoCommerce.Pricing") ?? ConfigurationHelper.GetConnectionStringValue("VirtoCommerce");
         private readonly IUnityContainer _container;
 
         public Module(IUnityContainer container)

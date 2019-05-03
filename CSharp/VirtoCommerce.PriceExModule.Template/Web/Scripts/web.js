@@ -1,5 +1,5 @@
 ﻿//Call this to register our module to main application
-var moduleName = "$ext_safeprojectnamecamel$.externalPrice";
+var moduleName = "$ext_safeprojectnamecamel$";
 
 if (AppDependencies !== undefined) {
     AppDependencies.push(moduleName);

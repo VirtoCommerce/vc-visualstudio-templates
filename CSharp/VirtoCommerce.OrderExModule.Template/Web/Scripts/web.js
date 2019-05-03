@@ -1,13 +1,13 @@
 ﻿//Call this to register our module to main application
-var moduleTemplateName = "$ext_safeprojectnamecamel$";
+var moduleName = "$ext_safeprojectnamecamel$";
 
 if (AppDependencies !== undefined) {
-    AppDependencies.push(moduleTemplateName);
+    AppDependencies.push(moduleName);
 }
 
-angular.module(moduleTemplateName, [])
-    .run(['virtoCommerce.orderModule.knownOperations', '$templateRequest', '$compile',
-        function (knownOperations, $templateRequest, $compile) {
+angular.module(moduleName, [])
+    .run(['virtoCommerce.orderModule.knownOperations', '$http', '$compile',
+        function (knownOperations, $http, $compile) {
             var foundTemplate = knownOperations.getOperation('CustomerOrder');
             if (foundTemplate) {
                 foundTemplate.detailBlade.metaFields.push(
@@ -49,9 +49,8 @@ angular.module(moduleTemplateName, [])
             };
             knownOperations.registerOperation(invoiceOperation);
 
-            $templateRequest('Modules/$($ext_safeprojectnamecamel$)/Scripts/tree-template.html').then(function (response) {
+            $http.get('Modules/$($ext_safeprojectname$)/Scripts/tree-template.tpl.html').then(function (response) {
                 // compile the response, which will put stuff into the cache
-                var template = angular.element(response);
-                $compile(template);
+                $compile(response.data);
             });
         }]);
