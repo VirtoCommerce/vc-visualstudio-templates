@@ -46,6 +46,9 @@ namespace $safeprojectname$.Repositories
         public override CustomerOrderEntity[] GetCustomerOrdersByIds(string[] ids, CustomerOrderResponseGroup responseGroup)
         {
             var retVal = base.GetCustomerOrdersByIds(ids, responseGroup);
+
+            _ = Invoices.Where(x => ids.Contains(x.CustomerOrderExId)).ToArray();
+
             return retVal;
         }
     }
