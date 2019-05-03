@@ -3,10 +3,11 @@
     <Metadata>
         <Identity Id="VirtoCommerce.Module.Vsix.73af5367-1757-4210-938b-67ab285c0eba" Version="2.0.0" Language="en-US" Publisher="Virto Commerce" />
         <DisplayName>Virto Commerce 2.x Module Templates</DisplayName>
-        <Description xml:space="preserve">A project template for creating extension/module for Virto Commerce platform.</Description>
+        <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the remommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
         <GettingStartedGuide>https://virtocommerce.com/docs/vc2devguide/working-with-platform-manager/extending-functionality/creating-new-module</GettingStartedGuide>
         <ReleaseNotes>https://virtocommerce.com/blog</ReleaseNotes>
+        <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
         <Tags>ecommerce,platform,azure,angularjs,pim,oms,cms</Tags>
     </Metadata>
