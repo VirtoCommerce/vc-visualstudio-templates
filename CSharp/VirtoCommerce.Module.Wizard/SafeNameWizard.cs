@@ -48,12 +48,15 @@ namespace VirtoCommerce.Module.Wizard
         private string SafeJs(string value)
         {
             StringBuilder stringBuilder = new StringBuilder();
-            foreach (var item in value)
+
+            for (int i = 0; i < value.Length; i++)
             {
-                if (char.IsUpper(item))
+                var item = value[i];
+
+                if (char.IsUpper(item) && i > 0)
                 {
-                    var index = value.IndexOf(item);
-                    if (index > 0 && !char.IsUpper(value[index - 1]) && !char.IsPunctuation(value[index - 1]))
+                    var prev = value[i - 1];
+                    if (!char.IsUpper(prev) && !char.IsPunctuation(prev))
                         stringBuilder.Append('-');
                 }
 
