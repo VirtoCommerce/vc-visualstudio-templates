@@ -127,7 +127,7 @@
     <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
     <Content Include="Web\Content\help\stylesheet.css" />
-    <Content Include="Web\Scripts\web.js" />
+    <Content Include="Web\Scripts\module.js" />
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
   </ItemGroup>
