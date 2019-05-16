@@ -1,12 +1,12 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using $ext_safeprojectname$.Core.Model.Order;
+using $ext_safeprojectname$.Core.Models.Order;
 using VirtoCommerce.Domain.Order.Model;
 using VirtoCommerce.OrderModule.Data.Model;
 using VirtoCommerce.Platform.Core.Common;
 
-namespace $safeprojectname$.Model.Order
+namespace $safeprojectname$.Models.Order
 {
     public class CustomerOrderExEntity : CustomerOrderEntity
     {

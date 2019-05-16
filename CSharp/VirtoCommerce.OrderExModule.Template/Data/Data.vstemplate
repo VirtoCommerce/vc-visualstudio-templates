@@ -14,21 +14,21 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
       
-      <Folder Name="Migrations" TargetFolderName="Migrations">
-        <Folder Name="Cart" TargetFolderName="Cart">
+      <Folder Name="Migrations">
+        <Folder Name="Cart">
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301004175_Initial.cs">Initial.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301004175_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301004175_Initial.resx">Initial.resx</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
         </Folder>
-        <Folder Name="Order" TargetFolderName="Order">
+        <Folder Name="Order">
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301003397_Initial.cs">Initial.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301003397_Initial.Designer.cs">Initial.Designer.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="201904301003397_Initial.resx">Initial.resx</ProjectItem>
           <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
         </Folder>
       </Folder>
-      <Folder Name="Model" TargetFolderName="Model">
+      <Folder Name="Models">
         <Folder Name="Cart">
           <ProjectItem ReplaceParameters="true">CartExEntity.cs</ProjectItem>
           <ProjectItem ReplaceParameters="true">LineItemExEntity.cs</ProjectItem>
@@ -38,11 +38,11 @@
           <ProjectItem ReplaceParameters="true">InvoiceEntity.cs</ProjectItem>
         </Folder>
       </Folder>
-      <Folder Name="Repositories" TargetFolderName="Repositories">
+      <Folder Name="Repositories">
         <ProjectItem ReplaceParameters="true" TargetFileName="CartExRepository.cs">CartExRepository.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="OrderExRepository.cs">OrderExRepository.cs</ProjectItem>
       </Folder>
-      <Folder Name="Services" TargetFolderName="Services">
+      <Folder Name="Services">
         <ProjectItem ReplaceParameters="true" TargetFileName="CustomerOrderBuilderExService.cs">CustomerOrderBuilderExService.cs</ProjectItem>
       </Folder>
     </Project>

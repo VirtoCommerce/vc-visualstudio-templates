@@ -1,4 +1,4 @@
-﻿using $ext_safeprojectname$.Core.Model.Order;
+﻿using $ext_safeprojectname$.Core.Models.Order;
 using VirtoCommerce.Domain.Order.Services;
 using VirtoCommerce.OrderModule.Data.Services;
 

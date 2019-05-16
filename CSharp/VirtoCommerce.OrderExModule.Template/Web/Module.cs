@@ -1,8 +1,8 @@
 ﻿using System;
-using $ext_safeprojectname$.Core.Model.Cart;
-using $ext_safeprojectname$.Core.Model.Order;
-using $ext_safeprojectname$.Data.Model.Cart;
-using $ext_safeprojectname$.Data.Model.Order;
+using $ext_safeprojectname$.Core.Models.Cart;
+using $ext_safeprojectname$.Core.Models.Order;
+using $ext_safeprojectname$.Data.Models.Cart;
+using $ext_safeprojectname$.Data.Models.Order;
 using $ext_safeprojectname$.Data.Repositories;
 using $ext_safeprojectname$.Data.Services;
 using Microsoft.Practices.Unity;
@@ -82,13 +82,13 @@ namespace $safeprojectname$
 
             AbstractTypeFactory<ShoppingCart>.OverrideType<ShoppingCart, CartEx>();
             AbstractTypeFactory<ShoppingCartEntity>.OverrideType<ShoppingCartEntity, CartExEntity>();
-            AbstractTypeFactory<CartLineItem>.OverrideType<CartLineItem, Core.Model.Cart.LineItemEx>();
+            AbstractTypeFactory<CartLineItem>.OverrideType<CartLineItem, Core.Models.Cart.LineItemEx>();
             AbstractTypeFactory<LineItemEntity>.OverrideType<LineItemEntity, LineItemExEntity>();
 
             AbstractTypeFactory<IOperation>.OverrideType<CustomerOrder, CustomerOrderEx>();
             AbstractTypeFactory<CustomerOrderEntity>.OverrideType<CustomerOrderEntity, CustomerOrderExEntity>();
             AbstractTypeFactory<CustomerOrder>.OverrideType<CustomerOrder, CustomerOrderEx>().WithFactory(() => new CustomerOrderEx { OperationType = "CustomerOrder" });
-            AbstractTypeFactory<OrderLineItem>.OverrideType<OrderLineItem, Core.Model.Order.LineItemEx>();
+            AbstractTypeFactory<OrderLineItem>.OverrideType<OrderLineItem, Core.Models.Order.LineItemEx>();
 
             // Thats need for PolymorphicOperationJsonConverter for API deserialization
             AbstractTypeFactory<IOperation>.RegisterType<Invoice>();

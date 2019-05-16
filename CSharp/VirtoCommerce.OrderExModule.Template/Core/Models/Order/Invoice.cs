@@ -1,6 +1,6 @@
 ﻿using VirtoCommerce.Domain.Order.Model;
 
-namespace $safeprojectname$.Model.Order
+namespace $safeprojectname$.Models.Order
 {
     public class Invoice : OrderOperation
     {

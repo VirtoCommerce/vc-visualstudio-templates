@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using VirtoCommerce.OrderModule.Data.Model;
 
-namespace $safeprojectname$.Model.Order
+namespace $safeprojectname$.Models.Order
 {
     public class InvoiceEntity : OperationEntity
     {

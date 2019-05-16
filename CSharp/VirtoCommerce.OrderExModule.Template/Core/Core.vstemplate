@@ -14,7 +14,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
         
-        <Folder Name="Model">
+        <Folder Name="Models">
           <Folder Name="Cart">
             <ProjectItem ReplaceParameters="true">CartEx.cs</ProjectItem>
             <ProjectItem ReplaceParameters="true">CartExType.cs</ProjectItem>

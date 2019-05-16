@@ -1,9 +1,10 @@
-﻿using VirtoCommerce.Domain.Cart.Model;
+﻿using VirtoCommerce.Domain.Order.Model;
 
-namespace $safeprojectname$.Model.Cart
+namespace $safeprojectname$.Models.Order
 {
     public class LineItemEx : LineItem
     {
         public string OuterId { get; set; }
     }
 }
+

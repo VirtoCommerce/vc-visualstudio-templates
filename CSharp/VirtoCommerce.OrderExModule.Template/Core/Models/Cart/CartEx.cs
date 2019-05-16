@@ -1,6 +1,6 @@
 ﻿using VirtoCommerce.Domain.Cart.Model;
 
-namespace $safeprojectname$.Model.Cart
+namespace $safeprojectname$.Models.Cart
 {
     public class CartEx : ShoppingCart
     {
