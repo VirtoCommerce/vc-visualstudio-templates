@@ -76,9 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Core\_packages.config" />
-    <None Include="Data\_app.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Test\_app.config" />
     <None Include="Test\_packages.config" />
     <None Include="Web\_app.config" />
     <None Include="Web\module.ignore" />
