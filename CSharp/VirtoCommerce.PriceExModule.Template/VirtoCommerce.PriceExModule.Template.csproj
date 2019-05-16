@@ -81,7 +81,7 @@
     <None Include="Core\_packages.config" />
     <None Include="Data\_packages.config" />
     <None Include="Test\_packages.config" />
-    <None Include="Web\Localizations\en.web.json" />
+    <None Include="Web\Localizations\en.module.json" />
     <None Include="Web\module.ignore" />
     <None Include="Web\module.manifest" />
     <None Include="Web\Web.config" />

@@ -25,10 +25,10 @@
         </Folder>
       </Folder>
       <Folder Name="Localizations">
-        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.web.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.module.json</ProjectItem>
       </Folder>
       <Folder Name="Scripts">
-        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">web.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">module.js</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
