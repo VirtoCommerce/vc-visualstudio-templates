@@ -107,10 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Core\AssemblyInfo.cs" />
-    <None Include="Core\Model\PriceEx.cs" />
+    <None Include="Core\Models\PriceEx.cs" />
     <None Include="Data\AssemblyInfo.cs" />
     <None Include="Data\Migrations\Configuration.cs" />
-    <None Include="Data\Model\PriceExEntity.cs" />
+    <None Include="Data\Models\PriceExEntity.cs" />
     <None Include="Data\Repositories\PriceExRepository.cs" />
     <None Include="Test\AssemblyInfo.cs" />
     <None Include="Test\Tests.cs" />

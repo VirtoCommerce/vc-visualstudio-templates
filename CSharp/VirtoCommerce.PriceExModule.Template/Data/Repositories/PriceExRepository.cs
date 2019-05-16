@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using $safeprojectname$.Model;
+using $safeprojectname$.Models;
 using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
 using VirtoCommerce.PricingModule.Data.Repositories;
 

@@ -19,7 +19,7 @@
         <ProjectItem ReplaceParameters="true">201904300818457_Initial.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true">Configuration.cs</ProjectItem>
       </Folder>
-      <Folder Name="Model">
+      <Folder Name="Models">
         <ProjectItem ReplaceParameters="true">PriceExEntity.cs</ProjectItem>
       </Folder>
       <Folder Name="Repositories">

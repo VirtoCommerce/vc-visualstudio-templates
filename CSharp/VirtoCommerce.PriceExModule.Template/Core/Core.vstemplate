@@ -11,7 +11,7 @@
     <Project TargetFileName="$safeprojectname$.csproj" File="Core.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-      <Folder Name="Model" TargetFolderName="Model">
+      <Folder Name="Models">
         <ProjectItem ReplaceParameters="true">PriceEx.cs</ProjectItem>
       </Folder>
     </Project>
