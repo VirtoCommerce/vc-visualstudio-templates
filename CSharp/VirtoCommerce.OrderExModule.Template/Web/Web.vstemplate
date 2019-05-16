@@ -18,12 +18,12 @@
         <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
         
         <Folder Name="Scripts">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">web.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">module.js</ProjectItem>
           <ProjectItem ReplaceParameters="true">tree-template.tpl.html</ProjectItem>
           
           <Folder Name="blades">
             <ProjectItem ReplaceParameters="true">invoice-detail.js</ProjectItem>
-            <ProjectItem ReplaceParameters="true">invoice-detail.tpl.html</ProjectItem>
+            <ProjectItem ReplaceParameters="true">invoice-detail.html</ProjectItem>
           </Folder>
         </Folder>
         <Folder Name="Content">

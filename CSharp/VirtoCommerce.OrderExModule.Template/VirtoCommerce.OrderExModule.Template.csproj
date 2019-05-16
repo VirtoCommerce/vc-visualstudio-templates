@@ -62,21 +62,21 @@
     <None Include="Test\_packages.config" />
     <None Include="Data\_packages.config" />
     <None Include="Web\AssemblyInfo.cs" />
-    <None Include="Core\Model\Cart\CartEx.cs" />
-    <None Include="Core\Model\Cart\CartExType.cs" />
-    <None Include="Core\Model\Order\CustomerOrderEx.cs" />
-    <None Include="Core\Model\Order\Invoice.cs" />
-    <None Include="Core\Model\Cart\LineItemEx.cs" />
+    <None Include="Core\Models\Cart\CartEx.cs" />
+    <None Include="Core\Models\Cart\CartExType.cs" />
+    <None Include="Core\Models\Order\CustomerOrderEx.cs" />
+    <None Include="Core\Models\Order\Invoice.cs" />
+    <None Include="Core\Models\Cart\LineItemEx.cs" />
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Data\AssemblyInfo.cs" />
-    <None Include="Data\Model\Cart\CartExEntity.cs" />
-    <None Include="Data\Model\Cart\LineItemExEntity.cs" />
-    <None Include="Data\Model\Order\CustomerOrderExEntity.cs" />
-    <None Include="Data\Model\Order\InvoiceEntity.cs" />
+    <None Include="Data\Models\Cart\CartExEntity.cs" />
+    <None Include="Data\Models\Cart\LineItemExEntity.cs" />
+    <None Include="Data\Models\Order\CustomerOrderExEntity.cs" />
+    <None Include="Data\Models\Order\InvoiceEntity.cs" />
     <None Include="Data\Repositories\CartExRepository.cs" />
     <None Include="Data\Repositories\OrderExRepository.cs" />
     <None Include="Data\Services\CustomerOrderBuilderExService.cs" />
-    <None Include="Core\Model\Order\LineItemEx.cs" />
+    <None Include="Core\Models\Order\LineItemEx.cs" />
     <None Include="Data\Migrations\Cart\Configuration.cs" />
     <None Include="Data\Migrations\Order\Configuration.cs" />
     <None Include="Data\Migrations\Cart\Initial.cs" />
@@ -108,8 +108,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web\Scripts\blades\invoice-detail.js" />
-    <None Include="Web\Scripts\blades\invoice-detail.tpl.html" />
-    <None Include="Web\Scripts\web.js" />
+    <None Include="Web\Scripts\blades\invoice-detail.html" />
+    <None Include="Web\Scripts\module.js" />
     <None Include="Web\Scripts\tree-template.tpl.html" />
     <None Include="Web\Web.csproj">
       <SubType>Designer</SubType>
