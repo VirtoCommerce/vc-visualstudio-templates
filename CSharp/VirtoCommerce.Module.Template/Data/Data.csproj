@@ -77,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Model\" />
+    <Folder Include="Models\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>

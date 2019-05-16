@@ -125,9 +125,9 @@
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
     <Content Include="Web\Scripts\blades\helloWorld.js" />
-    <Content Include="Web\Scripts\blades\helloWorld.tpl.html" />
-    <Content Include="Web\Scripts\web.js" />
-    <Content Include="Web\Scripts\resources\web-api.js" />
+    <Content Include="Web\Scripts\blades\helloWorld.html" />
+    <Content Include="Web\Scripts\module.js" />
+    <Content Include="Web\Scripts\resources\module-api.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Test\Tests.cs" />

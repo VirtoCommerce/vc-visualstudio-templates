@@ -14,7 +14,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
 
       <Folder Name="Migrations" />
-      <Folder Name="Model" />
+      <Folder Name="Models" />
       <Folder Name="Repositories" />
       <Folder Name="Services" />
     </Project>
