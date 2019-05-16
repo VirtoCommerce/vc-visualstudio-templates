@@ -17,7 +17,7 @@ angular.module(moduleName, [])
                             var newBlade = {
                                 id: 'blade1',
                                 controller: '$ext_safeprojectnamecamel$.helloWorldController',
-                                template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/helloWorld.tpl.html',
+                                template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/helloWorld.html',
                                 isClosingDisabled: true
                             };
                             bladeNavigationService.showBlade(newBlade);

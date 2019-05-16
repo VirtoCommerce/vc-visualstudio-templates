@@ -37,11 +37,11 @@
       <Folder Name="Scripts">
         <Folder Name="blades">
           <ProjectItem ReplaceParameters="true">helloWorld.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true">helloWorld.tpl.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">helloWorld.html</ProjectItem>
         </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">web.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">module.js</ProjectItem>
         <Folder Name="resources">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$-api.js">web-api.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$-api.js">module-api.js</ProjectItem>
         </Folder>
       </Folder>
     </Project>
