@@ -61,7 +61,7 @@ namespace $safeprojectname$
 
             Func<ICartRepository> cartRepFactory = () =>
                    new CartExRepository(_connectionString, new EntityPrimaryKeyGeneratorInterceptor(), _container.Resolve<AuditableInterceptor>(),
-                       new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CartExEntity), nameof(Data.Model.Cart.LineItemExEntity) }));
+                       new ChangeLogInterceptor(_container.Resolve<Func<IPlatformRepository>>(), ChangeLogPolicy.Cumulative, new[] { nameof(CartExEntity), nameof(LineItemExEntity) }));
             _container.RegisterInstance(instance: cartRepFactory);
 
             Func<IOrderRepository> orderRepFactory = () =>

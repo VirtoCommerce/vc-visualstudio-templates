@@ -19,7 +19,7 @@ namespace $safeprojectname$.Services
             var result = base.ToOrderModel(lineItem) as LineItemEx;
 
             // Next lines just copy OuterId from cart LineItemEx to order LineItemEx
-            var cartLineItemEx = lineItem as Core.Model.Cart.LineItemEx;
+            var cartLineItemEx = lineItem as Core.Models.Cart.LineItemEx;
             if (cartLineItemEx != null)
             {
                 result.OuterId = cartLineItemEx.OuterId;
