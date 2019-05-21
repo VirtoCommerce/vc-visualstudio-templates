@@ -28,7 +28,7 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.module.json</ProjectItem>
       </Folder>
       <Folder Name="Scripts">
-        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">module.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true">module.js</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
