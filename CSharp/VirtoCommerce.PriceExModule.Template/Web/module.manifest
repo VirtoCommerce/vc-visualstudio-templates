@@ -29,11 +29,5 @@
     </scripts>
 
   <settings></settings>
-
-  <permissions>
-    <group name="Pricing">
-      <permission id="pricing:read" name="View pricing data" description=""/>
-      <permission id="pricing:update" name="Update pricing data" description=""/>
-    </group>
-  </permissions>
+  <permissions></permissions>
 </module>
