@@ -1,1 +1,6 @@
-﻿VirtoCommerce.Domain.dll
+VirtoCommerce.CartModule.Data.dll
+VirtoCommerce.Domain.dll
+VirtoCommerce.Module.dll
+VirtoCommerce.OrderModule.Data.dll
+VirtoCommerce.Platform.Core.dll
+VirtoCommerce.Platform.Data.dll
