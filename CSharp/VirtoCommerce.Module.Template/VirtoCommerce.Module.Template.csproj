@@ -119,7 +119,7 @@
     <Content Include="Data\Data.vstemplate" />
     <Content Include="Test\Test.csproj" />
     <Content Include="Test\Test.vstemplate" />
-    <Content Include="Web\Content\css\web.css" />
+    <Content Include="Web\Content\css\stylesheet.css" />
     <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
     <Content Include="Web\Content\help\sample.png" />
