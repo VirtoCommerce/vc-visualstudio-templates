@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <module>
     <id>$ext_safeprojectname$</id>
     <version>1.0.0</version>
@@ -29,14 +29,5 @@
     </scripts>
 
   <settings></settings>
-
-  <permissions>
-    <group name="Pricing">
-      <permission id="pricing:access" name="Open pricing menu" description=""/>
-      <permission id="pricing:create" name="Create pricing data" description=""/>
-      <permission id="pricing:read" name="View pricing data" description=""/>
-      <permission id="pricing:update" name="Update pricing data" description=""/>
-      <permission id="pricing:delete" name="Delete pricing data" description=""/>
-    </group>
-  </permissions>
+  <permissions></permissions>
 </module>

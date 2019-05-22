@@ -19,7 +19,7 @@
       
       <Folder Name="Content">
         <Folder Name="css">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.css">web.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.css">stylesheet.css</ProjectItem>
         </Folder>
         <Folder Name="help">
           <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
@@ -37,11 +37,11 @@
       <Folder Name="Scripts">
         <Folder Name="blades">
           <ProjectItem ReplaceParameters="true">helloWorld.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true">helloWorld.tpl.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">helloWorld.html</ProjectItem>
         </Folder>
-        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">web.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="module.js">module.js</ProjectItem>
         <Folder Name="resources">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$-api.js">web-api.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$-api.js">module-api.js</ProjectItem>
         </Folder>
       </Folder>
     </Project>

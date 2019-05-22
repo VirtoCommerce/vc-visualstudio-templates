@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using $safeprojectname$.Model.Cart;
+using $safeprojectname$.Models.Cart;
 using VirtoCommerce.CartModule.Data.Repositories;
 using VirtoCommerce.Platform.Data.Infrastructure.Interceptors;
 

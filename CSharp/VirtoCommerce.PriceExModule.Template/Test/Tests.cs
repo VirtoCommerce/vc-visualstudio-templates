@@ -1,5 +1,5 @@
-﻿using $ext_safeprojectname$.Core.Model;
-using $ext_safeprojectname$.Data.Model;
+﻿using $ext_safeprojectname$.Core.Models;
+using $ext_safeprojectname$.Data.Models;
 using VirtoCommerce.Platform.Core.Common;
 using Xunit;
 

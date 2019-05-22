@@ -12,7 +12,7 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       
-      <Folder Name="Model" />
+      <Folder Name="Models" />
       <Folder Name="Services" />
     </Project>
   </TemplateContent>

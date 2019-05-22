@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using $ext_safeprojectname$.Core.Model;
+using $ext_safeprojectname$.Core.Models;
 using VirtoCommerce.Domain.Pricing.Model;
 using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.PricingModule.Data.Model;
 
-namespace $safeprojectname$.Model
+namespace $safeprojectname$.Models
 {
     public class PriceExEntity : PriceEntity
     {

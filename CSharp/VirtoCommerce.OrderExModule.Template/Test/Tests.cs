@@ -1,14 +1,14 @@
 ﻿using System.Linq;
-using $ext_safeprojectname$.Core.Model.Cart;
-using $ext_safeprojectname$.Core.Model.Order;
-using $ext_safeprojectname$.Data.Model.Cart;
-using $ext_safeprojectname$.Data.Model.Order;
+using $ext_safeprojectname$.Core.Models.Cart;
+using $ext_safeprojectname$.Core.Models.Order;
+using $ext_safeprojectname$.Data.Models.Cart;
+using $ext_safeprojectname$.Data.Models.Order;
 using VirtoCommerce.Platform.Core.Common;
 using Xunit;
 
 namespace $safeprojectname$
 {
-    using CartLineItemEx = Core.Model.Cart.LineItemEx;
+    using CartLineItemEx = Core.Models.Cart.LineItemEx;
 
     public class Tests
     {

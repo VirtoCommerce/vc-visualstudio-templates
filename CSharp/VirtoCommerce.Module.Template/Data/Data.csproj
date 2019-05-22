@@ -77,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Model\" />
+    <Folder Include="Models\" />
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
@@ -88,7 +88,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Virto Commerce 2.x Cart and Order Web Project</Name>
     <ProjectType>CSharp</ProjectType>
@@ -18,12 +18,12 @@
         <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
         
         <Folder Name="Scripts">
-          <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectnamejs$.js">web.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">module.js</ProjectItem>
           <ProjectItem ReplaceParameters="true">tree-template.tpl.html</ProjectItem>
           
           <Folder Name="blades">
             <ProjectItem ReplaceParameters="true">invoice-detail.js</ProjectItem>
-            <ProjectItem ReplaceParameters="true">invoice-detail.tpl.html</ProjectItem>
+            <ProjectItem ReplaceParameters="true">invoice-detail.html</ProjectItem>
           </Folder>
         </Folder>
         <Folder Name="Content">

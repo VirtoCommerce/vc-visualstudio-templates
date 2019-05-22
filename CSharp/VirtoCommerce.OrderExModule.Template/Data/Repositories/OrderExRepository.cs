@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Linq;
-using $safeprojectname$.Model.Order;
+using $safeprojectname$.Models.Order;
 using VirtoCommerce.Domain.Order.Model;
 using VirtoCommerce.OrderModule.Data.Model;
 using VirtoCommerce.OrderModule.Data.Repositories;

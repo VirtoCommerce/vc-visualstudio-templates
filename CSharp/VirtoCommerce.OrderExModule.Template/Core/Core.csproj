@@ -53,12 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Cart\CartEx.cs" />
-    <Compile Include="Model\Cart\CartExType.cs" />
-    <Compile Include="Model\Cart\LineItemEx.cs" />
-    <Compile Include="Model\Order\CustomerOrderEx.cs" />
-    <Compile Include="Model\Order\Invoice.cs" />
-    <Compile Include="Model\Order\LineItemEx.cs" />
+    <Compile Include="Models\Cart\CartEx.cs" />
+    <Compile Include="Models\Cart\CartExType.cs" />
+    <Compile Include="Models\Cart\LineItemEx.cs" />
+    <Compile Include="Models\Order\CustomerOrderEx.cs" />
+    <Compile Include="Models\Order\Invoice.cs" />
+    <Compile Include="Models\Order\LineItemEx.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

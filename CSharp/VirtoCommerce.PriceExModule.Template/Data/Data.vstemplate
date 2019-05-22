@@ -11,7 +11,6 @@
     <Project TargetFileName="$safeprojectname$.csproj" File="Data.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
       
       <Folder Name="Migrations">
         <ProjectItem ReplaceParameters="true">201904300818457_Initial.cs</ProjectItem>
@@ -19,7 +18,7 @@
         <ProjectItem ReplaceParameters="true">201904300818457_Initial.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true">Configuration.cs</ProjectItem>
       </Folder>
-      <Folder Name="Model">
+      <Folder Name="Models">
         <ProjectItem ReplaceParameters="true">PriceExEntity.cs</ProjectItem>
       </Folder>
       <Folder Name="Repositories">

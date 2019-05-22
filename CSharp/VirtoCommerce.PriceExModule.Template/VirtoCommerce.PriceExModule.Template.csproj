@@ -24,6 +24,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -79,11 +80,9 @@
       <SubType>Designer</SubType>
     </VSTemplate>
     <None Include="Core\_packages.config" />
-    <None Include="Data\_app.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Test\_app.config" />
     <None Include="Test\_packages.config" />
-    <None Include="Web\Localizations\en.web.json" />
+    <None Include="Web\Localizations\en.module.json" />
     <None Include="Web\module.ignore" />
     <None Include="Web\module.manifest" />
     <None Include="Web\Web.config" />
@@ -107,10 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Core\AssemblyInfo.cs" />
-    <None Include="Core\Model\PriceEx.cs" />
+    <None Include="Core\Models\PriceEx.cs" />
     <None Include="Data\AssemblyInfo.cs" />
     <None Include="Data\Migrations\Configuration.cs" />
-    <None Include="Data\Model\PriceExEntity.cs" />
+    <None Include="Data\Models\PriceExEntity.cs" />
     <None Include="Data\Repositories\PriceExRepository.cs" />
     <None Include="Test\AssemblyInfo.cs" />
     <None Include="Test\Tests.cs" />
@@ -127,7 +126,7 @@
     <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
     <Content Include="Web\Content\help\stylesheet.css" />
-    <Content Include="Web\Scripts\web.js" />
+    <Content Include="Web\Scripts\module.js" />
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
   </ItemGroup>

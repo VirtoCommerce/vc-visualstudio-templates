@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Practices.Unity;
-using $ext_safeprojectname$.Core.Model;
-using $ext_safeprojectname$.Data.Model;
+using $ext_safeprojectname$.Core.Models;
+using $ext_safeprojectname$.Data.Models;
 using $ext_safeprojectname$.Data.Repositories;
 using VirtoCommerce.Domain.Pricing.Model;
 using VirtoCommerce.Platform.Core.Common;
