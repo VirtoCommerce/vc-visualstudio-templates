@@ -1,11 +1,11 @@
-﻿using System.Web.Http;
+using System.Web.Http;
 
 namespace $safeprojectname$.Controllers.Api
 {
     [RoutePrefix("api/$ext_supersafename$")]
     public class $ext_supersafename$Controller : ApiController
     {
-        // GET: api/managedModule
+        // GET: api/$ext_supersafename$
         [HttpGet]
         [Route("")]
         public IHttpActionResult Get()
