@@ -39,11 +39,11 @@
         </Folder>
       </Folder>
       <Folder Name="Repositories">
-        <ProjectItem ReplaceParameters="true" TargetFileName="CartExRepository.cs">CartExRepository.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true" TargetFileName="OrderExRepository.cs">OrderExRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">CartExRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">OrderExRepository.cs</ProjectItem>
       </Folder>
       <Folder Name="Services">
-        <ProjectItem ReplaceParameters="true" TargetFileName="CustomerOrderBuilderExService.cs">CustomerOrderBuilderExService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">CustomerOrderBuilderExService.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
