@@ -16,9 +16,7 @@ Each template uses best practices and consists of several projects:
 Please use new templates in your everyday work. 
 
 ## Download
-Compile version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=VirtoCommerce2xModuleProjectTemplate.VirtoCommerce2xModule
-
-Extension can be submitted using https://visualstudiogallery.msdn.microsoft.com/
+Compiled version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=VirtoCommerce2xModuleProjectTemplate.VirtoCommerce2xModule
 
 # License
 Copyright (c) Virto Solutions LTD.  All rights reserved.
