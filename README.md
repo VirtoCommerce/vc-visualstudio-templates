@@ -7,6 +7,8 @@ Includes 3 templates:
 * Virto Commerce 2.x Cart and Order Module extension - A project for extending Virto Commerce Cart and Order models
 * Virto Commerce 2.x Pricing Module extension - A project for extending VirtoCommerce.Pricing module
 
+![image](https://user-images.githubusercontent.com/5801549/57129856-5e8cee00-6da0-11e9-8a5a-cfce19cd12ac.png)
+
 Each template uses best practices and consists of several projects:
 * Core - Business and Application Models
 * Data - Data Access and Implementation of business logic
@@ -16,7 +18,7 @@ Each template uses best practices and consists of several projects:
 Please use new templates in your everyday work. 
 
 ## Download
-Compiled version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=VirtoCommerce2xModuleProjectTemplate.VirtoCommerce2xModule
+Compiled version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates
 
 # License
 Copyright (c) Virto Solutions LTD.  All rights reserved.
