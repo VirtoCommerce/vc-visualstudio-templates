@@ -24,6 +24,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -75,34 +79,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="module.ignore" />
-    <None Include="_packages.config" />
-    <None Include="Content\help\index.html" />
-    <None Include="Content\help\stylesheet.css" />
-    <None Include="Content\help\sample.png" />
-    <None Include="module.manifest">
+    <None Include="Core\_packages.config" />
+    <None Include="Data\_packages.config" />
+    <None Include="Test\_packages.config" />
+    <None Include="Web\_app.config" />
+    <None Include="Web\module.ignore" />
+    <None Include="Web\module.manifest" />
+    <None Include="Web\_packages.config" />
+    <None Include="Web\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web\AssemblyInfo.cs" />
+    <None Include="Test\AssemblyInfo.cs" />
+    <None Include="Core\AssemblyInfo.cs" />
+    <None Include="Data\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="VirtoCommerce.Module.Template.vstemplate">
       <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\css\managedModule.css" />
-    <None Include="Scripts\blades\helloWorld_blade1.js" />
-    <None Include="Scripts\blades\helloWorld_blade1.tpl.html" />
-    <None Include="Scripts\managedModule.js" />
-    <None Include="Scripts\resources\managedModuleApi.js" />
-    <None Include="Web.config" />
-    <None Include="Module.Web.csproj">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Controllers\Api\managedModuleController.cs" />
-    <None Include="Module.cs" />
-    <None Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <VSTemplate Include="VirtoCommerce.Module.Template.vstemplate" />
+    </VSTemplate>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -115,6 +111,30 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Core.csproj" />
+    <Content Include="Core\Core.vstemplate" />
+    <Content Include="Data\Data.csproj" />
+    <Content Include="Data\Data.vstemplate" />
+    <Content Include="Test\Test.csproj" />
+    <Content Include="Test\Test.vstemplate" />
+    <Content Include="Web\Content\css\stylesheet.css" />
+    <Content Include="Web\Content\help\arch_scheme.png" />
+    <Content Include="Web\Content\help\index.html" />
+    <Content Include="Web\Content\help\sample.png" />
+    <None Include="Web\Content\help\stylesheet.css" />
+    <Content Include="Web\Web.csproj" />
+    <Content Include="Web\Web.vstemplate" />
+    <Content Include="Web\Scripts\blades\helloWorld.js" />
+    <Content Include="Web\Scripts\blades\helloWorld.html" />
+    <Content Include="Web\Scripts\module.js" />
+    <Content Include="Web\Scripts\resources\module-api.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Test\Tests.cs" />
+    <None Include="Web\Controllers\Api\MyModuleController.cs" />
+    <None Include="Web\Module.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

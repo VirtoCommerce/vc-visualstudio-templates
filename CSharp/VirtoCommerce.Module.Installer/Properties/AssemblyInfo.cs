@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VirtoCommerce.Module.Vsix")]
+[assembly: AssemblyTitle("VirtoCommerce.Module.Installer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VirtoCommerce.Module.Vsix")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCompany("VirtoCommerce")]
+[assembly: AssemblyProduct("VirtoCommerce.Module.Installer")]
+[assembly: AssemblyCopyright("Copyright © VirtoCommerce 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

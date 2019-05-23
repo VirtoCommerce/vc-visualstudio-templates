@@ -1,12 +1,12 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
     <TemplateData>
         <Name>Virto Commerce 2.x Module</Name>
-        <Description>A project template for creating Virto Commerce Module Extension</Description>
+        <Description>Default project template for creating Virto Commerce module</Description>
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType></ProjectSubType>
         <SortOrder>1000</SortOrder>
-        <CreateNewFolder>true</CreateNewFolder>
-        <DefaultName>ManagedModule</DefaultName>
+        <CreateNewFolder>false</CreateNewFolder>
+        <DefaultName>MyCompany.MyModule</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -16,45 +16,23 @@
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     </TemplateData>
     <TemplateContent>
-        <Project TargetFileName="$safeprojectname$.csproj" File="Module.Web.csproj" ReplaceParameters="true">
-            <ProjectItem ReplaceParameters="true" TargetFileName="Module.cs">Module.cs</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="module.manifest">module.manifest</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="module.ignore">module.ignore</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
-            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
-            <Folder Name="Content" TargetFolderName="Content">
-                <Folder Name="css" TargetFolderName="css">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.css">ManagedModule.css</ProjectItem>
-                </Folder>
-                <Folder Name="help" TargetFolderName="help">
-                    <ProjectItem TargetFileName="index.html" ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
-                    <ProjectItem TargetFileName="stylesheet.css">stylesheet.css</ProjectItem>
-                    <ProjectItem TargetFileName="sample.png">sample.png</ProjectItem>
-                </Folder>
-            </Folder>
-            <Folder Name="Controllers" TargetFolderName="Controllers">
-                <Folder Name="Api" TargetFolderName="Api">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Controller.cs">ManagedModuleController.cs</ProjectItem>
-                </Folder>
-            </Folder>
-            <Folder Name="Properties" TargetFolderName="Properties">
-                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-            </Folder>
-            <Folder Name="Scripts" TargetFolderName="Scripts">
-                <Folder Name="blades" TargetFolderName="blades">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld_blade1.js">helloWorld_blade1.js</ProjectItem>
-                    <ProjectItem ReplaceParameters="true" TargetFileName="helloWorld_blade1.tpl.html">helloWorld_blade1.tpl.html</ProjectItem>
-                </Folder>
-                <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.js">managedModule.js</ProjectItem>
-                <Folder Name="resources" TargetFolderName="resources">
-                    <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Api.js">managedModuleApi.js</ProjectItem>
-                </Folder>
-            </Folder>
-        </Project>
+      <ProjectCollection>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+          Web\Web.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+          Core\Core.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+          Data\Data.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
+          Test\Test.vstemplate
+        </ProjectTemplateLink>
+      </ProjectCollection>
     </TemplateContent>
-    <WizardExtension>
-        <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
-        <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
-    </WizardExtension>
+  <WizardExtension>
+    <Assembly>VirtoCommerce.Module.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627683273f803801</Assembly>
+    <FullClassName>VirtoCommerce.Module.Wizard.SafeNameWizard</FullClassName>
+  </WizardExtension>
 </VSTemplate>
