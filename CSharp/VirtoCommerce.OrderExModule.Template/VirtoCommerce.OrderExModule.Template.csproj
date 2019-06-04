@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Test\AssemblyInfo.cs" />
-    <None Include="Test\Tests.cs" />
+    <None Include="Tests\AssemblyInfo.cs" />
+    <None Include="Tests\Test.cs" />
     <None Include="Core\_app.config" />
     <None Include="Data\_app.config" />
-    <None Include="Test\_packages.config" />
+    <None Include="Tests\_packages.config" />
     <None Include="Data\_packages.config" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Core\Models\Cart\CartEx.cs" />
@@ -136,10 +136,10 @@
     <Content Include="Data\Data.vstemplate">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Test\Test.vstemplate">
+    <Content Include="Tests\Tests.vstemplate">
       <SubType>Designer</SubType>
     </Content>
-    <None Include="Test\Test.csproj">
+    <None Include="Tests\Tests.csproj">
       <SubType>Designer</SubType>
     </None>
     <Content Include="Web\Content\help\arch_scheme.png" />

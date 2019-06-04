@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
     <Name>Virto Commerce 2.x Cart and Order Module extension</Name>
@@ -27,8 +27,8 @@
       <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
         Data\Data.vstemplate
       </ProjectTemplateLink>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
-        Test\Test.vstemplate
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+        Tests\Tests.vstemplate
       </ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>
