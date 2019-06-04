@@ -112,7 +112,7 @@
     <None Include="Data\Models\PriceExEntity.cs" />
     <None Include="Data\Repositories\PriceExRepository.cs" />
     <None Include="Tests\AssemblyInfo.cs" />
-    <None Include="Tests\Tests.cs" />
+    <None Include="Tests\Test.cs" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>

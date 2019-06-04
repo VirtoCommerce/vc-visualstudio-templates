@@ -12,7 +12,7 @@
     <Project TargetFileName="$safeprojectname$.csproj" File="Tests.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true">Tests.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Test.cs</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
