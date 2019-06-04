@@ -191,7 +191,7 @@
   <Import Project="$nugetpackagesfolder$MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('$nugetpackagesfolder$MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$nugetpackagesfolder$MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '$nugetpackagesfolder$MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
     <Error Condition="!Exists('$nugetpackagesfolder$VirtoCommerce.Module.0.17.0\build\VirtoCommerce.Module.targets')" Text="$([System.String]::Format('$(ErrorText)', '$nugetpackagesfolder$VirtoCommerce.Module.0.17.0\build\VirtoCommerce.Module.targets'))" />
