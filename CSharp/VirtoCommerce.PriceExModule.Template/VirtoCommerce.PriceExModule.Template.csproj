@@ -81,7 +81,7 @@
     </VSTemplate>
     <None Include="Core\_packages.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Test\_packages.config" />
+    <None Include="Tests\_packages.config" />
     <None Include="Web\Localizations\en.module.json" />
     <None Include="Web\module.ignore" />
     <None Include="Web\module.manifest" />
@@ -111,8 +111,8 @@
     <None Include="Data\Migrations\Configuration.cs" />
     <None Include="Data\Models\PriceExEntity.cs" />
     <None Include="Data\Repositories\PriceExRepository.cs" />
-    <None Include="Test\AssemblyInfo.cs" />
-    <None Include="Test\Tests.cs" />
+    <None Include="Tests\AssemblyInfo.cs" />
+    <None Include="Tests\Tests.cs" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>
@@ -121,8 +121,8 @@
     <Content Include="Core\Core.vstemplate" />
     <Content Include="Data\Data.csproj" />
     <Content Include="Data\Data.vstemplate" />
-    <Content Include="Test\Test.csproj" />
-    <Content Include="Test\Test.vstemplate" />
+    <Content Include="Tests\Tests.csproj" />
+    <Content Include="Tests\Tests.vstemplate" />
     <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
     <Content Include="Web\Content\help\stylesheet.css" />

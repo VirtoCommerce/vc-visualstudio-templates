@@ -1,13 +1,13 @@
-﻿using $ext_safeprojectname$.Core.Models;
+using $ext_safeprojectname$.Core.Models;
 using $ext_safeprojectname$.Data.Models;
 using VirtoCommerce.Platform.Core.Common;
 using Xunit;
 
 namespace $safeprojectname$
 {
-    public class Tests
+    public class Test
     {
-        public Tests()
+        public Test()
         {
         }
 

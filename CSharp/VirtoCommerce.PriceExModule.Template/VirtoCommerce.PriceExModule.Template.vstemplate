@@ -26,8 +26,8 @@
         <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
           Data\Data.vstemplate
         </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
-          Test\Test.vstemplate
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+          Tests\Tests.vstemplate
         </ProjectTemplateLink>
       </ProjectCollection>
     </TemplateContent>
