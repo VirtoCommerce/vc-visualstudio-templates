@@ -14,7 +14,13 @@
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <Icon>__TemplateIcon.ico</Icon>
   <!-- Indicates how many parent folders this item template should appear in -->
-        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <LanguageTag>CSharp</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Web</ProjectTypeTag>
+    <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
+    <ProjectTypeTag>Order</ProjectTypeTag>
+    <ProjectTypeTag>Cart</ProjectTypeTag>
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
