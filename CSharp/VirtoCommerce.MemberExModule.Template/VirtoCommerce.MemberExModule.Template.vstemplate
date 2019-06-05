@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Virto Commerce 2.x Member Module extension</Name>
+    <Description>A project for extending Virto Commerce member models</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>MyCompany.MemberExModule</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <Icon>__TemplateIcon.ico</Icon>
+    <!-- Indicates how many parent folders this item template should appear in -->
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <LanguageTag>CSharp</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Web</ProjectTypeTag>
+    <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
+    <ProjectTypeTag>Member</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+      <ProjectCollection>
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+              Web\Web.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+              Core\Core.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+              Data\Data.vstemplate
+          </ProjectTemplateLink>
+          <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+              Tests\Tests.vstemplate
+          </ProjectTemplateLink>
+      </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>VirtoCommerce.Module.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627683273f803801</Assembly>
+    <FullClassName>VirtoCommerce.Module.Wizard.SafeNameWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
