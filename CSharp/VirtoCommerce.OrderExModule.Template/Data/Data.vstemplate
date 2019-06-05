@@ -5,7 +5,6 @@
     <ProjectSubType></ProjectSubType>
     <CreateNewFolder>true</CreateNewFolder>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
-    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
