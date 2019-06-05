@@ -127,8 +127,8 @@
   <ItemGroup>
     <Content Include="module.manifest" />
     <Content Include="Content\css\$ext_safeprojectnamejs$.css" />
-    <Content Include="Scripts\blades\helloWorld.js" />
-    <Content Include="Scripts\blades\helloWorld.html" />
+    <Content Include="Scripts\blades\hello-world.js" />
+    <Content Include="Scripts\blades\hello-world.html" />
     <Content Include="Scripts\module.js" />
     <Content Include="Scripts\resources\$ext_safeprojectnamejs$-api.js" />
   </ItemGroup>
