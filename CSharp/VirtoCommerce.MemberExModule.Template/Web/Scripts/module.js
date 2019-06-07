@@ -6,16 +6,40 @@ if (AppDependencies !== undefined) {
 }
 
 angular.module(moduleName, [])
-    .run(['$rootScope', 'virtoCommerce.customerModule.memberTypesResolverService',
-        function ($rootScope, memberTypesResolverService) {
+    .run(['$rootScope', 'platformWebApp.widgetService', 'virtoCommerce.customerModule.memberTypesResolverService',
+        function ($rootScope, widgetService, memberTypesResolverService) {
 
-            // add JobTitle field to Contact detail blade
-            var contactInfo = memberTypesResolverService.resolve("Contact");
-            contactInfo.detailBlade.metaFields.unshift({
-                name: 'jobTitle',
-                title: "JobTitle",
-                valueType: "ShortText"
-            });
+            var addressesWidget = {
+                controller: 'virtoCommerce.customerModule.memberAddressesWidgetController',
+                template: 'Modules/$(VirtoCommerce.Customer)/Scripts/widgets/memberAddressesWidget.tpl.html'
+            };
+            var emailsWidget = {
+                controller: 'virtoCommerce.customerModule.memberEmailsWidgetController',
+                template: 'Modules/$(VirtoCommerce.Customer)/Scripts/widgets/memberEmailsWidget.tpl.html'
+            };
+            var phonesWidget = {
+                controller: 'virtoCommerce.customerModule.memberPhonesWidgetController',
+                template: 'Modules/$(VirtoCommerce.Customer)/Scripts/widgets/memberPhonesWidget.tpl.html'
+            };
+            var dynamicPropertyWidget = {
+                controller: 'platformWebApp.dynamicPropertyWidgetController',
+                template: '$(Platform)/Scripts/app/dynamicProperties/widgets/dynamicPropertyWidget.tpl.html',
+                isVisible: function (blade) { return !blade.isNew; }
+            };
+            var indexWidget = {
+                documentType: 'Member',
+                controller: 'virtoCommerce.coreModule.searchIndex.indexWidgetController',
+                // size: [3, 1],
+                template: 'Modules/$(VirtoCommerce.Core)/Scripts/SearchIndex/widgets/index-widget.tpl.html',
+                isVisible: function (blade) { return !blade.isNew; }
+            };
+
+            // Register widgets in supplier details
+            widgetService.registerWidget(addressesWidget, 'supplierDetail1');
+            widgetService.registerWidget(emailsWidget, 'supplierDetail1');
+            widgetService.registerWidget(phonesWidget, 'supplierDetail1');
+            widgetService.registerWidget(dynamicPropertyWidget, 'supplierDetail2');
+            widgetService.registerWidget(indexWidget, 'supplierDetail2');
 
             // register new Supplier member type
             memberTypesResolverService.registerType({

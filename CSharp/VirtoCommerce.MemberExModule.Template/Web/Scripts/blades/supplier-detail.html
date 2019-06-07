@@ -3,15 +3,22 @@
     <div class="blade-inner">
         <div class="inner-block clearfix" ng-controller="$ext_safeprojectnamecamel$.supplierDetailController">
             <form class="form" name="detailForm">
-                <div ng-init="setForm(detailForm)">
-                    <label class="form-label">Supplier Name</label>
-                    <div class="form-input">
-                        <input ng-model="blade.currentEntity.name" focus-on="" required placeholder="Enter supplier name" />
+                <fieldset>
+                    <div class="form-group">
+                        <label class="form-label">Supplier Name</label>
+                        <div class="form-input">
+                            <input ng-model="blade.currentEntity.name" focus-on="" required placeholder="Enter supplier name" />
+                        </div>
                     </div>
+                    <div class="form-group" ng-init="setForm(detailForm)">
+                        <va-widget-container group="supplierDetail1" blade="blade" gridster-opts="{columns: 3}"></va-widget-container>
+                    </div>
+                </fieldset>
+
+                <va-metaform registered-inputs="blade.metaFields" blade="blade" column-count="2"></va-metaform>
+                <div class="form-group">
+                    <va-widget-container group="supplierDetail2" blade="blade" data="blade.currentEntity" gridster-opts="{columns: 3}"></va-widget-container>
                 </div>
-
-                <va-metaform registered-inputs="blade.metaFields" blade="blade"></va-metaform>
-
             </form>
         </div>
     </div>
