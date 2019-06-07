@@ -46,7 +46,7 @@ namespace $safeprojectname$.Repositories
         public override MemberDataEntity[] GetMembersByIds(string[] ids, string responseGroup = null, string[] memberTypes = null)
         {
             var retVal = base.GetMembersByIds(ids, responseGroup, memberTypes);
-            var reviews = SupplierReviews.Where(x => ids.Contains(x.SupplierId)).ToArray();
+            _ = SupplierReviews.Where(x => ids.Contains(x.SupplierId)).ToArray();
             return retVal;
         }
     }
