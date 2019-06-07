@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>Virto Commerce 2.x Member Module extension</Name>
+    <Name>Virto Commerce 2.x Customer Module extension</Name>
     <Description>A project for extending VirtoCommerce.Customer module with new (Supplier) member type</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>false</CreateNewFolder>
-    <DefaultName>MyCompany.MemberExModule</DefaultName>
+    <DefaultName>MyCompany.CustomerExModule</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -19,7 +19,7 @@
     <PlatformTag>Windows</PlatformTag>
     <ProjectTypeTag>Web</ProjectTypeTag>
     <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
-    <ProjectTypeTag>Member</ProjectTypeTag>
+    <ProjectTypeTag>Customer</ProjectTypeTag>
   </TemplateData>
   <TemplateContent>
       <ProjectCollection>
