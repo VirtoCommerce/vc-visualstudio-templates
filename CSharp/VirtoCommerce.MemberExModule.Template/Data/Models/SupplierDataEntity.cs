@@ -56,7 +56,7 @@ namespace $safeprojectname$.Models
             var retVal = base.ToModel(member) as Supplier;
 
             if (retVal != null)
-                retVal.Reviews = Reviews.OrderBy(x => x.Id).Select(x => x.ToModel(new SupplierReview())).ToList();
+                retVal.Reviews = Reviews.OrderBy(x => x.Id).Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
 
             return retVal;
         }
