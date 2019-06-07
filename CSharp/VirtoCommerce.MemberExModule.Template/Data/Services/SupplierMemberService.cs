@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq.Expressions;
 using $safeprojectname$.Models;
 using VirtoCommerce.CustomerModule.Data.Model;
@@ -24,7 +24,7 @@ namespace $safeprojectname$.Services
         }
 
 
-        //Override this method you can use for search members you custom tables and columns
+        // By overriding this method you can search by your custom tables and columns
         protected override Expression<Func<MemberDataEntity, bool>> GetQueryPredicate(MembersSearchCriteria criteria)
         {
             var retVal = base.GetQueryPredicate(criteria);
