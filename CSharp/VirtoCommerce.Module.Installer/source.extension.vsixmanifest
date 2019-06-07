@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VirtoCommerce.Module.BD8488C2-DCF0-4351-848E-8B3FE4C045C1" Version="2.1.0" Language="en-US" Publisher="Virto Commerce" />
+        <Identity Id="VirtoCommerce.Module.BD8488C2-DCF0-4351-848E-8B3FE4C045C1" Version="2.2.1" Language="en-US" Publisher="Virto Commerce" />
         <DisplayName>Virto Commerce 2.x Module Templates</DisplayName>
         <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the remommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
@@ -9,7 +9,7 @@
         <ReleaseNotes>https://virtocommerce.com/blog</ReleaseNotes>
         <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
-        <Tags>ecommerce,platform,azure,angularjs,pim,oms,cms</Tags>
+        <Tags>ecommerce, platform, azure, angularjs, pim, oms, cms, virtocommerce, virto, commerce</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
@@ -24,6 +24,7 @@
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.OrderExModule.Template" d:TargetPath="|VirtoCommerce.OrderExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.PriceExModule.Template" d:TargetPath="|VirtoCommerce.PriceExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Wizard" Path="|VirtoCommerce.Module.Wizard|" AssemblyName="|VirtoCommerce.Module.Wizard;AssemblyName|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.MemberExModule.Template" d:TargetPath="|VirtoCommerce.MemberExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208,17.0]" DisplayName="C# and Visual Basic" />

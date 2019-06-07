@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.Module.Installer", "VirtoCommerce.Module.Installer\VirtoCommerce.Module.Installer.csproj", "{01D54559-D552-441F-9B55-0B10F4C0E97C}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.Module.Wizard", "VirtoCommerce.Module.Wizard\VirtoCommerce.Module.Wizard.csproj", "{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtoCommerce.MemberExModule.Template", "VirtoCommerce.MemberExModule.Template\VirtoCommerce.MemberExModule.Template.csproj", "{87280004-8360-4259-9418-70A1DCCC77CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BE50B40-ACF5-4CD8-BEE3-F0C7A46DE4E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87280004-8360-4259-9418-70A1DCCC77CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87280004-8360-4259-9418-70A1DCCC77CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87280004-8360-4259-9418-70A1DCCC77CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87280004-8360-4259-9418-70A1DCCC77CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{6B0E71BB-87AA-460A-83C3-FA5CE0993394} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
 		{AF56362E-276B-4E64-9FCB-FD7E529F24F2} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
 		{7ECD6427-8063-4D98-8ABA-BF8BBA7C84EA} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
+		{87280004-8360-4259-9418-70A1DCCC77CE} = {A768531A-8B4F-4AB2-8E3D-70D8BC63ADFD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {267A0731-F784-40BC-A659-645C9ED2585E}

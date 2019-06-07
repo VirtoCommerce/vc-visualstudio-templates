@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -6,13 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("VirtoCommerce.Module.Template")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyDescription("VirtoCommerce Default Module Template")]
 [assembly: AssemblyCompany("VirtoCommerce")]
 [assembly: AssemblyProduct("VirtoCommerce.Module.Template")]
 [assembly: AssemblyCopyright("Copyright © VirtoCommerce 2019")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

@@ -36,8 +36,8 @@
 
       <Folder Name="Scripts">
         <Folder Name="blades">
-          <ProjectItem ReplaceParameters="true">helloWorld.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true">helloWorld.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">hello-world.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">hello-world.html</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="module.js">module.js</ProjectItem>
         <Folder Name="resources">

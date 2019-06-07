@@ -1,10 +1,10 @@
-﻿using Xunit;
+using Xunit;
 
 namespace $safeprojectname$
 {
-    public class Tests
+    public class Test
     {
-        public Tests()
+        public Test()
         {
         }
 

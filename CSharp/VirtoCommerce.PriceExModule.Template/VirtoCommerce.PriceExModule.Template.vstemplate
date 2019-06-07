@@ -1,4 +1,4 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
     <TemplateData>
         <Name>Virto Commerce 2.x Pricing Module extension</Name>
         <Description>A project for extending VirtoCommerce.Pricing module</Description>
@@ -14,6 +14,11 @@
         <Icon>__TemplateIcon.ico</Icon>
         <!-- Indicates how many parent folders this item template should appear in -->
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+        <LanguageTag>CSharp</LanguageTag>
+        <PlatformTag>Windows</PlatformTag>
+        <ProjectTypeTag>Web</ProjectTypeTag>
+        <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
+        <ProjectTypeTag>Pricing</ProjectTypeTag>
     </TemplateData>
     <TemplateContent>
       <ProjectCollection>
@@ -26,8 +31,8 @@
         <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
           Data\Data.vstemplate
         </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
-          Test\Test.vstemplate
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+          Tests\Tests.vstemplate
         </ProjectTemplateLink>
       </ProjectCollection>
     </TemplateContent>

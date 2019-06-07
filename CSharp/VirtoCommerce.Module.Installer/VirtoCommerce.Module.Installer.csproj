@@ -61,6 +61,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VirtoCommerce.MemberExModule.Template\VirtoCommerce.MemberExModule.Template.csproj">
+      <Project>{87280004-8360-4259-9418-70a1dccc77ce}</Project>
+      <Name>VirtoCommerce.MemberExModule.Template</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\VirtoCommerce.Module.Template\VirtoCommerce.Module.Template.csproj">
       <Project>{6B0E71BB-87AA-460A-83C3-FA5CE0993394}</Project>
       <Name>VirtoCommerce.Module.Template</Name>

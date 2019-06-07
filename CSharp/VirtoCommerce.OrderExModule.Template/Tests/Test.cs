@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using $ext_safeprojectname$.Core.Models.Cart;
 using $ext_safeprojectname$.Core.Models.Order;
 using $ext_safeprojectname$.Data.Models.Cart;
@@ -10,9 +10,9 @@ namespace $safeprojectname$
 {
     using CartLineItemEx = Core.Models.Cart.LineItemEx;
 
-    public class Tests
+    public class Test
     {
-        public Tests()
+        public Test()
         {
         }
 
