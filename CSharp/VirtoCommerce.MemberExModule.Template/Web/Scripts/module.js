@@ -29,8 +29,12 @@ angular.module(moduleName, ['virtoCommerce.customerModule'])
             var indexWidget = {
                 documentType: 'Member',
                 controller: 'virtoCommerce.coreModule.searchIndex.indexWidgetController',
-                // size: [3, 1],
                 template: 'Modules/$(VirtoCommerce.Core)/Scripts/SearchIndex/widgets/index-widget.tpl.html',
+                isVisible: function (blade) { return !blade.isNew; }
+            };
+            var reviewsWidget = {
+                controller: '$ext_safeprojectnamecamel$.reviewsWidgetController',
+                template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/widgets/supplier-reviews-widget.html',
                 isVisible: function (blade) { return !blade.isNew; }
             };
 
@@ -40,6 +44,8 @@ angular.module(moduleName, ['virtoCommerce.customerModule'])
             widgetService.registerWidget(phonesWidget, 'supplierDetail1');
             widgetService.registerWidget(dynamicPropertyWidget, 'supplierDetail2');
             widgetService.registerWidget(indexWidget, 'supplierDetail2');
+            widgetService.registerWidget(reviewsWidget, 'supplierDetail2');
+
 
             // register new Supplier member type
             memberTypesResolverService.registerType({

@@ -1,5 +1,6 @@
-namespace $safeprojectname$.Migrations
+namespace $safeprojectname$.Data.Migrations
 {
+    using System;
     using System.Data.Entity.Migrations;
     
     public partial class Initial : DbMigration
@@ -13,10 +14,6 @@ namespace $safeprojectname$.Migrations
                         Id = c.String(nullable: false, maxLength: 128),
                         Review = c.String(maxLength: 2048),
                         SupplierId = c.String(nullable: false, maxLength: 128),
-                        CreatedDate = c.DateTime(nullable: false),
-                        ModifiedDate = c.DateTime(),
-                        CreatedBy = c.String(maxLength: 64),
-                        ModifiedBy = c.String(maxLength: 64),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.MemberSupplier", t => t.SupplierId)
@@ -39,6 +36,7 @@ namespace $safeprojectname$.Migrations
             DropForeignKey("dbo.MemberSupplier", "Id", "dbo.Member");
             DropForeignKey("dbo.MemberSupplierReview", "SupplierId", "dbo.MemberSupplier");
 
+ 
             DropIndex("dbo.MemberSupplier", new[] { "Id" });
             DropIndex("dbo.MemberSupplierReview", new[] { "SupplierId" });
 

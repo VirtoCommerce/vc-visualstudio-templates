@@ -17,7 +17,7 @@ angular.module('$ext_safeprojectnamecamel$')
             // base function override (optional)
             blade.customInitialize = function () {
                 if (!blade.isNew) {
-                    blade.title = blade.currentEntity.name + 'external-customer.blades.supplier-detail.title-ex';
+                    blade.title = blade.currentEntity.name;
                 }
             };
     }]);

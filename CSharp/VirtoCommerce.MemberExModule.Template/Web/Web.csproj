@@ -141,6 +141,10 @@
     <Content Include="module.manifest" />
     <Content Include="Scripts\blades\supplier-detail.js" />
     <Content Include="Scripts\blades\supplier-detail.html" />
+    <Content Include="Scripts\blades\supplier-review-list.html" />
+    <Content Include="Scripts\blades\supplier-review-list.js" />
+    <Content Include="Scripts\widgets\supplier-reviews-widget.html" />
+    <Content Include="Scripts\widgets\supplier-reviews-widget.js" />
     <Content Include="Scripts\module.js" />
   </ItemGroup>
   <ItemGroup>

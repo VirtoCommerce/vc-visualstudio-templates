@@ -56,17 +56,17 @@
   <ItemGroup>
     <None Include="Core\Models\Supplier.cs" />
     <None Include="Core\Models\SupplierReview.cs" />
-    <None Include="Data\Migrations\201906052116109_Initial.cs" />
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Data\AssemblyInfo.cs" />
-    <None Include="Data\Migrations\201906052116109_Initial.Designer.cs">
-      <DependentUpon>201906052116109_Initial.cs</DependentUpon>
-    </None>
     <None Include="Data\Migrations\Configuration.cs" />
     <None Include="Data\Models\SupplierDataEntity.cs" />
     <None Include="Data\Models\SupplierReviewDataEntity.cs" />
     <None Include="Data\Repositories\SupplierRepository.cs" />
     <None Include="Data\Services\SupplierMemberService.cs" />
+    <None Include="Data\Migrations\201906110802132_Initial.cs" />
+    <None Include="Data\Migrations\201906110802132_Initial.Designer.cs">
+      <DependentUpon>201906110802132_Initial.cs</DependentUpon>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Localizations\en.module.json" />
     <None Include="Tests\AssemblyInfo.cs" />
@@ -89,6 +89,10 @@
     <None Include="Web\Content\help\arch_scheme.png" />
     <None Include="Web\Content\help\index.html" />
     <None Include="Web\Content\help\stylesheet.css" />
+    <None Include="Web\Scripts\blades\supplier-review-list.html" />
+    <None Include="Web\Scripts\blades\supplier-review-list.js" />
+    <None Include="Web\Scripts\widgets\supplier-reviews-widget.html" />
+    <None Include="Web\Scripts\widgets\supplier-reviews-widget.js" />
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
     <None Include="Web\Scripts\blades\supplier-detail.html" />
@@ -106,8 +110,8 @@
     <None Include="Web\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Migrations\201906052116109_Initial.resx">
-      <DependentUpon>201906052116109_Initial.cs</DependentUpon>
+    <None Include="Data\Migrations\201906110802132_Initial.resx">
+      <DependentUpon>201906110802132_Initial.cs</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
