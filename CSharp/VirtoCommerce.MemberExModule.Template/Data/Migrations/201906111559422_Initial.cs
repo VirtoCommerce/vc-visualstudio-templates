@@ -1,4 +1,4 @@
-namespace $safeprojectname$.Data.Migrations
+namespace MyCompany.CustomerExModule5.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
@@ -27,15 +27,16 @@ namespace $safeprojectname$.Data.Migrations
                         ContractNumber = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Member", t => t.Id, cascadeDelete: true)
+                .ForeignKey("dbo.Member", t => t.Id)
                 .Index(t => t.Id);
+            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.MemberSupplier", "Id", "dbo.Member");
             DropForeignKey("dbo.MemberSupplierReview", "SupplierId", "dbo.MemberSupplier");
- 
+
             DropIndex("dbo.MemberSupplier", new[] { "Id" });
             DropIndex("dbo.MemberSupplierReview", new[] { "SupplierId" });
 

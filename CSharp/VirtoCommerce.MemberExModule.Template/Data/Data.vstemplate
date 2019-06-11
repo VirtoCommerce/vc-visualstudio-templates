@@ -13,9 +13,9 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="app.config">_app.config</ProjectItem>
         
       <Folder Name="Migrations">
-        <ProjectItem ReplaceParameters="true">201906110802132_Initial.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true">201906110802132_Initial.Designer.cs</ProjectItem>
-        <ProjectItem ReplaceParameters="true">201906110802132_Initial.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true">201906111559422_Initial.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">201906111559422_Initial.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">201906111559422_Initial.resx</ProjectItem>
         <ProjectItem ReplaceParameters="true">Configuration.cs</ProjectItem>
       </Folder>
       <Folder Name="Models">
