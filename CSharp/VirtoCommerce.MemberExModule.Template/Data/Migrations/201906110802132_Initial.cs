@@ -35,7 +35,6 @@ namespace $safeprojectname$.Data.Migrations
         {
             DropForeignKey("dbo.MemberSupplier", "Id", "dbo.Member");
             DropForeignKey("dbo.MemberSupplierReview", "SupplierId", "dbo.MemberSupplier");
-
  
             DropIndex("dbo.MemberSupplier", new[] { "Id" });
             DropIndex("dbo.MemberSupplierReview", new[] { "SupplierId" });
