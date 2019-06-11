@@ -5,9 +5,9 @@ angular.module('$ext_safeprojectnamecamel$')
 
             if (blade.isNew) {
                 blade.title = 'external-customer.blades.supplier-detail.title';
-                blade.currentEntity = angular.extend({
-                    reviews: []
-                }, blade.currentEntity);
+                //blade.currentEntity = angular.extend({
+                //    reviews: []
+                //}, blade.currentEntity);
 
                 blade.fillDynamicProperties();
             } else {

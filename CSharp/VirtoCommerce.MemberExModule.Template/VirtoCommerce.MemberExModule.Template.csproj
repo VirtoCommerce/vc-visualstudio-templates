@@ -63,9 +63,9 @@
     <None Include="Data\Models\SupplierReviewDataEntity.cs" />
     <None Include="Data\Repositories\SupplierRepository.cs" />
     <None Include="Data\Services\SupplierMemberService.cs" />
-    <None Include="Data\Migrations\201906110802132_Initial.cs" />
-    <None Include="Data\Migrations\201906110802132_Initial.Designer.cs">
-      <DependentUpon>201906110802132_Initial.cs</DependentUpon>
+    <None Include="Data\Migrations\201906111559422_Initial.cs" />
+    <None Include="Data\Migrations\201906111559422_Initial.designer.cs">
+      <DependentUpon>201906111559422_Initial.cs</DependentUpon>
     </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Web\Localizations\en.module.json" />
@@ -110,8 +110,8 @@
     <None Include="Web\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Migrations\201906110802132_Initial.resx">
-      <DependentUpon>201906110802132_Initial.cs</DependentUpon>
+    <None Include="Data\Migrations\201906111559422_Initial.resx">
+      <DependentUpon>201906111559422_Initial.cs</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

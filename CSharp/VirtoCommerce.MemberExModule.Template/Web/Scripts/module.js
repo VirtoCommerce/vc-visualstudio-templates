@@ -33,7 +33,7 @@ angular.module(moduleName, ['virtoCommerce.customerModule'])
                 isVisible: function (blade) { return !blade.isNew; }
             };
             var reviewsWidget = {
-                controller: '$ext_safeprojectnamecamel$.reviewsWidgetController',
+                controller: '$ext_safeprojectnamecamel$.supplierReviewsWidgetController',
                 template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/widgets/supplier-reviews-widget.html',
                 isVisible: function (blade) { return !blade.isNew; }
             };

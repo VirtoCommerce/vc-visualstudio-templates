@@ -1,5 +1,5 @@
 angular.module('$ext_safeprojectnamecamel$')
-    .controller('$ext_safeprojectnamecamel$.reviewsWidgetController',
+    .controller('$ext_safeprojectnamecamel$.supplierReviewsWidgetController',
         ['$scope', 'platformWebApp.bladeNavigationService',
             function ($scope, bladeNavigationService) {
                 var blade = $scope.blade;
@@ -12,7 +12,7 @@ angular.module('$ext_safeprojectnamecamel$')
                         id: "supplierReviews",
                         title: blade.currentEntity.name,
                         subtitle: 'external-customer.widgets.supplier-reviews.title',
-                        controller: '$ext_safeprojectnamecamel$.reviewsController',
+                        controller: '$ext_safeprojectnamecamel$.supplierReviewListController',
                         template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/supplier-review-list.html'
                     };
                     bladeNavigationService.showBlade(newBlade, blade);

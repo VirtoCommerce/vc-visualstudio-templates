@@ -1,5 +1,5 @@
 angular.module('$ext_safeprojectnamecamel$')
-    .controller('$ext_safeprojectnamecamel$.reviewsController', ['$scope', 'platformWebApp.bladeNavigationService',
+    .controller('$ext_safeprojectnamecamel$.supplierReviewListController', ['$scope', 'platformWebApp.bladeNavigationService',
         function ($scope, bladeNavigationService) {
             var blade = $scope.blade;
             blade.updatePermission = 'customer:update';
