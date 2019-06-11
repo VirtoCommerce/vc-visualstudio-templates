@@ -1,6 +1,6 @@
 angular.module('$ext_safeprojectnamecamel$')
-    .controller('$ext_safeprojectnamecamel$.supplierDetailController', ['$scope', 'virtoCommerce.customerModule.members',
-        function ($scope, members) {
+    .controller('$ext_safeprojectnamecamel$.supplierDetailController', ['$scope',
+        function ($scope) {
             var blade = $scope.blade;
 
             if (blade.isNew) {

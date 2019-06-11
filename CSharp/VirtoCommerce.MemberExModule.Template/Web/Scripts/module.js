@@ -6,8 +6,8 @@ if (AppDependencies !== undefined) {
 }
 
 angular.module(moduleName, ['virtoCommerce.customerModule'])
-    .run(['$rootScope', 'platformWebApp.widgetService', 'virtoCommerce.customerModule.memberTypesResolverService',
-        function ($rootScope, widgetService, memberTypesResolverService) {
+    .run(['platformWebApp.widgetService', 'virtoCommerce.customerModule.memberTypesResolverService',
+        function (widgetService, memberTypesResolverService) {
 
             var addressesWidget = {
                 controller: 'virtoCommerce.customerModule.memberAddressesWidgetController',
