@@ -5,7 +5,7 @@ if (AppDependencies !== undefined) {
     AppDependencies.push(moduleName);
 }
 
-angular.module(moduleName, [])
+angular.module(moduleName, ['virtoCommerce.customerModule'])
     .run(['$rootScope', 'platformWebApp.widgetService', 'virtoCommerce.customerModule.memberTypesResolverService',
         function ($rootScope, widgetService, memberTypesResolverService) {
 
