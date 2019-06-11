@@ -13,7 +13,7 @@ angular.module('$ext_safeprojectnamecamel$')
                         title: blade.currentEntity.name,
                         subtitle: 'external-customer.widgets.supplier-reviews.title',
                         controller: '$ext_safeprojectnamecamel$.reviewsController',
-                        template: 'Modules/$($ext_safeprojectnamecamel$v)/Scripts/blades/supplier-review-list.html'
+                        template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/supplier-review-list.html'
                     };
                     bladeNavigationService.showBlade(newBlade, blade);
                 };
