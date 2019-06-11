@@ -27,7 +27,7 @@ namespace $safeprojectname$.Migrations
                         ContractNumber = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Member", t => t.Id)
+                .ForeignKey("dbo.Member", t => t.Id, cascadeDelete: true)
                 .Index(t => t.Id);
             
         }
