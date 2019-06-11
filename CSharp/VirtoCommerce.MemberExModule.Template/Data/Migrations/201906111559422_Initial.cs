@@ -1,4 +1,4 @@
-namespace MyCompany.CustomerExModule5.Data.Migrations
+namespace $safeprojectname$.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
