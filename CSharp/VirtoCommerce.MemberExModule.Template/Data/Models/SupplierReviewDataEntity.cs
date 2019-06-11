@@ -6,7 +6,7 @@ using VirtoCommerce.Platform.Core.Common;
 namespace $safeprojectname$.Models
 {
     public class SupplierReviewDataEntity : Entity
-{
+    {
         [StringLength(2048)]
         public string Review { get; set; }
 
