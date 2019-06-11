@@ -42,8 +42,8 @@ namespace $safeprojectname$.Models
                 }
             }
 
-            // Here you can write code for custom mapping
-            // supplier properties will be mapped in base method implementation by using value injection
+            // Here you can write code for custom mapping.
+            // Member properties will be mapped in base method implementation by using value injection
             return retVal;
         }
         /// <summary>
@@ -51,8 +51,8 @@ namespace $safeprojectname$.Models
         /// </summary>
         public override Member ToModel(Member member)
         {
-            // Here you can write code for custom mapping
-            // supplier properties will be mapped in base method implementation by using value injection
+            // Here you can write code for custom mapping.
+            // Member properties will be mapped in base method implementation by using value injection
             var retVal = base.ToModel(member) as Supplier;
 
             if (retVal != null)
