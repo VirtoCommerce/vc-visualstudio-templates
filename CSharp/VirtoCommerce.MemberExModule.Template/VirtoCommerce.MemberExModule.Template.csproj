@@ -68,6 +68,7 @@
     <None Include="Data\Repositories\SupplierRepository.cs" />
     <None Include="Data\Services\SupplierMemberService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Web\Localizations\en.module.json" />
     <None Include="Tests\AssemblyInfo.cs" />
     <None Include="Tests\Test.cs" />
     <None Include="Web\AssemblyInfo.cs" />

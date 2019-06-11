@@ -4,20 +4,20 @@ angular.module('$ext_safeprojectnamecamel$')
             var blade = $scope.blade;
 
             if (blade.isNew) {
-                blade.title = 'New Supplier';
+                blade.title = 'external-customer.blades.supplier-detail.title';
                 blade.currentEntity = angular.extend({
                     reviews: []
                 }, blade.currentEntity);
 
                 blade.fillDynamicProperties();
             } else {
-                blade.subtitle = 'Supplier details';
+                blade.subtitle = 'external-customer.blades.supplier-detail.subtitle';
             }
 
             // base function override (optional)
             blade.customInitialize = function () {
                 if (!blade.isNew) {
-                    blade.title = blade.currentEntity.name + '\'s details';
+                    blade.title = blade.currentEntity.name + 'external-customer.blades.supplier-detail.title-ex';
                 }
             };
     }]);

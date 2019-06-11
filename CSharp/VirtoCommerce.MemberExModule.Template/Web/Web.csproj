@@ -137,6 +137,7 @@
     <Content Include="Content\help\arch_scheme.png" />
     <Content Include="Content\help\index.html" />
     <Content Include="Content\help\stylesheet.css" />
+    <Content Include="Localizations\en.$ext_safeprojectnamejs$.json" />
     <Content Include="module.manifest" />
     <Content Include="Scripts\blades\supplier-detail.js" />
     <Content Include="Scripts\blades\supplier-detail.html" />

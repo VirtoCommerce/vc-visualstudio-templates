@@ -32,6 +32,9 @@
           <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
         </Folder>
       </Folder>
+      <Folder Name="Localizations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.module.json</ProjectItem>
+      </Folder>
     </Project>
   </TemplateContent>
   <WizardExtension>

@@ -1,0 +1,15 @@
+{
+  "external-customer": {
+    "blades": {
+      "supplier-detail": {
+        "labels": {
+          "name": "Supplier Name",
+          "placeholder": "Enter supplier name"
+        },
+        "subtitle": "Supplier details",
+        "title": "New Supplier",
+        "title-ex": "'s details"
+      }
+    }
+  }
+}

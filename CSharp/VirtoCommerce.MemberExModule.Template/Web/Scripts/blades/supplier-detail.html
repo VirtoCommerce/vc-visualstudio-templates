@@ -5,9 +5,9 @@
             <form class="form" name="detailForm">
                 <fieldset>
                     <div class="form-group">
-                        <label class="form-label">Supplier Name</label>
+                        <label class="form-label">{{'external-customer.blades.supplier-detail.labels.name' | translate}}</label>
                         <div class="form-input">
-                            <input ng-model="blade.currentEntity.name" focus-on="" required placeholder="Enter supplier name" />
+                            <input ng-model="blade.currentEntity.name" focus-on="" required placeholder="{{'external-customer.blades.supplier-detail.labels.placeholder' | translate}}" />
                         </div>
                     </div>
                     <div class="form-group" ng-init="setForm(detailForm)">
