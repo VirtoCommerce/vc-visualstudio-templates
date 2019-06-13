@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using VirtoCommerce.Domain.Customer.Model;
 
 namespace $safeprojectname$.Models
@@ -12,5 +12,6 @@ namespace $safeprojectname$.Models
 
         public string ContractNumber { get; set; }
         public ICollection<SupplierReview> Reviews { get; set; }
+        public IList<string> Organizations { get; set; }
     }
 }

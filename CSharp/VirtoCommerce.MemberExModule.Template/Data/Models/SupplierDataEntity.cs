@@ -13,7 +13,7 @@ namespace $safeprojectname$.Models
     /// </summary>
     public class SupplierDataEntity : MemberDataEntity
     {
-        public SupplierDataEntity()
+        public SupplierDataEntity() : base()
         {
             Reviews = new NullCollection<SupplierReviewDataEntity>();
         }
@@ -33,14 +33,32 @@ namespace $safeprojectname$.Models
             var retVal = base.FromModel(member, pkMap) as SupplierDataEntity;
             var supplier = member as Supplier;
 
-            if (supplier != null && !supplier.Reviews.IsNullOrEmpty())
+            if (supplier != null)
             {
-                retVal.Reviews = new ObservableCollection<SupplierReviewDataEntity>();
-                foreach (var review in supplier.Reviews)
+                if (!supplier.Organizations.IsNullOrEmpty())
                 {
-                    var reviewDataEntity = new SupplierReviewDataEntity();
-                    pkMap.AddPair(review, reviewDataEntity);
-                    retVal.Reviews.Add(reviewDataEntity.FromModel(review));
+                    MemberRelations = new ObservableCollection<MemberRelationDataEntity>();
+                    foreach (var organization in supplier.Organizations)
+                    {
+                        var memberRelation = new MemberRelationDataEntity
+                        {
+                            AncestorId = organization,
+                            AncestorSequence = 1,
+                            DescendantId = Id,
+                        };
+                        MemberRelations.Add(memberRelation);
+                    }
+                }
+
+                if (!supplier.Reviews.IsNullOrEmpty())
+                {
+                    retVal.Reviews = new ObservableCollection<SupplierReviewDataEntity>();
+                    foreach (var review in supplier.Reviews)
+                    {
+                        var reviewDataEntity = new SupplierReviewDataEntity();
+                        pkMap.AddPair(review, reviewDataEntity);
+                        retVal.Reviews.Add(reviewDataEntity.FromModel(review));
+                    }
                 }
             }
 
@@ -57,7 +75,10 @@ namespace $safeprojectname$.Models
             var retVal = base.ToModel(member) as Supplier;
 
             if (retVal != null)
+            {
+                retVal.Organizations = MemberRelations.Select(x => x.Ancestor).OfType<OrganizationDataEntity>().Select(x => x.Id).ToList();
                 retVal.Reviews = Reviews.OrderBy(x => x.Id).Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
+            }
 
             return retVal;
         }

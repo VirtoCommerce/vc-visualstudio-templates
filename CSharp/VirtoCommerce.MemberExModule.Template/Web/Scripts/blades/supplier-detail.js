@@ -5,6 +5,11 @@ angular.module('$ext_safeprojectnamecamel$')
 
             if (blade.isNew) {
                 blade.title = 'external-customer.blades.supplier-detail.title';
+
+                if (blade.parentBlade.currentEntity.id) {
+                    blade.currentEntity.organizations.push(blade.parentBlade.currentEntity.id);
+                }
+
                 blade.fillDynamicProperties();
             } else {
                 blade.subtitle = 'external-customer.blades.supplier-detail.subtitle';
