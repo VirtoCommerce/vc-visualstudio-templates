@@ -2,12 +2,13 @@
 This repository is the official storage for VirtoCommerce Visual Studio templates source code.
 
 ## Overview
-Includes 3 templates:
+Includes 4 templates:
 * Virto Commerce 2.x Module - Default project template for creating Virto Commerce module
 * Virto Commerce 2.x Cart and Order Module extension - A project for extending Virto Commerce Cart and Order models
 * Virto Commerce 2.x Pricing Module extension - A project for extending VirtoCommerce.Pricing module
+* Virto Commerce 2.x Customer Module extension - A project for extending VirtoCommerce.Customer module with new (Supplier) member type
 
-![image](https://user-images.githubusercontent.com/5801549/57129856-5e8cee00-6da0-11e9-8a5a-cfce19cd12ac.png)
+![image](https://user-images.githubusercontent.com/13037473/59408486-55029700-8dde-11e9-9d90-556f75acdcc6.PNG)
 
 Each template uses best practices and consists of several projects:
 * Core - Business and Application Models
