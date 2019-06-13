@@ -8,7 +8,7 @@ Includes 4 templates:
 * Virto Commerce 2.x Pricing Module extension - A project for extending VirtoCommerce.Pricing module
 * Virto Commerce 2.x Customer Module extension - A project for extending VirtoCommerce.Customer module with new (Supplier) member type
 
-![image](https://user-images.githubusercontent.com/13037473/59408486-55029700-8dde-11e9-9d90-556f75acdcc6.PNG)
+![image](https://user-images.githubusercontent.com/13037473/59409022-83cd3d00-8ddf-11e9-844b-239e6721f87d.png)
 
 Each template uses best practices and consists of several projects:
 * Core - Business and Application Models
