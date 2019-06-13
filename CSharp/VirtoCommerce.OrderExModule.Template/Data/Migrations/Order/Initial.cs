@@ -57,11 +57,9 @@ namespace $safeprojectname$.Migrations.Order
             DropForeignKey("dbo.OrderInvoice", "CustomerOrderExId", "dbo.CustomerOrderEx");
             DropForeignKey("dbo.OrderInvoice", "Id", "dbo.OrderOperation");
             DropForeignKey("dbo.CustomerOrderEx", "Id", "dbo.CustomerOrder");
-
             DropIndex("dbo.OrderInvoice", new[] { "CustomerOrderExId" });
             DropIndex("dbo.OrderInvoice", new[] { "Id" });
             DropIndex("dbo.CustomerOrderEx", new[] { "Id" });
-
             DropTable("dbo.OrderInvoice");
             DropTable("dbo.CustomerOrderEx");
         }

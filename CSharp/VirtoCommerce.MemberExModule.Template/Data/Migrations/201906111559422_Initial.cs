@@ -29,17 +29,14 @@ namespace $safeprojectname$.Migrations
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Member", t => t.Id, cascadeDelete: true)
                 .Index(t => t.Id);
-            
         }
         
         public override void Down()
         {
             DropForeignKey("dbo.MemberSupplier", "Id", "dbo.Member");
             DropForeignKey("dbo.MemberSupplierReview", "SupplierId", "dbo.MemberSupplier");
-
             DropIndex("dbo.MemberSupplier", new[] { "Id" });
             DropIndex("dbo.MemberSupplierReview", new[] { "SupplierId" });
-
             DropTable("dbo.MemberSupplier");
             DropTable("dbo.MemberSupplierReview");
         }
