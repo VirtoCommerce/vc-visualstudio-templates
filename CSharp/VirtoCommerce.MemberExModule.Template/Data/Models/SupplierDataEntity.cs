@@ -77,7 +77,7 @@ namespace $safeprojectname$.Models
             if (retVal != null)
             {
                 retVal.Organizations = MemberRelations.Select(x => x.Ancestor).OfType<OrganizationDataEntity>().Select(x => x.Id).ToList();
-                retVal.Reviews = Reviews.OrderBy(x => x.Id).Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
+                retVal.Reviews = Reviews.Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
             }
 
             return retVal;
