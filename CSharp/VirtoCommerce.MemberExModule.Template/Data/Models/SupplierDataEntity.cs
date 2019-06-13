@@ -28,6 +28,8 @@ namespace $safeprojectname$.Models
         /// </summary>
         public override MemberDataEntity FromModel(Member member, PrimaryKeyResolvingMap pkMap)
         {
+            // Here you can write code for custom mapping.
+            // Member properties will be mapped in base method implementation by using value injection
             var retVal = base.FromModel(member, pkMap) as SupplierDataEntity;
             var supplier = member as Supplier;
 
@@ -42,10 +44,9 @@ namespace $safeprojectname$.Models
                 }
             }
 
-            // Here you can write code for custom mapping.
-            // Member properties will be mapped in base method implementation by using value injection
             return retVal;
         }
+        
         /// <summary>
         /// This method used to convert data type instance to domain model
         /// </summary>
@@ -60,6 +61,7 @@ namespace $safeprojectname$.Models
 
             return retVal;
         }
+        
         /// <summary>
         /// This method used to apply changes form other member type instance 
         /// </summary>
@@ -67,14 +69,14 @@ namespace $safeprojectname$.Models
         {
             base.Patch(target);
 
-            var suplierDataEntity = target as SupplierDataEntity;
+            var supplierDataEntity = target as SupplierDataEntity;
 
-            if (suplierDataEntity != null)
+            if (supplierDataEntity != null)
             {
-                suplierDataEntity.ContractNumber = ContractNumber;
+                supplierDataEntity.ContractNumber = ContractNumber;
 
                 if (!Reviews.IsNullCollection())
-                    Reviews.Patch(suplierDataEntity.Reviews, (sourceReview, targetReview) => sourceReview.Patch(targetReview));
+                    Reviews.Patch(supplierDataEntity.Reviews, (sourceReview, targetReview) => sourceReview.Patch(targetReview));
             }
         }
     }
