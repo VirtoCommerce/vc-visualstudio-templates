@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VirtoCommerce.Module.BD8488C2-DCF0-4351-848E-8B3FE4C045C1" Version="2.2.0" Language="en-US" Publisher="Virto Commerce" />
+        <Identity Id="VirtoCommerce.Module.BD8488C2-DCF0-4351-848E-8B3FE4C045C1" Version="2.2.1" Language="en-US" Publisher="Virto Commerce" />
         <DisplayName>Virto Commerce 2.x Module Templates</DisplayName>
         <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the remommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
@@ -10,7 +10,6 @@
         <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
         <Tags>ecommerce, platform, azure, angularjs, pim, oms, cms, virtocommerce, virto, commerce</Tags>
-        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
