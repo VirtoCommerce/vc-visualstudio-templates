@@ -86,9 +86,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201906052116109_Initial.cs" />
-    <Compile Include="Migrations\201906052116109_Initial.Designer.cs">
-      <DependentUpon>201906052116109_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201906111559422_Initial.cs" />
+    <Compile Include="Migrations\201906111559422_Initial.Designer.cs">
+      <DependentUpon>201906111559422_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SupplierDataEntity.cs" />
@@ -108,8 +108,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906052116109_Initial.resx">
-      <DependentUpon>201906052116109_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906111559422_Initial.resx">
+      <DependentUpon>201906111559422_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

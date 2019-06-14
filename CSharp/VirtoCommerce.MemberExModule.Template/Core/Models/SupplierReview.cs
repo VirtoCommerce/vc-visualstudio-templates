@@ -1,10 +1,9 @@
-﻿using VirtoCommerce.Platform.Core.Common;
+using VirtoCommerce.Platform.Core.Common;
 
 namespace $safeprojectname$.Models
 {
-    public class SupplierReview : AuditableEntity
+    public class SupplierReview : Entity
     {
         public string Review { get; set; }
-
     }
 }

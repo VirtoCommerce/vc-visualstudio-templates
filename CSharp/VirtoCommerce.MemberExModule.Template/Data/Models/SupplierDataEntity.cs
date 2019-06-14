@@ -13,7 +13,7 @@ namespace $safeprojectname$.Models
     /// </summary>
     public class SupplierDataEntity : MemberDataEntity
     {
-        public SupplierDataEntity()
+        public SupplierDataEntity() : base()
         {
             Reviews = new NullCollection<SupplierReviewDataEntity>();
         }
@@ -28,38 +28,61 @@ namespace $safeprojectname$.Models
         /// </summary>
         public override MemberDataEntity FromModel(Member member, PrimaryKeyResolvingMap pkMap)
         {
+            // Here you can write code for custom mapping.
+            // Member properties will be mapped in base method implementation by using value injection
             var retVal = base.FromModel(member, pkMap) as SupplierDataEntity;
             var supplier = member as Supplier;
 
-            if (supplier != null && !supplier.Reviews.IsNullOrEmpty())
+            if (supplier != null)
             {
-                retVal.Reviews = new ObservableCollection<SupplierReviewDataEntity>();
-                foreach (var review in supplier.Reviews)
+                if (!supplier.Organizations.IsNullOrEmpty())
                 {
-                    var reviewDataEntity = new SupplierReviewDataEntity();
-                    pkMap.AddPair(review, reviewDataEntity);
-                    retVal.Reviews.Add(reviewDataEntity.FromModel(review));
+                    MemberRelations = new ObservableCollection<MemberRelationDataEntity>();
+                    foreach (var organization in supplier.Organizations)
+                    {
+                        var memberRelation = new MemberRelationDataEntity
+                        {
+                            AncestorId = organization,
+                            AncestorSequence = 1,
+                            DescendantId = Id,
+                        };
+                        MemberRelations.Add(memberRelation);
+                    }
+                }
+
+                if (!supplier.Reviews.IsNullOrEmpty())
+                {
+                    retVal.Reviews = new ObservableCollection<SupplierReviewDataEntity>();
+                    foreach (var review in supplier.Reviews)
+                    {
+                        var reviewDataEntity = new SupplierReviewDataEntity();
+                        pkMap.AddPair(review, reviewDataEntity);
+                        retVal.Reviews.Add(reviewDataEntity.FromModel(review));
+                    }
                 }
             }
 
-            // Here you can write code for custom mapping
-            // supplier properties will be mapped in base method implementation by using value injection
             return retVal;
         }
+        
         /// <summary>
         /// This method used to convert data type instance to domain model
         /// </summary>
         public override Member ToModel(Member member)
         {
-            // Here you can write code for custom mapping
-            // supplier properties will be mapped in base method implementation by using value injection
+            // Here you can write code for custom mapping.
+            // Member properties will be mapped in base method implementation by using value injection
             var retVal = base.ToModel(member) as Supplier;
 
             if (retVal != null)
-                retVal.Reviews = Reviews.OrderBy(x => x.Id).Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
+            {
+                retVal.Organizations = MemberRelations.Select(x => x.Ancestor).OfType<OrganizationDataEntity>().Select(x => x.Id).ToList();
+                retVal.Reviews = Reviews.Select(x => x.ToModel(AbstractTypeFactory<SupplierReview>.TryCreateInstance())).ToList();
+            }
 
             return retVal;
         }
+        
         /// <summary>
         /// This method used to apply changes form other member type instance 
         /// </summary>
@@ -67,14 +90,14 @@ namespace $safeprojectname$.Models
         {
             base.Patch(target);
 
-            var suplierDataEntity = target as SupplierDataEntity;
+            var supplierDataEntity = target as SupplierDataEntity;
 
-            if (suplierDataEntity != null)
+            if (supplierDataEntity != null)
             {
-                suplierDataEntity.ContractNumber = ContractNumber;
+                supplierDataEntity.ContractNumber = ContractNumber;
 
                 if (!Reviews.IsNullCollection())
-                    Reviews.Patch(suplierDataEntity.Reviews, (sourceReview, targetReview) => sourceReview.Patch(targetReview));
+                    Reviews.Patch(supplierDataEntity.Reviews, (sourceReview, targetReview) => sourceReview.Patch(targetReview));
             }
         }
     }

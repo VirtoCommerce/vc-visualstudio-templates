@@ -23,6 +23,12 @@
         <Folder Name="blades">
           <ProjectItem ReplaceParameters="true">supplier-detail.html</ProjectItem>
           <ProjectItem ReplaceParameters="true">supplier-detail.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">supplier-review-list.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">supplier-review-list.js</ProjectItem>
+        </Folder>
+        <Folder Name="widgets">
+          <ProjectItem ReplaceParameters="true">supplier-reviews-widget.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">supplier-reviews-widget.js</ProjectItem>  
         </Folder>
       </Folder>
       <Folder Name="Content">
@@ -31,6 +37,9 @@
           <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true">index.html</ProjectItem>
           <ProjectItem ReplaceParameters="true">stylesheet.css</ProjectItem>
         </Folder>
+      </Folder>
+      <Folder Name="Localizations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.module.json</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
