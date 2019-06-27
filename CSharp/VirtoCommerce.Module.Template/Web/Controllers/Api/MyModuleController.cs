@@ -1,4 +1,5 @@
 using System.Web.Http;
+using $ext_safeprojectname$.Core;
 using VirtoCommerce.Platform.Core.Web.Security;
 
 namespace $safeprojectname$.Controllers.Api
@@ -9,7 +10,7 @@ namespace $safeprojectname$.Controllers.Api
         // GET: api/$ext_supersafename$
         [HttpGet]
         [Route("")]
-        [CheckPermission(Permission = "$ext_safeprojectname$:read")]
+        [CheckPermission(Permission = ModuleConstants.Security.Permissions.Read)]
         public IHttpActionResult Get()
         {
             return Ok(new { result = "Hello world!" });

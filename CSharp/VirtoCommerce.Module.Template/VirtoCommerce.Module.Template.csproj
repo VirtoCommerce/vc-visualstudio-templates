@@ -93,6 +93,7 @@
     <None Include="Tests\AssemblyInfo.cs" />
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Data\AssemblyInfo.cs" />
+    <None Include="Core\ModuleConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
