@@ -11,6 +11,7 @@
     <Project TargetFileName="$safeprojectname$.csproj" File="Core.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true">ModuleConstants.cs</ProjectItem>
       
       <Folder Name="Models" />
       <Folder Name="Services" />
