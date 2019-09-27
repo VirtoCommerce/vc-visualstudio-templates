@@ -34,7 +34,11 @@
         </Folder>
       </Folder>
 
-      <Folder Name="Scripts">
+        <Folder Name="Localizations">
+            <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_supersafename$.json">en.module.json</ProjectItem>
+        </Folder>
+
+        <Folder Name="Scripts">
         <Folder Name="blades">
           <ProjectItem ReplaceParameters="true">hello-world.js</ProjectItem>
           <ProjectItem ReplaceParameters="true">hello-world.html</ProjectItem>
