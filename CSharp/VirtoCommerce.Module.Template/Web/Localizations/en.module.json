@@ -1,10 +1,9 @@
 {
-    "$ext_safeprojectnamecamel": {
-        "blades": {
-            "hello-world": {
-                "title": "Hello world blade"
-            }
-        }
+  "$ext_safeprojectnamecamel$": {
+    "blades": {
+      "hello-world": {
+        "title": "Hello world blade"
+      }
     }
-}
+  }
 }

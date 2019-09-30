@@ -126,6 +126,7 @@
     <None Include="Content\help\stylesheet.css" />
     <None Include="Content\help\sample.png" />
     <None Include="Content\help\arch_scheme.png" />
+    <Content Include="Localizations\en.$ext_safeprojectname$.json" />
     <None Include="app.config" />
     <None Include="Web.config" />
   </ItemGroup>

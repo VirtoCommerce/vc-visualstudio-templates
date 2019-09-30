@@ -121,7 +121,7 @@
     <Content Include="Content\help\arch_scheme.png" />
     <Content Include="Content\help\index.html" />
     <Content Include="Content\help\stylesheet.css" />
-    <Content Include="Localizations\en.$ext_safeprojectnamejs$.json" />
+    <Content Include="Localizations\en.$ext_safeprojectname$.json" />
     <None Include="module.ignore" />
     <None Include="packages.config" />
     <None Include="app.config" />
