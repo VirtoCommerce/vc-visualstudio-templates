@@ -5,7 +5,7 @@ angular.module('$ext_safeprojectnamecamel$')
 
         blade.refresh = function () {
             api.get(function (data) {
-                blade.title = '$ext_safeprojectnamecamel$.blades.hello-world.title'
+                blade.title = '$ext_safeprojectnamecamel$.blades.hello-world.title';
                 blade.data = data.result;
                 blade.isLoading = false;
             });
