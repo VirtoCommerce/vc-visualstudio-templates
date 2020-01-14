@@ -1,0 +1,34 @@
+<div class="blade-static __bottom" ng-include="'$(Platform)/Scripts/common/templates/create.tpl.html'" ng-if="blade.isNew"></div>
+<div class="blade-content">
+    <div class="blade-inner">
+        <div class="inner-block clearfix" ng-controller="$ext_safeprojectnamecamel$.supplierDetailController">
+            <form class="form" name="detailForm">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="form-label">{{'external-customer.blades.supplier-detail.labels.name' | translate}}</label>
+                        <div class="form-input">
+                            <input ng-model="blade.currentEntity.name" focus-on="" required placeholder="{{'external-customer.blades.supplier-detail.labels.placeholder' | translate}}" />
+                        </div>
+                    </div>
+                    <div class="form-group" ng-init="setForm(detailForm)">
+                        <va-widget-container group="supplierDetail1" blade="blade" gridster-opts="{columns: 3}"></va-widget-container>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label class="form-label">{{'customer.blades.contact-detail.labels.organizations' | translate}}</label>
+                    <ui-select multiple ng-model="blade.currentEntity.organizations">
+                        <ui-select-match placeholder="{{'customer.blades.contact-detail.placeholders.organizations' | translate}}">{{$item.name}}</ui-select-match>
+                        <ui-select-choices repeat="x.id as x in organizations" refresh="fetchOrganizations($select)" when-scrolled="fetchNextOrganizations($select)">
+                            <span ng-bind-html="x.name | highlight: $select.search"></span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+
+                <va-metaform registered-inputs="blade.metaFields" blade="blade" column-count="2"></va-metaform>
+                <div class="form-group">
+                    <va-widget-container group="supplierDetail2" blade="blade" data="blade.currentEntity" gridster-opts="{columns: 3}"></va-widget-container>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

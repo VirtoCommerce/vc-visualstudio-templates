@@ -16,6 +16,7 @@
       <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
       <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
       <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+	  <ProjectItem ReplaceParameters="true">Readme.md</ProjectItem>
 
       <Folder Name="Content">
         <Folder Name="help">
@@ -25,7 +26,7 @@
         </Folder>
       </Folder>
       <Folder Name="Localizations">
-        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectnamejs$.json">en.module.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectname$.json">en.module.json</ProjectItem>
       </Folder>
       <Folder Name="Scripts">
         <ProjectItem ReplaceParameters="true">module.js</ProjectItem>

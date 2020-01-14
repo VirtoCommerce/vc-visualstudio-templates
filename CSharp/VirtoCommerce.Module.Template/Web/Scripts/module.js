@@ -1,4 +1,4 @@
-﻿//Call this to register our module to main application
+// Call this to register your module to main application
 var moduleName = "$ext_safeprojectnamecamel$";
 
 if (AppDependencies !== undefined) {
@@ -17,7 +17,7 @@ angular.module(moduleName, [])
                             var newBlade = {
                                 id: 'blade1',
                                 controller: '$ext_safeprojectnamecamel$.helloWorldController',
-                                template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/helloWorld.html',
+                                template: 'Modules/$($ext_safeprojectnamecamel$)/Scripts/blades/hello-world.html',
                                 isClosingDisabled: true
                             };
                             bladeNavigationService.showBlade(newBlade);

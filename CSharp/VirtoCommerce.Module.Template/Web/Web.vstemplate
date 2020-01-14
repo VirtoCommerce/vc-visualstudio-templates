@@ -16,6 +16,7 @@
       <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
       <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
       <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true">Readme.md</ProjectItem>
       
       <Folder Name="Content">
         <Folder Name="css">
@@ -33,11 +34,13 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="$ext_supersafename$Controller.cs">MyModuleController.cs</ProjectItem>
         </Folder>
       </Folder>
-
+      <Folder Name="Localizations">
+          <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectname$.json">en.module.json</ProjectItem>
+      </Folder>
       <Folder Name="Scripts">
         <Folder Name="blades">
-          <ProjectItem ReplaceParameters="true">helloWorld.js</ProjectItem>
-          <ProjectItem ReplaceParameters="true">helloWorld.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true">hello-world.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true">hello-world.html</ProjectItem>
         </Folder>
         <ProjectItem ReplaceParameters="true" TargetFileName="module.js">module.js</ProjectItem>
         <Folder Name="resources">

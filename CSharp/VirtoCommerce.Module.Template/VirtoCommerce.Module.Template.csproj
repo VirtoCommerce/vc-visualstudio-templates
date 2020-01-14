@@ -81,7 +81,9 @@
   <ItemGroup>
     <None Include="Core\_packages.config" />
     <None Include="Data\_packages.config" />
-    <None Include="Test\_packages.config" />
+    <None Include="Tests\_packages.config" />
+    <None Include="Web\Readme.md" />
+    <None Include="Web\Localizations\en.module.json" />
     <None Include="Web\_app.config" />
     <None Include="Web\module.ignore" />
     <None Include="Web\module.manifest" />
@@ -90,9 +92,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web\AssemblyInfo.cs" />
-    <None Include="Test\AssemblyInfo.cs" />
+    <None Include="Tests\AssemblyInfo.cs" />
     <None Include="Core\AssemblyInfo.cs" />
     <None Include="Data\AssemblyInfo.cs" />
+    <None Include="Core\ModuleConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -117,8 +120,8 @@
     <Content Include="Core\Core.vstemplate" />
     <Content Include="Data\Data.csproj" />
     <Content Include="Data\Data.vstemplate" />
-    <Content Include="Test\Test.csproj" />
-    <Content Include="Test\Test.vstemplate" />
+    <Content Include="Tests\Tests.csproj" />
+    <Content Include="Tests\Tests.vstemplate" />
     <Content Include="Web\Content\css\stylesheet.css" />
     <Content Include="Web\Content\help\arch_scheme.png" />
     <Content Include="Web\Content\help\index.html" />
@@ -126,13 +129,13 @@
     <None Include="Web\Content\help\stylesheet.css" />
     <Content Include="Web\Web.csproj" />
     <Content Include="Web\Web.vstemplate" />
-    <Content Include="Web\Scripts\blades\helloWorld.js" />
-    <Content Include="Web\Scripts\blades\helloWorld.html" />
+    <Content Include="Web\Scripts\blades\hello-world.js" />
+    <Content Include="Web\Scripts\blades\hello-world.html" />
     <Content Include="Web\Scripts\module.js" />
     <Content Include="Web\Scripts\resources\module-api.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Test\Tests.cs" />
+    <None Include="Tests\Test.cs" />
     <None Include="Web\Controllers\Api\MyModuleController.cs" />
     <None Include="Web\Module.cs" />
   </ItemGroup>

@@ -16,6 +16,7 @@
         <ProjectItem ReplaceParameters="false">module.ignore</ProjectItem>
         <ProjectItem ReplaceParameters="true">module.manifest</ProjectItem>
         <ProjectItem ReplaceParameters="true">Web.config</ProjectItem>
+		<ProjectItem ReplaceParameters="true">Readme.md</ProjectItem>
         
         <Folder Name="Scripts">
           <ProjectItem ReplaceParameters="true">module.js</ProjectItem>
