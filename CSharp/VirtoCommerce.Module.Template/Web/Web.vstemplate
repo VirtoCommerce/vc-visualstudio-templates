@@ -34,7 +34,9 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="$ext_supersafename$Controller.cs">MyModuleController.cs</ProjectItem>
         </Folder>
       </Folder>
-
+      <Folder Name="Localizations">
+          <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectname$.json">en.module.json</ProjectItem>
+      </Folder>
       <Folder Name="Scripts">
         <Folder Name="blades">
           <ProjectItem ReplaceParameters="true">hello-world.js</ProjectItem>
