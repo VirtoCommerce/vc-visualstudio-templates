@@ -117,14 +117,14 @@
     <Reference Include="VirtoCommerce.CustomerModule.Data, Version=2.14.23.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$VirtoCommerce.CustomerModule.Data.2.14.23\lib\net461\VirtoCommerce.CustomerModule.Data.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Domain, Version=2.25.29.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.29\lib\net461\VirtoCommerce.Domain.dll</HintPath>
+    <Reference Include="VirtoCommerce.Domain, Version=2.25.32.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.32\lib\net461\VirtoCommerce.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.52.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.52\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.55\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.52.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.52\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.55\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

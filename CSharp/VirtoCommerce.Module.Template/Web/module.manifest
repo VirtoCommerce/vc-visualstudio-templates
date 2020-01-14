@@ -2,9 +2,9 @@
 <module>
     <id>$ext_safeprojectname$</id>
     <version>1.0.0</version>
-    <platformVersion>2.13.52</platformVersion>
+    <platformVersion>2.13.55</platformVersion>
     <dependencies>
-        <dependency id="VirtoCommerce.Core" version="2.25.29" />
+        <dependency id="VirtoCommerce.Core" version="2.25.32" />
     </dependencies>
 
     <title>$ext_projectname$</title>
