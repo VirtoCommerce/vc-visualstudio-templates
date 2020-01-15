@@ -48,17 +48,17 @@
     <Reference Include="CacheManager.Core, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$CacheManager.Core.0.8.0\lib\net45\CacheManager.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -93,14 +93,11 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -109,14 +106,14 @@
     <Reference Include="VirtoCommerce.Domain, Version=2.25.32.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.32\lib\net461\VirtoCommerce.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.55\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.56\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Core.Web, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.Web.2.13.55\lib\net461\VirtoCommerce.Platform.Core.Web.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Core.Web, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.Web.2.13.56\lib\net461\VirtoCommerce.Platform.Core.Web.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.55\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.56\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -44,17 +44,17 @@
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$Castle.Core.4.4.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>$nugetpackagesfolder$EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="LinqKit, Version=1.1.9.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$LinqKit.1.1.9.0\lib\net45\LinqKit.dll</HintPath>
@@ -94,14 +94,14 @@
     <Reference Include="VirtoCommerce.Domain, Version=2.25.32.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$VirtoCommerce.Domain.2.25.32\lib\net461\VirtoCommerce.Domain.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.55\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Core, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Core.2.13.56\lib\net461\VirtoCommerce.Platform.Core.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.55\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Data, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Data.2.13.56\lib\net461\VirtoCommerce.Platform.Data.dll</HintPath>
     </Reference>
-    <Reference Include="VirtoCommerce.Platform.Testing, Version=2.13.55.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Testing.2.13.55\lib\net461\VirtoCommerce.Platform.Testing.dll</HintPath>
+    <Reference Include="VirtoCommerce.Platform.Testing, Version=2.13.56.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$nugetpackagesfolder$VirtoCommerce.Platform.Testing.2.13.56\lib\net461\VirtoCommerce.Platform.Testing.dll</HintPath>
     </Reference>
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>$nugetpackagesfolder$xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
