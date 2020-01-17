@@ -2,9 +2,9 @@
 <module>
     <id>$ext_safeprojectname$</id>
     <version>1.0.0</version>
-    <platformVersion>2.13.52</platformVersion>
+    <platformVersion>2.13.56</platformVersion>
     <dependencies>
-        <dependency id="VirtoCommerce.Core" version="2.25.29" />
+        <dependency id="VirtoCommerce.Core" version="2.25.32" />
     </dependencies>
 
     <title>$ext_projectname$</title>
@@ -31,7 +31,7 @@
     </scripts>
 
     <settings>
-        <group name="General">
+        <group name="$ext_safeprojectname$|General">
             <setting>
                 <name>$ext_safeprojectname$.General.String</name>
                 <valueType>string</valueType>
@@ -61,7 +61,7 @@
                 <description>A decimal setting</description>
             </setting>
         </group>
-        <group name="Advanced">
+        <group name="$ext_safeprojectname$|Advanced">
             <setting>
                 <name>$ext_safeprojectname$.Advanced.Boolean1</name>
                 <valueType>boolean</valueType>

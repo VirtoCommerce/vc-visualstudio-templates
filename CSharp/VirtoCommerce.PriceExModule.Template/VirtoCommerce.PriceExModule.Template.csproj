@@ -88,6 +88,7 @@
     <None Include="Web\Web.config" />
     <None Include="Web\_app.config" />
     <None Include="Web\_packages.config" />
+	<None Include="Web\Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AssemblyInfo.cs" />
@@ -115,7 +116,7 @@
     <None Include="Tests\Test.cs" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Web\Module.cs" />
-  </ItemGroup>
+ </ItemGroup>
   <ItemGroup>
     <Content Include="Core\Core.csproj" />
     <Content Include="Core\Core.vstemplate" />

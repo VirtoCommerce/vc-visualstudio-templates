@@ -107,6 +107,7 @@
     <None Include="Web\module.ignore" />
     <None Include="Web\module.manifest" />
     <None Include="Web\_packages.config" />
+	<None Include="Web\Readme.md" />
     <None Include="Web\Web.config" />
   </ItemGroup>
   <ItemGroup>

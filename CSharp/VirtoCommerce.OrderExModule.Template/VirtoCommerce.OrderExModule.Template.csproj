@@ -97,6 +97,7 @@
     <None Include="Web\module.manifest" />
     <None Include="Web\Web.config" />
     <None Include="Web\_packages.config" />
+	<None Include="Web\Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="VirtoCommerce.OrderExModule.Template.vstemplate">

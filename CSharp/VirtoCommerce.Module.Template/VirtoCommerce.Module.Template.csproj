@@ -82,6 +82,7 @@
     <None Include="Core\_packages.config" />
     <None Include="Data\_packages.config" />
     <None Include="Tests\_packages.config" />
+    <None Include="Web\Readme.md" />
     <None Include="Web\Localizations\en.module.json" />
     <None Include="Web\_app.config" />
     <None Include="Web\module.ignore" />
