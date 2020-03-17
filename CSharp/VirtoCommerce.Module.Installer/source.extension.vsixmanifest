@@ -21,10 +21,8 @@
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Template" d:TargetPath="|VirtoCommerce.Module.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.OrderExModule.Template" d:TargetPath="|VirtoCommerce.OrderExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.PriceExModule.Template" d:TargetPath="|VirtoCommerce.PriceExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Wizard" Path="|VirtoCommerce.Module.Wizard|" AssemblyName="|VirtoCommerce.Module.Wizard;AssemblyName|" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.MemberExModule.Template" d:TargetPath="|VirtoCommerce.MemberExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+      
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208,17.0]" DisplayName="C# and Visual Basic" />
