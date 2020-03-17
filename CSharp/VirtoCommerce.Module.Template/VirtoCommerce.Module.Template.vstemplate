@@ -1,6 +1,6 @@
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
     <TemplateData>
-        <Name>Virto Commerce 2.x Module</Name>
+        <Name>Virto Commerce 3.x Module</Name>
         <Description>Default project template for creating Virto Commerce module</Description>
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType></ProjectSubType>
@@ -26,7 +26,7 @@
           Web\Web.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
-          Core\Core.vstemplate
+          src\Core\Core.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
           Data\Data.vstemplate
