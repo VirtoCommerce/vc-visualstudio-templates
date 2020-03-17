@@ -9,13 +9,14 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.csproj" File="Data.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">_packages.config</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-
-      <Folder Name="Migrations" />
-      <Folder Name="Models" />
-      <Folder Name="Repositories" />
-      <Folder Name="Services" />
+      <Folder Name="Caching" TargetFolderName="Caching"/>
+      <Folder Name="ExportImport" TargetFolderName="ExportImport"/>
+      <Folder Name="Handlers" TargetFolderName="Handlers"/>
+      <Folder Name="Models" TargetFolderName="Models"/>
+      <Folder Name="Repositories" TargetFolderName="Repositories"/>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$DbContext.cs">DbContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true">DesignTimeDbContextFactory.cs</ProjectItem>
+      <Folder Name="Services" TargetFolderName="Services" />
     </Project>
   </TemplateContent>
   <WizardExtension>

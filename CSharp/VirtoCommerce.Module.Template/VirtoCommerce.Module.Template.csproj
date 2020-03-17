@@ -79,8 +79,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\_packages.config" />
     <None Include="src\Core\Core.csproj" />
+    <None Include="src\Data\Data.csproj" />
     <None Include="Tests\_packages.config" />
     <None Include="Web\Readme.md" />
     <None Include="Web\Localizations\en.module.json" />
@@ -91,10 +91,11 @@
     <None Include="Web\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\Data\Repositories\DbContext.cs" />
+    <None Include="src\Data\Repositories\DesignTimeDbContextFactory.cs" />
     <None Include="src\Core\ModuleConstants.cs" />
     <None Include="Web\AssemblyInfo.cs" />
     <None Include="Tests\AssemblyInfo.cs" />
-    <None Include="Data\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -115,9 +116,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\Data.csproj" />
-    <Content Include="Data\Data.vstemplate" />
     <Content Include="src\Core\Core.vstemplate" />
+    <Content Include="src\Data\Data.vstemplate" />
     <Content Include="Tests\Tests.csproj" />
     <Content Include="Tests\Tests.vstemplate" />
     <Content Include="Web\Content\css\stylesheet.css" />
@@ -142,6 +142,11 @@
     <Folder Include="src\Core\Models\" />
     <Folder Include="src\Core\Notifications\" />
     <Folder Include="src\Core\Services\" />
+    <Folder Include="src\Data\Caching\" />
+    <Folder Include="src\Data\ExportImport\" />
+    <Folder Include="src\Data\Handlers\" />
+    <Folder Include="src\Data\Models\" />
+    <Folder Include="src\Data\Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
