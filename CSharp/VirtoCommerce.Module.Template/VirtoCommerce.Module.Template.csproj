@@ -81,6 +81,12 @@
   <ItemGroup>
     <None Include="src\Core\Core.csproj" />
     <None Include="src\Data\Data.csproj" />
+    <None Include="src\Web\Localizations\en.module.json" />
+    <None Include="src\Web\module.manifest" />
+    <None Include="src\Web\package-lock.json" />
+    <None Include="src\Web\package.json" />
+    <None Include="src\Web\Readme.md" />
+    <None Include="src\Web\Web.csproj" />
     <None Include="Tests\_packages.config" />
     <None Include="Web\Readme.md" />
     <None Include="Web\Localizations\en.module.json" />
@@ -91,6 +97,8 @@
     <None Include="Web\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\Web\Module.cs" />
+    <None Include="src\Web\Controllers\Api\MyModuleController.cs" />
     <None Include="src\Data\Repositories\DbContext.cs" />
     <None Include="src\Data\Repositories\DesignTimeDbContextFactory.cs" />
     <None Include="src\Core\ModuleConstants.cs" />
@@ -118,6 +126,12 @@
   <ItemGroup>
     <Content Include="src\Core\Core.vstemplate" />
     <Content Include="src\Data\Data.vstemplate" />
+    <Content Include="src\Web\Scripts\blades\hello-world.html" />
+    <Content Include="src\Web\Scripts\blades\hello-world.js" />
+    <Content Include="src\Web\Scripts\module.js" />
+    <Content Include="src\Web\Scripts\resources\module-api.js" />
+    <Content Include="src\Web\Web.vstemplate" />
+    <Content Include="src\Web\webpack.config.js" />
     <Content Include="Tests\Tests.csproj" />
     <Content Include="Tests\Tests.vstemplate" />
     <Content Include="Web\Content\css\stylesheet.css" />

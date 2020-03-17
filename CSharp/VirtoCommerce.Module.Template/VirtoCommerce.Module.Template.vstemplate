@@ -23,13 +23,13 @@
     <TemplateContent>
       <ProjectCollection>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
-          Web\Web.vstemplate
+          src\Web\Web.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
           src\Core\Core.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
-          Data\Data.vstemplate
+          src\Data\Data.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
           Tests\Tests.vstemplate
