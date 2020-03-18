@@ -32,7 +32,7 @@
           src\Data\Data.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
-          Tests\Tests.vstemplate
+          test\Tests.vstemplate
         </ProjectTemplateLink>
       </ProjectCollection>
     </TemplateContent>
