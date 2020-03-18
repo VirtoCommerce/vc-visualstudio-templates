@@ -19,7 +19,9 @@
         <PlatformTag>Windows</PlatformTag>
         <ProjectTypeTag>Web</ProjectTypeTag>
         <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
-        <ProjectTypeTag>ModuleV3</ProjectTypeTag>
+        <ProjectTypeTag>Module</ProjectTypeTag>
+        <ProjectTypeTag>Core</ProjectTypeTag>
+        <TemplateID>VirtoCommerce.Module.V3</TemplateID>
     </TemplateData>
     <TemplateContent>
       <ProjectCollection>
