@@ -6,10 +6,14 @@
     <CreateNewFolder>true</CreateNewFolder>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Hidden>true</Hidden>
+    <SortOrder>1000</SortOrder>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.csproj" File="Core.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true">ModuleConstants.cs</ProjectItem>
         <Folder Name="Events" TargetFolderName="Events" />
         <Folder Name="Models" TargetFolderName="Models" />
         <Folder Name="Notifications" TargetFolderName="Notifications" />

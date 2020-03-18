@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace $safeprojectname$.Web
+namespace $safeprojectname$
 {
     public class Module : IModule
     {
@@ -20,7 +20,7 @@ namespace $safeprojectname$.Web
             // database initialization
             var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
             var connectionString = configuration.GetConnectionString("VirtoCommerce.$safeprojectname$") ?? configuration.GetConnectionString("VirtoCommerce");
-            serviceCollection.AddDbContext<VCModuleV3DbContext>(options => options.UseSqlServer(connectionString));
+            serviceCollection.AddDbContext<$ext_safeprojectname$DbContext > (options => options.UseSqlServer(connectionString));
         }
 
         public void PostInitialize(IApplicationBuilder appBuilder)

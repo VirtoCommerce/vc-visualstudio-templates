@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace $safeprojectname$.Test
+namespace $safeprojectname$
 {
     public class Test
     {

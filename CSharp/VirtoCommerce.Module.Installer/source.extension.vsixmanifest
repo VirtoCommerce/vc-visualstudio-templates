@@ -10,6 +10,7 @@
         <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
         <Tags>ecommerce, platform, azure, angularjs, pim, oms, cms, virtocommerce, virto, commerce</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />

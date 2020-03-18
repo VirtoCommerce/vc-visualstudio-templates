@@ -5,8 +5,9 @@
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType></ProjectSubType>
         <SortOrder>1000</SortOrder>
-        <CreateNewFolder>false</CreateNewFolder>
-        <DefaultName>MyCompany.MyModule</DefaultName>
+        <CreateNewFolder>true</CreateNewFolder>
+        <CreateInPlace>true</CreateInPlace>
+        <DefaultName>MyVC3Module</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -18,22 +19,26 @@
         <PlatformTag>Windows</PlatformTag>
         <ProjectTypeTag>Web</ProjectTypeTag>
         <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
-        <ProjectTypeTag>Module</ProjectTypeTag>
+        <ProjectTypeTag>ModuleV3</ProjectTypeTag>
     </TemplateData>
     <TemplateContent>
       <ProjectCollection>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
-          src\Web\Web.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
-          src\Core\Core.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
-          src\Data\Data.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
-          test\Tests.vstemplate
-        </ProjectTemplateLink>
+        <SolutionFolder  Name="src">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+              src\Web\Web.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+              src\Core\Core.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+              src\Data\Data.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
+        <SolutionFolder  Name="test">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
+                test\Tests.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
       </ProjectCollection>
     </TemplateContent>
   <WizardExtension>

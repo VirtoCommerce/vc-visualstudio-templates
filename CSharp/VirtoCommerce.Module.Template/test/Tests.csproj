@@ -14,9 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj" />
-    <ProjectReference Include="..\..\src\$ext_safeprojectname$.Data\$ext_safeprojectname$.Data.csproj" />
-    <ProjectReference Include="..\..\src\$ext_safeprojectname$.Web\$ext_safeprojectname$.Web.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Data\$ext_safeprojectname$.Data.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.Web\$ext_safeprojectname$.Web.csproj" />
   </ItemGroup>
 
 </Project>

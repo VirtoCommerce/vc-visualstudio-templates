@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace $safeprojectname$.Controllers.Api
 {
-    [RoutePrefix("api/$ext_supersafename$")]
-    public class $ext_supersafename$Controller : ApiController
+    [Route("api/$ext_supersafename$")]
+    public class $ext_supersafename$Controller : Controller
     {
         // GET: api/$ext_supersafename$
         [HttpGet]
