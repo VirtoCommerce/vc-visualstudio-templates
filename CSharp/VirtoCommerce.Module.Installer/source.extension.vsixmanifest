@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="VirtoCommerce.Module.91484340-d0c5-4006-b787-16f1c86d718c" Version="3.0.0.4" Language="en-US" Publisher="Virto Commerce" />
         <DisplayName>Virto Commerce 3.x Module Templates</DisplayName>
-        <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the remommended project structure.</Description>
+        <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the recommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
         <GettingStartedGuide>https://github.com/VirtoCommerce/vc-platform/tree/release/3.0.0</GettingStartedGuide>
         <ReleaseNotes>https://github.com/VirtoCommerce/vc-visualstudio-templates/releases</ReleaseNotes>
@@ -13,9 +13,9 @@
         <Preview>true</Preview>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,]" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[14.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,]" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
