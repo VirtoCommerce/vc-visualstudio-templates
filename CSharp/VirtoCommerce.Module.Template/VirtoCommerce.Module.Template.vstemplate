@@ -36,9 +36,9 @@
               src\Data\Data.vstemplate
             </ProjectTemplateLink>
         </SolutionFolder>
-        <SolutionFolder  Name="test">
-            <ProjectTemplateLink ProjectName="$safeprojectname$.Test" CopyParameters="true">
-                test\Tests.vstemplate
+        <SolutionFolder  Name="tests">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+                tests\Tests.vstemplate
             </ProjectTemplateLink>
         </SolutionFolder>
       </ProjectCollection>

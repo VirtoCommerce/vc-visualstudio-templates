@@ -122,11 +122,11 @@
     <Content Include="src\Web\Scripts\resources\module-api.js" />
     <Content Include="src\Web\Web.vstemplate" />
     <Content Include="src\Web\webpack.config.js" />
-    <Content Include="test\Tests.csproj" />
-    <Content Include="test\Tests.vstemplate" />
+    <Content Include="tests\Tests.csproj" />
+    <Content Include="tests\Tests.vstemplate" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="test\Test.cs" />
+    <None Include="tests\Test.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
