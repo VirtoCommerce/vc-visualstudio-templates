@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("VirtoCommerce Default Module Template")]
 [assembly: AssemblyCompany("VirtoCommerce")]
 [assembly: AssemblyProduct("VirtoCommerce.Module.Template")]
-[assembly: AssemblyCopyright("Copyright © VirtoCommerce 2019")]
+[assembly: AssemblyCopyright("Copyright © VirtoCommerce 2020")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
