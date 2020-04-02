@@ -26,7 +26,7 @@ namespace $safeprojectname$
                 public static SettingDescriptor $ext_safeprojectname$Enabled = new SettingDescriptor
                 {
                     Name = "$ext_safeprojectname$.$ext_safeprojectname$Enabled",
-                    GroupName = "Store|General",
+                    GroupName = "$ext_safeprojectname|General",
                     ValueType = SettingValueType.Boolean,
                     DefaultValue = false
                 };
@@ -34,7 +34,7 @@ namespace $safeprojectname$
                 public static SettingDescriptor $ext_safeprojectname$Password = new SettingDescriptor
                 {
                     Name = "$ext_safeprojectname$.$ext_safeprojectname$Password",
-                    GroupName = "Store|Advanced",
+                    GroupName = "$ext_safeprojectname|Advanced",
                     ValueType = SettingValueType.SecureString,
                     DefaultValue = "qwerty"
                 };

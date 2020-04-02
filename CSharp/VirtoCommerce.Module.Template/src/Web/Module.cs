@@ -34,7 +34,7 @@ namespace $safeprojectname$
             permissionsProvider.RegisterPermissions(ModuleConstants.Security.Permissions.AllPermissions.Select(x =>
                 new Permission()
                 {
-                    GroupName = "$safeprojectname$",
+                    GroupName = "$ext_safeprojectname",
                     ModuleId = ModuleInfo.Id,
                     Name = x
                 }).ToArray());
