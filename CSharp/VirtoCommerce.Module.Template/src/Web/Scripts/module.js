@@ -26,7 +26,7 @@ angular.module(moduleName, [])
                 });
         }
     ])
-    .run(['$rootScope', 'platformWebApp.mainMenuService', 'platformWebApp.widgetService', '$state',
+    .run(['platformWebApp.mainMenuService', 'platformWebApp.widgetService', '$state',
         function ($rootScope, mainMenuService, widgetService, $state) {
             //Register module in main menu
             var menuItem = {
