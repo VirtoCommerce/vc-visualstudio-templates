@@ -3,6 +3,25 @@
     "blades": {
       "hello-world": {
         "title": "Hello world blade"
+      },
+      "permissions": {
+        "$ext_safeprojectnamecamel$:access": "Open $ext_safeprojectname$ menu",
+        "$ext_safeprojectnamecamel$:create": "Create $ext_safeprojectname$ related data",
+        "$ext_safeprojectnamecamel$:read": "View $ext_safeprojectname$ related data",
+        "$ext_safeprojectnamecamel$:update": "Update $ext_safeprojectname$ related data",
+        "$ext_safeprojectnamecamel$:delete": "Delete $ext_safeprojectname$ related data"
+      },
+      "settings": {
+        "$ext_safeprojectname$": {
+          "$ext_safeprojectname$Password": {
+            "title": "$ext_safeprojectname$ Password",
+            "description": "$ext_safeprojectname$ Password setting"
+          },
+          "$ext_safeprojectname$Enabled": {
+            "title": "$ext_safeprojectname$ Enabled",
+            "description": "$ext_safeprojectname$ Enabled setting"
+          }
+        }
       }
     }
   }
