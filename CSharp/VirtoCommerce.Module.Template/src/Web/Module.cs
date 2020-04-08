@@ -19,8 +19,8 @@ namespace $safeprojectname$
         {
             // database initialization
             var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
-            var connectionString = configuration.GetConnectionString("VirtoCommerce.$safeprojectname$") ?? configuration.GetConnectionString("VirtoCommerce");
-            serviceCollection.AddDbContext<$ext_safeprojectname$DbContext > (options => options.UseSqlServer(connectionString));
+            var connectionString = configuration.GetConnectionString("VirtoCommerce.$ext_supersafename$") ?? configuration.GetConnectionString("VirtoCommerce");
+            serviceCollection.AddDbContext<$ext_supersafename$DbContext > (options => options.UseSqlServer(connectionString));
         }
 
         public void PostInitialize(IApplicationBuilder appBuilder)
@@ -34,7 +34,7 @@ namespace $safeprojectname$
             permissionsProvider.RegisterPermissions(ModuleConstants.Security.Permissions.AllPermissions.Select(x =>
                 new Permission()
                 {
-                    GroupName = "$ext_safeprojectname",
+                    GroupName = "$ext_supersafename$",
                     ModuleId = ModuleInfo.Id,
                     Name = x
                 }).ToArray());

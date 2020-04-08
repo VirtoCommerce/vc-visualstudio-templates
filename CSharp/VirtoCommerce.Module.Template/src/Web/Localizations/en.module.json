@@ -3,25 +3,25 @@
     "blades": {
       "hello-world": {
         "title": "Hello world blade"
+      }
+    }
+  },
+  "permissions": {
+    "$ext_supersafenamejs$:access": "Open $ext_supersafename$ menu",
+    "$ext_supersafenamejs$:create": "Create $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:read": "View $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:update": "Update $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:delete": "Delete $ext_supersafename$ related data"
+  },
+  "settings": {
+    "$ext_supersafename$": {
+      "$ext_supersafename$Password": {
+        "title": "$ext_supersafename$ Password",
+        "description": "$ext_supersafename$ Password setting"
       },
-      "permissions": {
-        "$ext_safeprojectnamecamel$:access": "Open $ext_safeprojectname$ menu",
-        "$ext_safeprojectnamecamel$:create": "Create $ext_safeprojectname$ related data",
-        "$ext_safeprojectnamecamel$:read": "View $ext_safeprojectname$ related data",
-        "$ext_safeprojectnamecamel$:update": "Update $ext_safeprojectname$ related data",
-        "$ext_safeprojectnamecamel$:delete": "Delete $ext_safeprojectname$ related data"
-      },
-      "settings": {
-        "$ext_safeprojectname$": {
-          "$ext_safeprojectname$Password": {
-            "title": "$ext_safeprojectname$ Password",
-            "description": "$ext_safeprojectname$ Password setting"
-          },
-          "$ext_safeprojectname$Enabled": {
-            "title": "$ext_safeprojectname$ Enabled",
-            "description": "$ext_safeprojectname$ Enabled setting"
-          }
-        }
+      "$ext_supersafename$Enabled": {
+        "title": "$ext_supersafename$ Enabled",
+        "description": "$ext_supersafename$ Enabled setting"
       }
     }
   }

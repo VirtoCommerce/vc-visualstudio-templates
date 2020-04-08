@@ -27,7 +27,7 @@ angular.module(moduleName, [])
         }
     ])
     .run(['platformWebApp.mainMenuService', 'platformWebApp.widgetService', '$state',
-        function ($rootScope, mainMenuService, widgetService, $state) {
+        function (mainMenuService, widgetService, $state) {
             //Register module in main menu
             var menuItem = {
                 path: 'browse/$ext_safeprojectnamecamel$',

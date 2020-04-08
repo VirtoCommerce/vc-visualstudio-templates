@@ -11,7 +11,6 @@
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-        <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
         <Icon>__TemplateIcon.ico</Icon>
         <!-- Indicates how many parent folders this item template should appear in -->
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>

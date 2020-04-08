@@ -9,11 +9,11 @@ namespace $safeprojectname$
         {
             public static class Permissions
             {
-                public const string Create = "$ext_safeprojectname$:create";
-                public const string Access = "$ext_safeprojectname$:access";
-                public const string Read = "$ext_safeprojectname$:read";
-                public const string Update = "$ext_safeprojectname$:update";
-                public const string Delete = "$ext_safeprojectname$:delete";
+                public const string Access = "$ext_supersafenamejs$:access";
+                public const string Create = "$ext_supersafenamejs$:create";
+                public const string Read = "$ext_supersafenamejs$:read";
+                public const string Update = "$ext_supersafenamejs$:update";
+                public const string Delete = "$ext_supersafenamejs$:delete";
 
                 public static string[] AllPermissions = { Read, Create, Access, Update, Delete };
         }
@@ -23,18 +23,18 @@ namespace $safeprojectname$
         {
             public static class General
             {
-                public static SettingDescriptor $ext_safeprojectname$Enabled = new SettingDescriptor
+                public static SettingDescriptor $ext_supersafename$Enabled = new SettingDescriptor
                 {
-                    Name = "$ext_safeprojectname$.$ext_safeprojectname$Enabled",
-                    GroupName = "$ext_safeprojectname|General",
+                    Name = "$ext_supersafename$.$ext_supersafename$Enabled",
+                    GroupName = "$ext_supersafename$|General",
                     ValueType = SettingValueType.Boolean,
                     DefaultValue = false
                 };
 
-                public static SettingDescriptor $ext_safeprojectname$Password = new SettingDescriptor
+                public static SettingDescriptor $ext_supersafename$Password = new SettingDescriptor
                 {
-                    Name = "$ext_safeprojectname$.$ext_safeprojectname$Password",
-                    GroupName = "$ext_safeprojectname|Advanced",
+                    Name = "$ext_supersafename$.$ext_supersafename$Password",
+                    GroupName = "$ext_supersafename$|Advanced",
                     ValueType = SettingValueType.SecureString,
                     DefaultValue = "qwerty"
                 };
@@ -43,8 +43,8 @@ namespace $safeprojectname$
                 {
                     get
                     {
-                        yield return $ext_safeprojectname$Enabled;
-                        yield return $ext_safeprojectname$Password;
+                        yield return $ext_supersafename$Enabled;
+                        yield return $ext_supersafename$Password;
                     }
                 }
             }

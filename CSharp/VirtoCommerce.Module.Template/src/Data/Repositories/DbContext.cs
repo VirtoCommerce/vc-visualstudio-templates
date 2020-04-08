@@ -3,14 +3,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace $ext_safeprojectname$.Data.Repositories
 {
-    public class $ext_safeprojectname$DbContext : DbContextWithTriggers
+    public class $ext_supersafename$DbContext : DbContextWithTriggers
     {
-        public $ext_safeprojectname$DbContext(DbContextOptions<$ext_safeprojectname$DbContext> options)
+        public $ext_supersafename$DbContext(DbContextOptions<$ext_supersafename$DbContext> options)
           : base(options)
         {
         }
 
-        protected $ext_safeprojectname$DbContext(DbContextOptions options)
+        protected $ext_supersafename$DbContext(DbContextOptions options)
             : base(options)
         {
         }
