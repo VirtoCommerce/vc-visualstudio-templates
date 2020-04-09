@@ -1,13 +1,14 @@
-using $ext_safeprojectname$.Core;
-using $ext_safeprojectname$.Data.Repositories;
-using VirtoCommerce.Platform.Core.Modularity;
-using VirtoCommerce.Platform.Core.Security;
-using VirtoCommerce.Platform.Core.Settings;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using VirtoCommerce.Platform.Core.Modularity;
+using VirtoCommerce.Platform.Core.Security;
+using VirtoCommerce.Platform.Core.Settings;
+using $ext_safeprojectname$.Core;
+using $ext_safeprojectname$.Data.Repositories;
+
 
 namespace $safeprojectname$
 {
