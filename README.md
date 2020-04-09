@@ -5,7 +5,7 @@ This repository is the official storage for VirtoCommerce Visual Studio template
 Includes templates:
 * Virto Commerce 3.x Module - Default project template for creating Virto Commerce module
 
-![image](https://user-images.githubusercontent.com/13037473/59409022-83cd3d00-8ddf-11e9-844b-239e6721f87d.png)
+![image](https://user-images.githubusercontent.com/44946644/78904497-d4b4cd00-7aa6-11ea-8d60-a1aad8293fff.png)
 
 Template use best practices and consists of several projects:
 * Core - Business and Application Models
