@@ -35,7 +35,7 @@ angular.module(moduleName, [])
                 title: '$ext_projectname$',
                 priority: 100,
                 action: function () { $state.go('workspace.$ext_supersafenamejs$State'); },
-                permission: '$ext_supersafenamejs$:read'
+                permission: '$ext_supersafenamejs$:access'
             };
             mainMenuService.addMenuItem(menuItem);
         }
