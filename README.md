@@ -16,7 +16,7 @@ Template use best practices and consists of several projects:
 Please use new templates in your everyday work. 
 
 ## Download
-Compiled version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerceModuleTemplates
+Compiled version of the extension can be download from: https://marketplace.visualstudio.com/items?itemName=Virto-Commerce.VirtoCommerce3ModuleTemplates
 
 # License
 Copyright (c) Virto Solutions LTD.  All rights reserved.
