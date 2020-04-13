@@ -1,16 +1,16 @@
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
     <TemplateData>
-        <Name>Virto Commerce 2.x Module</Name>
+        <Name>Virto Commerce 3.x Module</Name>
         <Description>Default project template for creating Virto Commerce module</Description>
         <ProjectType>CSharp</ProjectType>
         <ProjectSubType></ProjectSubType>
         <SortOrder>1000</SortOrder>
-        <CreateNewFolder>false</CreateNewFolder>
-        <DefaultName>MyCompany.MyModule</DefaultName>
+        <CreateNewFolder>true</CreateNewFolder>
+        <CreateInPlace>true</CreateInPlace>
+        <DefaultName>MyVC3Module</DefaultName>
         <ProvideDefaultName>true</ProvideDefaultName>
         <LocationField>Enabled</LocationField>
         <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-        <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
         <Icon>__TemplateIcon.ico</Icon>
         <!-- Indicates how many parent folders this item template should appear in -->
         <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
@@ -19,21 +19,27 @@
         <ProjectTypeTag>Web</ProjectTypeTag>
         <ProjectTypeTag>VirtoCommerce</ProjectTypeTag>
         <ProjectTypeTag>Module</ProjectTypeTag>
+        <ProjectTypeTag>Core</ProjectTypeTag>
+        <TemplateID>VirtoCommerce.Module.V3</TemplateID>
     </TemplateData>
     <TemplateContent>
       <ProjectCollection>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
-          Web\Web.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
-          Core\Core.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
-          Data\Data.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
-          Tests\Tests.vstemplate
-        </ProjectTemplateLink>
+        <SolutionFolder  Name="src">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Web" CopyParameters="true">
+              src\Web\Web.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Core" CopyParameters="true">
+              src\Core\Core.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Data" CopyParameters="true">
+              src\Data\Data.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
+        <SolutionFolder  Name="tests">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.Tests" CopyParameters="true">
+                tests\Tests.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
       </ProjectCollection>
     </TemplateContent>
   <WizardExtension>

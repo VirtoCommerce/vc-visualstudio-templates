@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <id>$ext_safeprojectname$</id>
+    <version>1.0.0</version>
+    <version-tag></version-tag>
+    <platformVersion>3.0.0</platformVersion>
+    <dependencies>
+<!--        <dependency id="VirtoCommerce.Core" version="3.0.0" /> -->
+    </dependencies>
+
+    <title>$ext_projectname$</title>
+    <description>Enter your module description here.</description>
+    <authors>
+        <author>$username$</author>
+    </authors>
+    <owners>
+      <owner>$registeredorganization$</owner>
+    </owners>
+
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright © $year$ $registeredorganization$. All rights reserved</copyright>
+    <tags>extension module</tags>
+  
+    <assemblyFile>$safeprojectname$.dll</assemblyFile>
+    <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
+
+</module>

@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="VirtoCommerce.Module.BD8488C2-DCF0-4351-848E-8B3FE4C045C1" Version="2.3.2" Language="en-US" Publisher="Virto Commerce" />
-        <DisplayName>Virto Commerce 2.x Module Templates</DisplayName>
-        <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the remommended project structure.</Description>
+        <Identity Id="VirtoCommerce.Module.91484340-d0c5-4006-b787-16f1c86d718c" Version="3.0.0" Language="en-US" Publisher="Virto Commerce" />
+        <DisplayName>Virto Commerce 3.x Module Templates</DisplayName>
+        <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the recommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
-        <GettingStartedGuide>https://virtocommerce.com/docs/vc2devguide/working-with-platform-manager/extending-functionality/creating-new-module</GettingStartedGuide>
+        <GettingStartedGuide>https://github.com/VirtoCommerce/vc-platform/tree/release/3.0.0</GettingStartedGuide>
         <ReleaseNotes>https://github.com/VirtoCommerce/vc-visualstudio-templates/releases</ReleaseNotes>
         <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
         <Tags>ecommerce, platform, azure, angularjs, pim, oms, cms, virtocommerce, virto, commerce</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,]" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,]" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[14.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,]" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,]" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Template" d:TargetPath="|VirtoCommerce.Module.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.OrderExModule.Template" d:TargetPath="|VirtoCommerce.OrderExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.PriceExModule.Template" d:TargetPath="|VirtoCommerce.PriceExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="VirtoCommerce.Module.Wizard" Path="|VirtoCommerce.Module.Wizard|" AssemblyName="|VirtoCommerce.Module.Wizard;AssemblyName|" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="VirtoCommerce.MemberExModule.Template" d:TargetPath="|VirtoCommerce.MemberExModule.Template;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+
     </Assets>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.26208,17.0]" DisplayName="C# and Visual Basic" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[16.5.29515.121,17.0)" DisplayName="C# and Visual Basic" />
     </Prerequisites>
 </PackageManifest>

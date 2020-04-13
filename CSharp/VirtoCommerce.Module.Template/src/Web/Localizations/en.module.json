@@ -1,0 +1,28 @@
+{
+  "$ext_safeprojectnamecamel$": {
+    "blades": {
+      "hello-world": {
+        "title": "Hello world blade"
+      }
+    }
+  },
+  "permissions": {
+    "$ext_supersafenamejs$:access": "Open $ext_supersafename$ menu",
+    "$ext_supersafenamejs$:create": "Create $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:read": "View $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:update": "Update $ext_supersafename$ related data",
+    "$ext_supersafenamejs$:delete": "Delete $ext_supersafename$ related data"
+  },
+  "settings": {
+    "$ext_supersafename$": {
+      "$ext_supersafename$Password": {
+        "title": "$ext_supersafename$ Password",
+        "description": "$ext_supersafename$ Password setting"
+      },
+      "$ext_supersafename$Enabled": {
+        "title": "$ext_supersafename$ Enabled",
+        "description": "$ext_supersafename$ Enabled setting"
+      }
+    }
+  }
+}
