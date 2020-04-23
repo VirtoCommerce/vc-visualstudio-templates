@@ -21,7 +21,7 @@ namespace $safeprojectname$
             // database initialization
             var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
             var connectionString = configuration.GetConnectionString("VirtoCommerce.$ext_supersafename$") ?? configuration.GetConnectionString("VirtoCommerce");
-            serviceCollection.AddDbContext<$ext_supersafename$DbContext > (options => options.UseSqlServer(connectionString));
+            serviceCollection.AddDbContext<$ext_supersafename$DbContext> (options => options.UseSqlServer(connectionString));
         }
 
         public void PostInitialize(IApplicationBuilder appBuilder)
@@ -40,9 +40,18 @@ namespace $safeprojectname$
                     Name = x
                 }).ToArray());
 
+            // Ensure that any pending migrations are applied
+            using (var serviceScope = appBuilder.ApplicationServices.CreateScope())
+            {
+                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService <$ext_supersafename$DbContext> ())
+                    {
+                    dbContext.Database.EnsureCreated();
+                    dbContext.Database.Migrate();
+                }
+            }
         }
 
-        public void Uninstall()
+    public void Uninstall()
         {
             // do nothing in here
         }
