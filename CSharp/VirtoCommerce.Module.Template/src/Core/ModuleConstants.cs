@@ -15,7 +15,7 @@ namespace $safeprojectname$
                 public const string Update = "$ext_supersafenamejs$:update";
                 public const string Delete = "$ext_supersafenamejs$:delete";
 
-                public static string[] AllPermissions = { Read, Create, Access, Update, Delete };
+                public static string[] AllPermissions { get; } = { Read, Create, Access, Update, Delete };
         }
         }
     
@@ -23,7 +23,7 @@ namespace $safeprojectname$
         {
             public static class General
             {
-                public static SettingDescriptor $ext_supersafename$Enabled = new SettingDescriptor
+                public static SettingDescriptor $ext_supersafename$Enabled  { get; } = new SettingDescriptor
                 {
                     Name = "$ext_supersafename$.$ext_supersafename$Enabled",
                     GroupName = "$ext_supersafename$|General",
@@ -31,7 +31,7 @@ namespace $safeprojectname$
                     DefaultValue = false
                 };
 
-                public static SettingDescriptor $ext_supersafename$Password = new SettingDescriptor
+                public static SettingDescriptor $ext_supersafename$Password  { get; } = new SettingDescriptor
                 {
                     Name = "$ext_supersafename$.$ext_supersafename$Password",
                     GroupName = "$ext_supersafename$|Advanced",
