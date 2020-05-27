@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\$ext_safeprojectname$.Core\$ext_safeprojectname$.Core.csproj" />
     <ProjectReference Include="..\$ext_safeprojectname$.Data\$ext_safeprojectname$.Data.csproj" />
   </ItemGroup>
   <ItemGroup>

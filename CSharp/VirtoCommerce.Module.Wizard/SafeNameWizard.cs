@@ -1,18 +1,15 @@
-﻿using EnvDTE;
-using Microsoft.VisualStudio.TemplateWizard;
-using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using EnvDTE;
+using Microsoft.VisualStudio.TemplateWizard;
 
 namespace VirtoCommerce.Module.Wizard
 {
     public class SafeNameWizard : IWizard
     {
         #region NotImplemented
-        #pragma warning disable S1186 // Methods should not be empty
+#pragma warning disable S1186 // Methods should not be empty
         public void BeforeOpeningFile(ProjectItem projectItem) { }
 
         public void ProjectFinishedGenerating(Project project) { }
@@ -20,7 +17,7 @@ namespace VirtoCommerce.Module.Wizard
         public void ProjectItemFinishedGenerating(ProjectItem projectItem) { }
 
         public void RunFinished() { }
-        #pragma warning restore S1186 // Methods should not be empty 
+#pragma warning restore S1186 // Methods should not be empty 
         #endregion
 
         public bool ShouldAddProjectItem(string filePath)
@@ -33,7 +30,7 @@ namespace VirtoCommerce.Module.Wizard
             var safeprojectname = replacementsDictionary["$safeprojectname$"];
 
             var supersafename = Safe(safeprojectname);
-            var supersafenamejs =  ToJsCamelCase(supersafename);
+            var supersafenamejs = ToJsCamelCase(supersafename);
             var safeprojectnamejs = SafeJs(safeprojectname);
 
             var projectnameitems = safeprojectname.Split('.').Select(x => ToJsCamelCase(Safe(x)));
