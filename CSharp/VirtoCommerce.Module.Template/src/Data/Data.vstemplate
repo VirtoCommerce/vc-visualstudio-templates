@@ -19,7 +19,7 @@
       <Folder Name="Handlers" TargetFolderName="Handlers"/>
       <Folder Name="Models" TargetFolderName="Models"/>
       <Folder Name="Repositories" TargetFolderName="Repositories">
-        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_safeprojectname$DbContext.cs">DbContext.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="$ext_supersafename$DbContext.cs">DbContext.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true">DesignTimeDbContextFactory.cs</ProjectItem>
       </Folder>
       <Folder Name="Services" TargetFolderName="Services" />

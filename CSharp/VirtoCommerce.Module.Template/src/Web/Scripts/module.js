@@ -6,14 +6,14 @@ if (AppDependencies !== undefined) {
 }
 
 angular.module(moduleName, [])
-    .config(['$stateProvider', '$urlRouterProvider',
-        function ($stateProvider, $urlRouterProvider) {
+    .config(['$stateProvider',
+        function ($stateProvider) {
             $stateProvider
                 .state('workspace.$ext_supersafenamejs$State', {
                     url: '/$ext_safeprojectnamecamel$',
                     templateUrl: '$(Platform)/Scripts/common/templates/home.tpl.html',
                     controller: [
-                        '$scope', 'platformWebApp.bladeNavigationService', function ($scope, bladeNavigationService) {
+                        'platformWebApp.bladeNavigationService', function (bladeNavigationService) {
                             var newBlade = {
                                 id: 'blade1',
                                 controller: '$ext_safeprojectnamecamel$.helloWorldController',
@@ -26,6 +26,7 @@ angular.module(moduleName, [])
                 });
         }
     ])
+
     .run(['platformWebApp.mainMenuService', 'platformWebApp.widgetService', '$state',
         function (mainMenuService, widgetService, $state) {
             //Register module in main menu

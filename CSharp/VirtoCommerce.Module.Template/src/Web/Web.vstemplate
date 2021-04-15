@@ -27,7 +27,7 @@
         </Folder>
       </Folder>
       <Folder Name="Localizations">
-          <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_safeprojectname$.json">en.module.json</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="en.$ext_shortsafename$.json">en.module.json</ProjectItem>
       </Folder>
       <Folder Name="Scripts">
         <Folder Name="blades">
