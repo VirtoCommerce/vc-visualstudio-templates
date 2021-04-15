@@ -29,6 +29,12 @@ namespace VirtoCommerce.Module.Wizard
         {
             var safeprojectname = replacementsDictionary["$safeprojectname$"];
 
+            const string extenssionToRemove = "module";
+            if (safeprojectname.EndsWith(extenssionToRemove, System.StringComparison.InvariantCultureIgnoreCase))
+            {
+                safeprojectname = safeprojectname.Remove(safeprojectname.Length - extenssionToRemove.Length);
+            }
+
             var supersafename = Safe(safeprojectname);
             var supersafenamejs = ToJsCamelCase(supersafename);
             var safeprojectnamejs = SafeJs(safeprojectname);
@@ -36,6 +42,7 @@ namespace VirtoCommerce.Module.Wizard
             var projectnameitems = safeprojectname.Split('.').Select(x => ToJsCamelCase(Safe(x)));
             var safeprojectnamecamel = string.Join(".", projectnameitems);
 
+            replacementsDictionary.Add("$shortsafename$", safeprojectname); // XXmodule = XX
             replacementsDictionary.Add("$supersafename$", supersafename); // 0ProjectName XX = _ProjectNameXX
             replacementsDictionary.Add("$supersafenamejs$", supersafenamejs); // ProjectNameXX = projectNameXX
             replacementsDictionary.Add("$safeprojectnamejs$", safeprojectnamejs); // ProjectNameXX = project-name-xx
@@ -44,9 +51,9 @@ namespace VirtoCommerce.Module.Wizard
 
         private string SafeJs(string value)
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            var stringBuilder = new StringBuilder();
 
-            for (int i = 0; i < value.Length; i++)
+            for (var i = 0; i < value.Length; i++)
             {
                 var item = value[i];
 
@@ -65,13 +72,11 @@ namespace VirtoCommerce.Module.Wizard
 
         private string Safe(string value)
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            var stringBuilder = new StringBuilder();
             foreach (var item in value)
             {
-                if (!char.IsLetterOrDigit(item))
-                    continue;
-
-                stringBuilder.Append(item);
+                if (char.IsLetterOrDigit(item))
+                    stringBuilder.Append(item);
             }
 
             if (stringBuilder.Length == 0)

@@ -16,9 +16,9 @@ namespace $ext_safeprojectname$.Data.Repositories
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //        modelBuilder.Entity<MyModuleEntity>().ToTable("MyModule").HasKey(x => x.Id);
-            //        modelBuilder.Entity<MyModuleEntity>().Property(x => x.Id).HasMaxLength(128);
-            //        base.OnModelCreating(modelBuilder);
+            // modelBuilder.Entity<MyModuleEntity>().ToTable("MyModule").HasKey(x => x.Id);
+            // modelBuilder.Entity<MyModuleEntity>().Property(x => x.Id).HasMaxLength(128);
+            // base.OnModelCreating(modelBuilder);
         }
     }
 }

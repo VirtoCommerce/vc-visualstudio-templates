@@ -9,7 +9,6 @@ using VirtoCommerce.Platform.Core.Settings;
 using $ext_safeprojectname$.Core;
 using $ext_safeprojectname$.Data.Repositories;
 
-
 namespace $safeprojectname$
 {
     public class Module : IModule
@@ -18,11 +17,17 @@ namespace $safeprojectname$
 
         public void Initialize(IServiceCollection serviceCollection)
         {
-            // database initialization
-            var configuration = serviceCollection.BuildServiceProvider().GetRequiredService<IConfiguration>();
-            var connectionString = configuration.GetConnectionString("VirtoCommerce.$ext_supersafename$") ?? configuration.GetConnectionString("VirtoCommerce");
-            serviceCollection.AddDbContext<$ext_supersafename$DbContext> (options => options.UseSqlServer(connectionString));
-        }
+            // initialize DB
+            serviceCollection.AddDbContext<$ext_supersafename$DbContext> ((provider, options) =>
+            {
+                var configuration = provider.GetRequiredService<IConfiguration>();
+                options.UseSqlServer(configuration.GetConnectionString(ModuleInfo.Id) ?? configuration.GetConnectionString("VirtoCommerce"));
+            });
+
+        // TODO:
+        // serviceCollection.AddTransient<I$ext_supersafename$Repository, $ext_supersafename$Repository>();
+        // serviceCollection.AddTransient<Func<I$ext_supersafename$Repository>>(provider => () => provider.CreateScope().ServiceProvider.GetRequiredService<I$ext_supersafename$Repository>());
+    }
 
         public void PostInitialize(IApplicationBuilder appBuilder)
         {
@@ -40,22 +45,20 @@ namespace $safeprojectname$
                     Name = x
                 }).ToArray());
 
-            // Ensure that any pending migrations are applied
+            // ensure that all pending migrations are applied
             using (var serviceScope = appBuilder.ApplicationServices.CreateScope())
             {
-                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService <$ext_supersafename$DbContext> ())
-                    {
+                using (var dbContext = serviceScope.ServiceProvider.GetRequiredService<$ext_supersafename$DbContext>())
+                {
                     dbContext.Database.EnsureCreated();
                     dbContext.Database.Migrate();
                 }
             }
         }
 
-    public void Uninstall()
+        public void Uninstall()
         {
             // do nothing in here
         }
-
     }
-
 }

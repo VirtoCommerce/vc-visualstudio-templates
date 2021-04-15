@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <module>
-    <id>$ext_safeprojectname$</id>
+    <id>$ext_shortsafename$</id>
     <version>1.0.0</version>
     <version-tag></version-tag>
     <platformVersion>3.0.0</platformVersion>
     <dependencies>
-<!--        <dependency id="VirtoCommerce.Core" version="3.0.0" /> -->
+        <!--<dependency id="VirtoCommerce.Core" version="3.0.0" />-->
     </dependencies>
 
     <title>$ext_projectname$</title>
@@ -23,5 +23,4 @@
   
     <assemblyFile>$safeprojectname$.dll</assemblyFile>
     <moduleType>$safeprojectname$.Module, $safeprojectname$</moduleType>
-
 </module>
