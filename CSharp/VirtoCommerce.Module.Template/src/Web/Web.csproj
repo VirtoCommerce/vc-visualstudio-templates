@@ -4,7 +4,10 @@
         <noWarn>1591</noWarn>
         <OutputType>Library</OutputType>
     </PropertyGroup>
-
+    <PropertyGroup>
+        <!-- Project is not a test project -->
+        <SonarQubeTestProject>false</SonarQubeTestProject>
+    </PropertyGroup>
     <ItemGroup>
         <Compile Remove="dist\**" />
         <Compile Remove="node_modules\**" />
