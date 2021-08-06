@@ -5,7 +5,7 @@
         <DisplayName>Virto Commerce 3.x Module Templates</DisplayName>
         <Description xml:space="preserve">Create your new Virto Commerce extension/module promptly and with the recommended project structure.</Description>
         <MoreInfo>https://virtocommerce.com/docs</MoreInfo>
-        <GettingStartedGuide>https://github.com/VirtoCommerce/vc-platform/tree/release/3.0.0</GettingStartedGuide>
+        <GettingStartedGuide>https://github.com/VirtoCommerce/vc-platform</GettingStartedGuide>
         <ReleaseNotes>https://github.com/VirtoCommerce/vc-visualstudio-templates/releases</ReleaseNotes>
         <Icon>virtocommerce.png</Icon>
         <PreviewImage>module.png</PreviewImage>
