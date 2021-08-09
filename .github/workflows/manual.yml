@@ -21,6 +21,6 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: module-installer
+        name: VirtoCommerce.Module.Installer.vsix
         path: ./CSharp/VirtoCommerce.Module.Installer/bin/Release/VirtoCommerce.Module.Installer.vsix
     
