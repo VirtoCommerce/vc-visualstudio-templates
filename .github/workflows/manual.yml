@@ -21,7 +21,6 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: Build extension
-      run: msbuild ./CSharp/VirtoCommerce.Module.sln /t:Rebuild    
-      
-      
-    - run: dir /w
+      run: msbuild ./CSharp/VirtoCommerce.Module.sln /t:Rebuild /p:Configuration=Release
+
+    - run: dir
