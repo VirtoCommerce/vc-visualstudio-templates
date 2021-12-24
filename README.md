@@ -1,6 +1,8 @@
 # VirtoCommerce Visual Studio Extensions
 This repository is the official storage for VirtoCommerce Visual Studio templates source code.
 
+:point_right: We migarted a new Virto Commerce Module template to template for dotnet new. Please use https://github.com/VirtoCommerce/vc-cli-module-template to create a new Virto Commerce module.
+
 ## Overview
 Includes templates:
 * Virto Commerce 3.x Module - Default project template for creating Virto Commerce module
